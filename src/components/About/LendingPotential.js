@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../../../public/images/siteLogo.svg";
 
 const LendingPotential = () => {
   return (
@@ -8,7 +7,7 @@ const LendingPotential = () => {
       <div className="w-[80%]">
         <div className=" flex justify-center items-center">
           <Image
-            src={Logo}
+            src={"/images/siteLogo.svg"}
             alt="Logo"
             width={100}
             height={100}

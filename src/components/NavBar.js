@@ -1,7 +1,5 @@
 // src/components/NavBar.js
 import Image from "next/image";
-import logoImg from "../../public/images/logo.svg";
-import arrowImg from "../../public/images/vector.svg";
 import { usePathname } from "next/navigation";
 export default function NavBar() {
   const pathName = usePathname();
@@ -11,7 +9,7 @@ export default function NavBar() {
       <div className="w-[80%] flex justify-between">
         <div className="space-x-6 flex justify-center item-center">
           <Image
-            src={logoImg}
+            src={"/images/logo.svg"}
             alt="logo"
             width={100}
             height={100}
@@ -55,13 +53,23 @@ export default function NavBar() {
             <a href="#" className="font-extralight text-lg font-roboto">
               Schedule a demo
             </a>
-            <Image src={arrowImg} alt="arrow" width={6} height={6} />
+            <Image
+              src={"/images/vector.svg"}
+              alt="arrow"
+              width={6}
+              height={6}
+            />
           </div>
           <div className="flex space-x-2 items-baseline">
             <a href="#" className="font-extralight text-lg font-roboto">
               Contact
             </a>
-            <Image src={arrowImg} alt="arrow" width={6} height={6} />
+            <Image
+              src={"/images/vector.svg"}
+              alt="arrow"
+              width={6}
+              height={6}
+            />
           </div>
         </div>
       </div>
