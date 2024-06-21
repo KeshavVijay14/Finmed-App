@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // components/WhyPartnerDetailed.js
 export default function WhyPartnerDetailed() {
   return (

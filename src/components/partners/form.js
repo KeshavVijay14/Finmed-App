@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // components/PartnerForm.js
 export default function PartnerForm() {
   return (

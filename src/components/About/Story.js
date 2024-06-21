@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const OurStory = () => {
   return (
     <div className="flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white py-16 px-4">
