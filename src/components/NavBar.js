@@ -54,7 +54,7 @@ export default function NavBar() {
               Schedule a demo
             </a>
             <Image
-              src={"/images/vector.svg"}
+              src={"/images/Vector.svg"}
               alt="arrow"
               width={6}
               height={6}
@@ -65,7 +65,7 @@ export default function NavBar() {
               Contact
             </a>
             <Image
-              src={"/images/vector.svg"}
+              src={"/images/Vector.svg"}
               alt="arrow"
               width={6}
               height={6}

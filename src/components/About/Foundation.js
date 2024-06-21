@@ -17,7 +17,7 @@ export default function HoverEffectSections() {
             onMouseLeave={() => setHoveredSection(null)}
           >
             <Image
-              src="/images/vector 1.svg"
+              src="/images/Vector 1.svg"
               alt="Compliance"
               width={80}
               height={80}
@@ -55,7 +55,7 @@ export default function HoverEffectSections() {
             onMouseLeave={() => setHoveredSection(null)}
           >
             <Image
-              src="/images/vector 2.svg"
+              src="/images/Vector 2.svg"
               alt="Security"
               width={80}
               height={80}
@@ -96,7 +96,7 @@ export default function HoverEffectSections() {
             onMouseLeave={() => setHoveredSection(null)}
           >
             <Image
-              src="/images/vector 3.svg"
+              src="/images/Vector 3.svg"
               alt="Data Analytics"
               width={115}
               height={115}
