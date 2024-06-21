@@ -62,7 +62,7 @@ const CardSlider = () => {
             className=" rounded-full p-2 px-3 bg-white cursor-pointer "
           >
             <Image
-              src={"/images/arrowLeft.svg"}
+              src={"/images/arrowleft.svg"}
               alt="arr-left"
               width={10}
               height={10}
