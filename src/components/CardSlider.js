@@ -80,10 +80,10 @@ const CardSlider = () => {
             />
           </div>
         </div>
-        <div className="relative">
-          <div className="slider-container">
+        <div className="relative ">
+          <div className="slider-container ">
             <div
-              className="slider-content"
+              className="slider-content max-w-md"
               style={{ transform: `translateX(-${currentIndex * 320}px)` }}
             >
               {cards.map((card, index) => (
