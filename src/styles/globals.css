@@ -67,37 +67,37 @@ body {
 .gradient-border-purple {
   border-left: 10px solid;
   border-image-source: linear-gradient(
-    -89.51deg,
+    -80.51deg,
     rgba(217, 217, 217, 0),
     #c670e7
   );
   border-image-slice: 10;
   width: 10;
-  height: 80px;
+  height: 90px;
 }
 
 .gradient-border-green {
   border-left: 10px solid;
   border-image-source: linear-gradient(
-    -89.51deg,
+    -80.51deg,
     rgba(217, 217, 217, 0),
     #62d89f
   );
   border-image-slice: 10;
   width: 10;
-  height: 80px;
+  height: 90px;
 }
 
 .gradient-border-blue {
   border-left: 10px solid;
   border-image-source: linear-gradient(
-    -89.51deg,
+    -80.51deg,
     rgba(217, 217, 217, 0),
     #00a8ff
   );
   border-image-slice: 10;
   width: 10;
-  height: 80px;
+  height: 90px;
 }
 
 .slider-container {
@@ -261,5 +261,3 @@ body {
   width: 50%;
   margin: 20px 0;
 }
-
-

@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 const OurStory = () => {
   return (
-    <div className="flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white py-16 px-4">
+    <div className="pb-48 flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white px-4">
       <h2 className="text-4xl font-bold mb-4 text-[#62D89F] font-trebuchet">Our story</h2>
-      <p className="max-w-2xl text-center text-base font-light leading-relaxed font-roboto">
+      <p className="max-w-2xl text-start  text-sm font-thin leading-relaxed font-roboto">
         Born from a simple theory in 2022, Finmed swiftly evolved into a vital
         solution. Recognizing the challenges healthcare providers and lenders
         face due to the complex A/R. We embarked on a journey to develop

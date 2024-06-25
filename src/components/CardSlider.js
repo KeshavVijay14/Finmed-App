@@ -44,13 +44,13 @@ const CardSlider = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center">
+    <section className=" mt-100 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center">
       <div className="flex flex-col text-center w-[80%]  justify-between">
-        <div className="w-1/2">
-          <h2 className="text-2xl font-bold text-[#62D89F] mb-2 max-w-md font-trebuchet">
+        <div className="flex flex-col items-start text-start">
+          <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2  font-trebuchet">
             A fully integrated suite of financial and healthcare solutions
           </h2>
-          <p className="text-lg font-light text-white mb-12 max-w-md font-roboto">
+          <p className="text-sm font-thin text-white mb-12 max-w-lg  font-roboto">
             Unlock the potential of healthcare financing with Finmed, where
             cutting-edge financial technology meets the ever-evolving healthcare
             industry.
@@ -80,7 +80,7 @@ const CardSlider = () => {
             />
           </div>
         </div>
-        <div className="relative ">
+        <div className="relative">
           <div className="slider-container">
             <div
               className="slider-content"
@@ -100,10 +100,10 @@ const CardSlider = () => {
                         borderTopRightRadius: "10px",
                       }}
                     ></div>
-                    <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2">
+                    <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-6 pl-4">
                       {card.title}
                     </h3>
-                    <p className="text-black font-light text-base font-roboto">
+                    <p className="text-black font-thin text-sm font-roboto pl-4">
                       {card.description}
                     </p>
                   </div>

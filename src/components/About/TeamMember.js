@@ -17,12 +17,9 @@ const TeamMember = ({ member }) => {
       <p className="text-white text-sm mb-4 font-normal text-center font-roboto">
         {member.position}
       </p>
-      <ul className="text-left text-white list-disc list-inside space-y-1">
+      <ul className="text-start text-white list-disc list-inside space-y-1 pl-10">
         {member.details.map((detail, index) => (
-          <li
-            key={index}
-            className="text-white text-base font-light font-roboto"
-          >
+          <li key={index} className="text-white  text-sm font-thin font-roboto">
             {detail}
           </li>
         ))}

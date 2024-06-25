@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20  flex justify-center">
-      <div className="container w-[80%] flex     items-center justify-between ">
-        <div className="  mb-10  max-w-lg">
+      <div className="container w-[80%] flex  items-center justify-between gap-10 ">
+        <div className="mb-10  max-w-lg">
           <h1 className="text-4xl font-bold mb-6 text-[#62D89F] font-trebuchet">
             Innovative Financial Technology Revolutionizing the Healthcare
             Sector
           </h1>
-          <p className="mb-8 text-base font-light text-white font-roboto">
+          <p className="mb-8 text-base font-light text-white sm:max-w-sm  md:max-w-md   font-roboto">
             Unlock the potential of healthcare financing with Finmed, where
             cutting-edge financial technology meets the ever-evolving needs of
             the healthcare sector.
