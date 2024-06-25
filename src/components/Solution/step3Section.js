@@ -15,7 +15,7 @@ const Step3Section = () => {
               V Score
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light">
+          <div className="text-white   font-roboto font-thin text-sm">
             V Score utilizes a wide range of data points to score each client,
             ensuring their compatibility within our lending network.
           </div>

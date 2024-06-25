@@ -15,7 +15,7 @@ const Step4Section = () => {
               Pulse
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light">
+          <div className="text-white   font-roboto font-thin text-sm">
             The Pulse of Finmed. Reading, analyzing, and transforming data into
             actionable insights. It guides our decisions on client interactions,
             claims processing, and company strategies with precision.

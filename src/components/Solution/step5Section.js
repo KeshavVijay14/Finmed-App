@@ -15,7 +15,7 @@ const Step5Section = () => {
               8200
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light">
+          <div className="text-white  font-roboto font-thin text-sm">
             8200 is advanced monitoring and fraud detection system. Utilizing
             cutting edge technology, we safeguard your transactions in
             real-time, ensuring unparalleled security and peace of mind for all

@@ -15,7 +15,7 @@ const Step2Section = () => {
               Hive
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light">
+          <div className="text-white  font-roboto font-thin text-sm">
             Designed with security, efficiency, and compliance in mind. Hive
             ensures the smooth and reliable exchange of healthcare claim data
             between medical billing companies and our financial technology.

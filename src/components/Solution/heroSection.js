@@ -8,7 +8,7 @@ const HeroSection = () => {
           <h1 className="text-4xl font-bold mb-4 text-[#62D89F] font-trebuchet">
             Creating endless lending possibilities
           </h1>
-          <p className="font-light text-base text-white max-w-lg font-roboto">
+          <p className="font-thin text-sm text-white max-w-lg font-roboto">
             Finmed is spearheading a revolution in both the financial and
             healthcare industries. Our solutions empower financial institutions
             and lenders with access to a secure platform. With Finmed, you can

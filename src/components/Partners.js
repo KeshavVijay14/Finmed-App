@@ -25,7 +25,7 @@ export default function PartnersSection() {
       <div className="container mx-auto flex flex-col items-center">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 ">
           {partners.map((partner, index) => (
-            <div key={index} className="px-16">
+            <div key={index} className="px-16 flex">
               <Image
                 src={partner.src}
                 alt={partner.alt}
@@ -39,19 +39,26 @@ export default function PartnersSection() {
         <div className="   py-20 px-8 flex justify-center w-full">
           <div className="separator  "></div>
         </div>
-        <div className="flex flex-wrap justify-center items-center space-x-48">
+        <div className="w-[60%] flex justify-between items-center">
           {icons.map((icon, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <Image
-                src={icon.src}
-                alt={icon.alt}
-                width={30}
-                height={30}
-                className="mb-2"
-              />
-              <p className="text-white text-xl font-normal font-roboto">
-                {icon.label}
-              </p>
+            <div
+              key={index}
+              className="flex flex-col justify-between items-center"
+            >
+              <div className=" ">
+                <Image
+                  src={icon.src}
+                  alt={icon.alt}
+                  width={30}
+                  height={30}
+                  className="mb-2"
+                />
+              </div>
+              <div className={`${index % 2 !== 0 && "mt-3"}`}>
+                <p className="text-white text-xl font-normal font-roboto">
+                  {icon.label}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -15,7 +15,7 @@ const Step1Section = () => {
               copay.com
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light ">
+          <div className="text-white font-thin text-sm font-roboto  ">
             Introducing Copay.com, the ultimate one-stop lending platform
             designed exclusively for healthcare providers in search of financial
             solutions.

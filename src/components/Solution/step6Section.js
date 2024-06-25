@@ -15,7 +15,7 @@ const Step6Section = () => {
               Lender Network
             </div>
           </div>
-          <div className="text-white text-base font-roboto font-light">
+          <div className="text-white   font-roboto font-thin text-sm">
             Discover our expansive network of banks and lenders, all eager to
             participate in the healthcare lending market. Each member can select
             their unique criteria for desired credit profiles. Clients meeting
