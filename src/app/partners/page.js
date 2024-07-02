@@ -6,7 +6,7 @@ import WhyPartnerComp from "../../components/partners/whyPartners";
 import WhyPartnerDetailed from "../../components/partners/partnersDetail";
 export default function Partners() {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-primary text-white  w-full overflow-x-auto">
       <NavBar />
       <PartnerForm />
       <WhyPartnerComp />

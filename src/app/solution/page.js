@@ -5,7 +5,7 @@ import SolutionComp from "../../components/Solution";
 
 export default function Solution() {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-primary text-white  w-full overflow-x-auto">
       <NavBar />
       <SolutionComp />
       <Footer />

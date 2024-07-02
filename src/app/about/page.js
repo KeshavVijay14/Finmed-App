@@ -9,7 +9,7 @@ import Foundation from "../../components/About/Foundation";
 import Separator from "../../components/Separator";
 export default function Home() {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-primary text-white  w-full overflow-x-auto ">
       <NavBar />
       <LendingPotential />
       <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center items-center py-40">

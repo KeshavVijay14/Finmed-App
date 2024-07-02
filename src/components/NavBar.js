@@ -5,7 +5,7 @@ export default function NavBar() {
   const pathName = usePathname();
 
   return (
-    <nav className="flex justify-center items-center py-4   bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white">
+    <nav className="flex justify-center items-center py-4  w-full overflow-x-auto  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white">
       <div className="w-[80%] flex justify-between">
         <div className="space-x-6 flex justify-center item-center">
           <Image
@@ -19,7 +19,7 @@ export default function NavBar() {
             href="/home"
             className={`${
               pathName === "/home" && "gradient-underline"
-            } hover-gradient-underline    text-sm  customText px-2`}
+            } hover-gradient-underline     text-sm  customText px-2`}
           >
             Home
           </a>

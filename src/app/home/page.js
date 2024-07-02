@@ -9,7 +9,7 @@ import CardSlider from "../../components/CardSlider";
 
 export default function Home() {
   return (
-    <div className=" text-white ">
+    <div className=" text-white  w-full overflow-x-auto">
       <NavBar />
       <HeroSection />
       <Partners />

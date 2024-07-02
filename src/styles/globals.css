@@ -28,7 +28,7 @@ body {
   background: linear-gradient(270deg, #62d89f 0%, #c670e7 55%, #00a8ff 100%);
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.5s ease-out;
 }
 
 .hover-gradient-underline:hover::after {

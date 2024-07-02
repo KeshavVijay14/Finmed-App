@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const SolutionComp = () => {
   return (
-    <>
+    <div>
       <HeroSection />
       <Separator />
       <StepSection />
@@ -25,7 +25,7 @@ const SolutionComp = () => {
       <Step6Section />
       <Separator />
       {/* <MovingDot /> */}
-    </>
+    </div>
   );
 };
 
