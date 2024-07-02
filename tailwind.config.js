@@ -1,21 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
-        primary: "#1D1D42",
-        secondary: "#2C2C6A",
-        accent: "#33F9FF",
+        white: "#fff",
       },
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
-        trebuchet: ['"Trebuchet MS"', "sans-serif"],
+        roboto: "Roboto",
+        "trebuchet-ms": "'Trebuchet MS'",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      spacing: {},
+      borderRadius: {
+        sm: "14px",
+      },
+      fontSize: {
+        base: "16px",
+        
+        lgi: "19px",
+        "13xl": "32px",
+        
+       
+        "21xl": "40px",
+        
+       
+        "5xs": "8px",
+        xs: "12px",
+        sm: "14px",
+        inherit: "inherit",
       },
     },
   },
-  plugins: [],
 };

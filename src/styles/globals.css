@@ -1,19 +1,18 @@
-/* src/styles/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* styles/globals.css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
-/* styles/globals.css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
-/* Optionally, you can specify a fallback font family */
 body {
-  font-family: "Roboto", "Trebuchet MS";
+  @apply leading-[normal] m-0;
 }
-
+*,
+::before,
+::after {
+  border-width: 0;
+}
 .hover-gradient-underline {
   position: relative;
 }

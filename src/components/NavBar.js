@@ -19,7 +19,7 @@ export default function NavBar() {
             href="/home"
             className={`${
               pathName === "/home" && "gradient-underline"
-            } hover-gradient-underline     text-sm  customText px-2`}
+            } hover-gradient-underline   font-extralight text-[inherit]  customText px-2`}
           >
             Home
           </a>
@@ -27,7 +27,7 @@ export default function NavBar() {
             href="/solution"
             className={`${
               pathName === "/solution" && "gradient-underline"
-            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
           >
             Solutions
           </a>
@@ -35,7 +35,7 @@ export default function NavBar() {
             href="/about"
             className={`${
               pathName === "/about" && "gradient-underline"
-            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
           >
             About
           </a>
@@ -43,14 +43,17 @@ export default function NavBar() {
             href="/partners"
             className={`${
               pathName === "/partners" && "gradient-underline"
-            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
           >
             Partners
           </a>
         </div>
         <div className="space-x-6  flex">
           <div className="flex space-x-2 items-baseline">
-            <a href="#" className="font-thin text-sm font-roboto px-2">
+            <a
+              href="#"
+              className="font-extralight text-[inherit] font-roboto px-2"
+            >
               Schedule a demo
             </a>
             <Image
@@ -61,7 +64,10 @@ export default function NavBar() {
             />
           </div>
           <div className="flex space-x-2 items-baseline">
-            <a href="#" className="font-thin text-sm font-roboto px-2">
+            <a
+              href="#"
+              className="font-extralight text-[inherit] font-roboto px-2"
+            >
               Contact
             </a>
             <Image
