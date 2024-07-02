@@ -70,7 +70,7 @@ const Step6Section = () => {
           </div>
           <div className="absolute right-20 top-32">
             <Image
-              src="/images/co-pay.svg"
+              src="/images/lender-network-bg.png"
               alt="Icon 2"
               width={320}
               height={160}

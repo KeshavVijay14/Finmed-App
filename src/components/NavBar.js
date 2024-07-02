@@ -19,7 +19,7 @@ export default function NavBar() {
             href="/home"
             className={`${
               pathName === "/home" && "gradient-underline"
-            } hover-gradient-underline font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline    text-sm  customText px-2`}
           >
             Home
           </a>
@@ -27,7 +27,7 @@ export default function NavBar() {
             href="/solution"
             className={`${
               pathName === "/solution" && "gradient-underline"
-            } hover-gradient-underline font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
           >
             Solutions
           </a>
@@ -35,7 +35,7 @@ export default function NavBar() {
             href="/about"
             className={`${
               pathName === "/about" && "gradient-underline"
-            } hover-gradient-underline font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
           >
             About
           </a>
@@ -43,7 +43,7 @@ export default function NavBar() {
             href="/partners"
             className={`${
               pathName === "/partners" && "gradient-underline"
-            } hover-gradient-underline font-thin text-sm font-roboto px-2`}
+            } hover-gradient-underline nav-text font-thin text-sm font-roboto px-2`}
           >
             Partners
           </a>

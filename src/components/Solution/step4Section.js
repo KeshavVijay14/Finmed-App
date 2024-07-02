@@ -68,7 +68,7 @@ const Step4Section = () => {
           </div>
           <div className="absolute right-20 top-32">
             <Image
-              src="/images/co-pay.svg"
+              src="/images/pulse-bg.png"
               alt="Icon 2"
               width={320}
               height={160}

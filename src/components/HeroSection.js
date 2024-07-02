@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20  flex justify-center">
-      <div className="container w-[80%] flex  items-center justify-between gap-10 ">
+    <section className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]    flex justify-center">
+      <div className="container w-[80%] flex items-center justify-around  h-[100vh] ">
         <div className="mb-10  max-w-lg">
           <h1 className="text-4xl font-bold mb-6 text-[#62D89F] font-trebuchet">
             Innovative Financial Technology Revolutionizing the Healthcare
