@@ -63,7 +63,7 @@ function MetricItem({ value, label, inView }) {
       const end = parseInt(value, 10);
       if (start === end) return;
 
-      let totalDuration = 500;
+      let totalDuration = 2000;
       let incrementTime = (totalDuration / end) * 5;
 
       let timer = setInterval(() => {

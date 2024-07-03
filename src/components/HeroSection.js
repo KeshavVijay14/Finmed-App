@@ -11,7 +11,7 @@ export default function HeroSection() {
           ref={ref}
         >
           <div
-            className={`container w-[80%] flex items-center justify-around  h-[100vh] ${
+            className={`container w-[80%] flex items-center justify-around gap-20 xl:gap-0 h-[100vh] ${
               inView ? "animate-scale-opacity-z" : ""
             } `}
           >
@@ -34,9 +34,7 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <div
-              className={`relative  h-full flex  items-center hover-scale`}
-            >
+            <div className={`relative  h-full flex  items-center hover-scale`}>
               <div className="absolute left-[-80px] transform translate-y-16 ">
                 <Image
                   src="/images/mobile-screen-view.svg"
@@ -55,7 +53,6 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-         
         </section>
       )}
     </InView>

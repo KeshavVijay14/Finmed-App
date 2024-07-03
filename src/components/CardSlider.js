@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
 
 const CardSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(3);
-  const [startAnimation, setStartAnimation] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const cards = [
     {
@@ -31,19 +30,19 @@ const CardSlider = () => {
         "Pulse serves as the pulse of Finmed, recording and transforming data into actionable business intelligence to inform our decisions on client interactions, claim processing, and company strategies with precision.",
       bgClass: "bg-purple-300",
     },
+    {
+      title: "8200",
+      description:
+        "8200 is advanced monitoring and fraud detection system. Utilizing cutting edge technology, we safeguard your transactions in real-time, ensuring unparalleled security and peace of mind for all of our clients.",
+      bgClass: "bg-purple-500",
+    },
+    {
+      title: "Lender Network",
+      description:
+        "Discover our expansive network of banks and lenders, all eager to participate in the healthcare lending market. Each member can select their unique criteria for desired credit profiles. Clients meeting these criteria are seamlessly connected, streamlining the lending process.",
+      bgClass: "bg-green-500",
+    },
   ];
-
-  useEffect(() => {
-    if (startAnimation) {
-      let timer;
-      if (currentIndex > 0) {
-        timer = setInterval(() => {
-          setCurrentIndex((prevIndex) => prevIndex - 1);
-        }, 30); // Adjust the interval time as needed
-      }
-      return () => clearInterval(timer);
-    }
-  }, [startAnimation]);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -58,27 +57,27 @@ const CardSlider = () => {
   };
 
   return (
-    <InView triggerOnce threshold={1} onChange={(inView) => inView && setStartAnimation(true)}>
+    <InView triggerOnce threshold={1}>
       {({ ref }) => (
         <section
           className="mt-100 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
           ref={ref}
         >
-          <div className="flex flex-col text-center w-[80%]  justify-between">
+          <div className="flex flex-col text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
-              <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2  font-trebuchet">
+              <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">
                 A fully integrated suite of financial and healthcare solutions
               </h2>
-              <p className="text-sm font-thin text-white mb-12 max-w-lg  font-roboto">
+              <p className="text-sm font-thin text-white mb-12 max-w-lg font-roboto">
                 Unlock the potential of healthcare financing with Finmed, where
                 cutting-edge financial technology meets the ever-evolving
                 healthcare industry.
               </p>
             </div>
-            <div className="flex justify-end mb-6 gap-4 ">
+            <div className="flex justify-end mb-6 gap-4">
               <div
-                onClick={handlePrev}
-                className="rounded-full p-2 px-3 bg-white cursor-pointer "
+                onClick={handleNext}
+                className="rounded-full p-2 px-3 bg-white cursor-pointer"
               >
                 <Image
                   src={"/images/arrowleft.svg"}
@@ -88,8 +87,8 @@ const CardSlider = () => {
                 />
               </div>
               <div
-                onClick={handleNext}
-                className="rounded-full p-2 px-3 bg-white cursor-pointer "
+                onClick={handlePrev}
+                className="rounded-full p-2 px-3 bg-white cursor-pointer"
               >
                 <Image
                   src={"/images/arrowRight.svg"}
@@ -99,16 +98,19 @@ const CardSlider = () => {
                 />
               </div>
             </div>
-            <div className="relative ">
-              <div className="slider-container ">
+            <div className="relative">
+              <div className="slider-container">
                 <div
-                  className="slider-content max-w-md"
-                  style={{ transform: `translateX(-${currentIndex * 320}px)` }}
+                  className="slider-content flex transition-transform duration-300"
+                  style={{
+                    transform: `translateX(-${currentIndex * 320}px)`,
+                    width: `${cards.length * 320}px`,
+                  }}
                 >
                   {cards.map((card, index) => (
                     <div
                       key={index}
-                      className={`card h-56 rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
+                      className={`card h-56 w-80 rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
                     >
                       <div
                         className={`w-full absolute top-0 left-0 ${card.bgClass}`}

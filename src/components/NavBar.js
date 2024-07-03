@@ -28,7 +28,7 @@ export default function NavBar() {
             href="/solution"
             className={`${
               pathName === "/solution" && "gradient-underline"
-            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] customText px-2`}
           >
             Solutions
           </a>
@@ -36,7 +36,7 @@ export default function NavBar() {
             href="/about"
             className={`${
               pathName === "/about" && "gradient-underline"
-            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] customText px-2`}
           >
             About
           </a>
@@ -44,7 +44,7 @@ export default function NavBar() {
             href="/partners"
             className={`${
               pathName === "/partners" && "gradient-underline"
-            } hover-gradient-underline font-extralight text-[inherit] font-roboto px-2`}
+            } hover-gradient-underline font-extralight text-[inherit] customText px-2`}
           >
             Partners
           </a>
@@ -53,7 +53,7 @@ export default function NavBar() {
           <div className="flex space-x-2 items-baseline">
             <a
               href="#"
-              className="font-extralight text-[inherit] font-roboto px-2"
+              className="font-extralight text-[inherit] customText px-2"
             >
               Schedule a demo
             </a>
@@ -67,7 +67,7 @@ export default function NavBar() {
           <div className="flex space-x-2 items-baseline">
             <a
               href="#"
-              className="font-extralight text-[inherit] font-roboto px-2"
+              className="font-extralight text-[inherit] customText px-2"
             >
               Contact
             </a>
