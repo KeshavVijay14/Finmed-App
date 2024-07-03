@@ -23,6 +23,7 @@ export default function NavBar() {
           >
             Home
           </a>
+
           <a
             href="/solution"
             className={`${

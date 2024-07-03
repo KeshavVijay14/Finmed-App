@@ -9,7 +9,6 @@ import CardSlider from "../../components/CardSlider";
 
 export default function Home() {
   return (
-    
     <div className=" text-white  w-full overflow-x-auto">
       <NavBar />
       <HeroSection />
@@ -26,7 +25,8 @@ export default function Home() {
       </div>
 
       <MetricsSection />
-      <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]  py-20 px-8 flex justify-center">
+
+      <div className="py-20 px-8 flex justify-center w-full bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
         <div className="separator"></div>
       </div>
       <Footer />

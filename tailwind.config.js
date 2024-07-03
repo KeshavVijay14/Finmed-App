@@ -98,6 +98,9 @@ module.exports = {
         sm: "14px",
         inherit: "inherit",
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, rgba(28, 45, 92, 0), #081a49 29.5%, rgba(9, 26, 73, 0.99) 77%, rgba(28, 45, 92, 0))',
+      }
     },
   },
   plugins: [

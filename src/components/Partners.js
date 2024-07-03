@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Separator from "./Separator";
 import { InView } from "react-intersection-observer";
 
 export default function PartnersSection() {
@@ -46,7 +45,7 @@ export default function PartnersSection() {
                 </div>
               ))}
             </div>
-            <div className="   py-20 px-8 flex justify-center w-full">
+            <div className="py-20 px-8 flex justify-center w-full">
               <div className="separator  "></div>
             </div>
             <div
