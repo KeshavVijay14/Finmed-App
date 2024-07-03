@@ -8,12 +8,11 @@ import Step4Section from "./step4Section";
 import Step5Section from "./step5Section";
 import Step6Section from "./step6Section";
 import Separator from "../Separator";
-import MovingDot from "./movingDots";
 import Image from "next/image";
 
 const SolutionComp = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
       <HeroSection />
       <Separator />
       <StepSection />
@@ -24,7 +23,6 @@ const SolutionComp = () => {
       <Step5Section />
       <Step6Section />
       <Separator />
-      {/* <MovingDot /> */}
     </div>
   );
 };

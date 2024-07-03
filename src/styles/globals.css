@@ -130,12 +130,36 @@ body {
   @apply transform transition-transform duration-300 hover:scale-105 cursor-pointer;
 }
 
+ 
+
 .section-fade {
   @apply opacity-0 transition-opacity duration-1000 ease-out;
 }
 
 .count {
   @apply text-3xl font-bold text-[#62D89F];
+}
+
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes textColorChange {
+  0%, 100% {
+    color: #ffffff;
+  }
+  50% {
+    color: #62d89f;
+  }
 }
 
 .button-hover {
@@ -166,6 +190,15 @@ body {
 .button-hover:hover {
   color: #62d89f;
 }
+
+.inView-animate::before {
+  animation: shine 0.4s ease-in-out;
+}
+
+.inView-animate {
+  animation: textColorChange 0.4s ease-in-out;
+}
+
 
 /* styles/customAnimations.css */
 .image-hover {
@@ -228,6 +261,7 @@ body {
   );
   border-image-slice: 1;
   cursor: pointer;
+  
 }
 
 .gradient-background {

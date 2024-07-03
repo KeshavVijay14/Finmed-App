@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function WhyPartner() {
   return (
-    <div className="bg-gradient-to-b flex justify-center from-[#2B2465] via-[#081949] to-[#121D52] text-white py-16">
-      <div className="w-[80%]">
+    <div className="bg-gradient-to-b flex justify-center from-[#2B2465] via-[#081949] to-[#121D52] text-white  ">
+      <div className="w-[80%] h-[100vh] flex flex-col justify-center items-center text-center">
         <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet text-center mb-12">
           Why partner with Finmed?
         </h2>
         <div className="flex justify-end items-center">
-          <div className="flex gap-80">
+          <div className="flex">
             <div className="flex">
               <Image
                 src="/images/partner1.svg"

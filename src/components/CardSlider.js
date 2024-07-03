@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { InView } from "react-intersection-observer";
 
 const CardSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(3);
+  const [startAnimation, setStartAnimation] = useState(false);
 
   const cards = [
     {
@@ -31,6 +33,18 @@ const CardSlider = () => {
     },
   ];
 
+  useEffect(() => {
+    if (startAnimation) {
+      let timer;
+      if (currentIndex > 0) {
+        timer = setInterval(() => {
+          setCurrentIndex((prevIndex) => prevIndex - 1);
+        }, 30); // Adjust the interval time as needed
+      }
+      return () => clearInterval(timer);
+    }
+  }, [startAnimation]);
+
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? cards.length - 1 : prevIndex - 1
@@ -44,76 +58,81 @@ const CardSlider = () => {
   };
 
   return (
-    <section className=" mt-100 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center">
-      <div className="flex flex-col text-center w-[80%]  justify-between">
-        <div className="flex flex-col items-start text-start">
-          <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2  font-trebuchet">
-            A fully integrated suite of financial and healthcare solutions
-          </h2>
-          <p className="text-sm font-thin text-white mb-12 max-w-lg  font-roboto">
-            Unlock the potential of healthcare financing with Finmed, where
-            cutting-edge financial technology meets the ever-evolving healthcare
-            industry.
-          </p>
-        </div>
-        <div className="flex justify-end mb-6 gap-4 ">
-          <div
-            onClick={handlePrev}
-            className=" rounded-full p-2 px-3 bg-white cursor-pointer "
-          >
-            <Image
-              src={"/images/arrowleft.svg"}
-              alt="arr-left"
-              width={10}
-              height={10}
-            />
-          </div>
-          <div
-            onClick={handleNext}
-            className=" rounded-full p-2 px-3 bg-white cursor-pointer "
-          >
-            <Image
-              src={"/images/arrowRight.svg"}
-              alt="arr-right"
-              width={10}
-              height={10}
-            />
-          </div>
-        </div>
-        <div className="relative ">
-          <div className="slider-container ">
-            <div
-              className="slider-content max-w-md"
-              style={{ transform: `translateX(-${currentIndex * 320}px)` }}
-            >
-              {cards.map((card, index) => (
-                <>
-                  <div
-                    key={index}
-                    className={`card h-56 rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
-                  >
+    <InView triggerOnce threshold={1} onChange={(inView) => inView && setStartAnimation(true)}>
+      {({ ref }) => (
+        <section
+          className="mt-100 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
+          ref={ref}
+        >
+          <div className="flex flex-col text-center w-[80%]  justify-between">
+            <div className="flex flex-col items-start text-start">
+              <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2  font-trebuchet">
+                A fully integrated suite of financial and healthcare solutions
+              </h2>
+              <p className="text-sm font-thin text-white mb-12 max-w-lg  font-roboto">
+                Unlock the potential of healthcare financing with Finmed, where
+                cutting-edge financial technology meets the ever-evolving
+                healthcare industry.
+              </p>
+            </div>
+            <div className="flex justify-end mb-6 gap-4 ">
+              <div
+                onClick={handlePrev}
+                className="rounded-full p-2 px-3 bg-white cursor-pointer "
+              >
+                <Image
+                  src={"/images/arrowleft.svg"}
+                  alt="arr-left"
+                  width={10}
+                  height={10}
+                />
+              </div>
+              <div
+                onClick={handleNext}
+                className="rounded-full p-2 px-3 bg-white cursor-pointer "
+              >
+                <Image
+                  src={"/images/arrowRight.svg"}
+                  alt="arr-right"
+                  width={10}
+                  height={10}
+                />
+              </div>
+            </div>
+            <div className="relative ">
+              <div className="slider-container ">
+                <div
+                  className="slider-content max-w-md"
+                  style={{ transform: `translateX(-${currentIndex * 320}px)` }}
+                >
+                  {cards.map((card, index) => (
                     <div
-                      className={`w-full absolute top-0 left-0 ${card.bgClass}`}
-                      style={{
-                        height: "10px",
-                        borderTopLeftRadius: "10px",
-                        borderTopRightRadius: "10px",
-                      }}
-                    ></div>
-                    <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-6 pl-4">
-                      {card.title}
-                    </h3>
-                    <p className="text-black font-thin text-sm font-roboto pl-4">
-                      {card.description}
-                    </p>
-                  </div>
-                </>
-              ))}
+                      key={index}
+                      className={`card h-56 rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
+                    >
+                      <div
+                        className={`w-full absolute top-0 left-0 ${card.bgClass}`}
+                        style={{
+                          height: "10px",
+                          borderTopLeftRadius: "10px",
+                          borderTopRightRadius: "10px",
+                        }}
+                      ></div>
+                      <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-6 pl-4">
+                        {card.title}
+                      </h3>
+                      <p className="text-black font-thin text-sm font-roboto pl-4">
+                        {card.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      )}
+    </InView>
   );
 };
 

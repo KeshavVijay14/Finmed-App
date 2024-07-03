@@ -9,8 +9,14 @@ export default function Partners() {
     <div className="bg-primary text-white  w-full overflow-x-auto">
       <NavBar />
       <PartnerForm />
+      <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center items-center py-40">
+        <div className="separator"></div>
+      </div>
       <WhyPartnerComp />
       <WhyPartnerDetailed />
+      <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center items-center py-40">
+        <div className="separator"></div>
+      </div>
       <Footer />
     </div>
   );
