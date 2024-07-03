@@ -105,7 +105,7 @@ const Step4Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-48 top-12 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-48 top-12 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step4.svg"
                   alt="Icon 2"
@@ -121,7 +121,7 @@ const Step4Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-4 top-40 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-4 top-40 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step5.svg"
                   alt="Icon 2"
@@ -129,7 +129,7 @@ const Step4Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[320px] bottom-16 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[320px] bottom-16 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step2.svg"
                   alt="Icon 2"
@@ -137,7 +137,7 @@ const Step4Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[424px] bottom-32 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[424px] bottom-32 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 2"
@@ -145,7 +145,7 @@ const Step4Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-32 bottom-12 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-32 bottom-12 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step3.svg"
                   alt="Icon 2"
@@ -153,7 +153,7 @@ const Step4Section = () => {
                   height={20}
                 />
               </div>
-              <div className={`absolute right-[484px] top-0 rounded shadow-sm p-3 ${inViewState ? "gradient-border" : "border-0"}`}>
+              <div className={`absolute right-[484px] top-0 rounded shadow-sm p-3 ${inViewState ? "gradient-border" : "gradient-border-thin"}`}>
                 <Image
                   src="/images/step6.svg"
                   alt="Icon 2"

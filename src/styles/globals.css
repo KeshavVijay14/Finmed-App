@@ -250,19 +250,7 @@ body {
   opacity: 1;
 }
 
-.gradient-border {
-  border: 3px solid;
-  border-image-source: linear-gradient(
-    153.07deg,
-    #c670e7 0%,
-    #62d89f 31.69%,
-    #00a8ff 71.42%,
-    #1c2d5c 100.59%
-  );
-  border-image-slice: 1;
-  cursor: pointer;
-  
-}
+ 
 
 .gradient-background {
   background: radial-gradient(

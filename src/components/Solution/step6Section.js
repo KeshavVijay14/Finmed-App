@@ -107,7 +107,7 @@ const Step6Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-36 top-8 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-36 top-8 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 2"
@@ -115,11 +115,7 @@ const Step6Section = () => {
                   height={20}
                 />
               </div>
-              <div
-                className={`absolute right-20 top-32 ${
-                  inViewState ? "animate-scale-up" : ""
-                }`}
-              >
+              <div className={`absolute right-20 top-32 ${inViewState ? 'animate-scale-up' : ''}`}>
                 <Image
                   src="/images/lender-network-bg.png"
                   alt="Icon 2"
@@ -127,7 +123,7 @@ const Step6Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-12 top-48 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-12 top-48 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step3.svg"
                   alt="Icon 2"
@@ -135,7 +131,7 @@ const Step6Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[300px] bottom-12 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[300px] bottom-12 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step5.svg"
                   alt="Icon 2"
@@ -145,7 +141,7 @@ const Step6Section = () => {
               </div>
               <div
                 className={`absolute right-[450px] bottom-20 rounded shadow-sm p-3 ${
-                  inViewState ? "gradient-border" : "border-0"
+                  inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
                 <Image
@@ -155,7 +151,7 @@ const Step6Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-32 bottom-16 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-32 bottom-16 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step6.svg"
                   alt="Icon 2"
@@ -163,7 +159,7 @@ const Step6Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[360px] top-16 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[360px] top-16 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step4.svg"
                   alt="Icon 2"

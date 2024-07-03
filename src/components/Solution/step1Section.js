@@ -105,7 +105,7 @@ const Step1Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-64 top-0 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-64 top-0 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 2"
@@ -125,7 +125,7 @@ const Step1Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-12 top-4 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-12 top-4 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step3.svg"
                   alt="Icon 2"
@@ -133,7 +133,7 @@ const Step1Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[300px] bottom-0 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[300px] bottom-0 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step5.svg"
                   alt="Icon 2"
@@ -141,7 +141,7 @@ const Step1Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-[480px] bottom-16 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-[480px] bottom-16 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step2.svg"
                   alt="Icon 2"
@@ -149,7 +149,7 @@ const Step1Section = () => {
                   height={20}
                 />
               </div>
-              <div className="absolute right-12 bottom-4 rounded shadow-sm p-3 border-0">
+              <div className="absolute right-12 bottom-4 rounded shadow-sm p-3 gradient-border-thin">
                 <Image
                   src="/images/step6.svg"
                   alt="Icon 2"
@@ -159,7 +159,7 @@ const Step1Section = () => {
               </div>
               <div
                 className={`absolute right-[544px] top-4 rounded shadow-sm p-3 ${
-                  inViewState ? "gradient-border" : "border-0"
+                  inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
                 <Image

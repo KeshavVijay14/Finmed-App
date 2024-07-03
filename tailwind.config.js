@@ -14,7 +14,7 @@ module.exports = {
         "transform-move": "transformMove 1s ease-in-out forwards",
         "transform-move-2": "transformMove2 1s ease-in-out forwards",
         "transform-move-3": "transformMove3 1s ease-in-out forwards",
-        "scale-up": "scaleUp 2s ease-in-out forwards",  // New animation for scaling and opacity transition
+        "scale-up": "scaleUp 2s ease-in-out forwards",
       },
       keyframes: {
         scaleAnimation: {
@@ -100,5 +100,24 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.gradient-border': {
+          border: '4px solid',
+          borderImageSource: 'linear-gradient(153.07deg, #c670e7 0%, #62d89f 31.69%, #00a8ff 71.42%, #1c2d5c 100.59%)',
+          borderImageSlice: '1',
+          borderRadius: '14px',
+          cursor: 'pointer',
+        },
+        '.gradient-border-thin': {
+          border: '0.5px solid',
+          borderImageSource: 'linear-gradient(153.07deg, #c670e7 0%, #62d89f 31.69%, #00a8ff 71.42%, #1c2d5c 100.59%)',
+          borderImageSlice: '1',
+          borderRadius: '14px',
+          cursor: 'pointer',
+        },
+      });
+    },
+  ],
 };
