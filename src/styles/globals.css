@@ -394,3 +394,10 @@ body {
   filter: blur(30px);
   cursor: pointer;
 }
+
+ 
+
+.circle-with-shadow {
+  filter: drop-shadow(0 0 8px #D360FF);
+  
+}

@@ -56,7 +56,7 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient1"
-                        gradientTransform="rotate(153.88)"
+                        gradientTransform="rotate(103.88)"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
@@ -80,7 +80,12 @@ const StepSection = () => {
                         fill="freeze"
                       />
                     </path>
-                    <circle r="5" fill="#D360FF" opacity="0">
+                    <circle
+                      class="circle-with-shadow"
+                      r="5"
+                      fill="#D360FF"
+                      opacity="0"
+                    >
                       <animate
                         attributeName="opacity"
                         from="0"
@@ -108,7 +113,7 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient2"
-                        gradientTransform="rotate(153.88)"
+                        gradientTransform="rotate(103.88)"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
@@ -132,7 +137,12 @@ const StepSection = () => {
                         fill="freeze"
                       />
                     </path>
-                    <circle r="5" fill="#D360FF" opacity="0">
+                    <circle
+                      class="circle-with-shadow"
+                      r="5"
+                      fill="#D360FF"
+                      opacity="0"
+                    >
                       <animate
                         attributeName="opacity"
                         from="0"
@@ -162,7 +172,7 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient3"
-                        gradientTransform="rotate(153.88)"
+                        gradientTransform="rotate(103.88)"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
@@ -186,7 +196,12 @@ const StepSection = () => {
                         fill="freeze"
                       />
                     </path>
-                    <circle r="5" fill="#D360FF" opacity="0">
+                    <circle
+                      class="circle-with-shadow"
+                      r="5"
+                      fill="#D360FF"
+                      opacity="0"
+                    >
                       <animate
                         attributeName="opacity"
                         from="0"
@@ -214,9 +229,9 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient"
-                        gradientTransform="rotate(153.07)"
+                        gradientTransform="rotate(103.88)"
                       >
-                        <stop offset="0%" stopColor="#c670e7" />
+                        <stop offset="1%" stopColor="#c670e7" />
                         <stop offset="31.69%," stopColor="#62d89f" />
                         <stop offset="71.42%" stopColor="#00a8ff" />
                         <stop offset="100.59%" stopColor="#1c2d5c" />
@@ -238,7 +253,12 @@ const StepSection = () => {
                         fill="freeze"
                       />
                     </path>
-                    <circle r="5" fill="#D360FF" opacity="0">
+                    <circle
+                      class="circle-with-shadow"
+                      r="5"
+                      fill="#D360FF"
+                      opacity="0"
+                    >
                       <animate
                         attributeName="opacity"
                         from="0"

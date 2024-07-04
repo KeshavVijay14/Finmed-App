@@ -60,7 +60,7 @@ const Step1Section = () => {
                   <defs>
                     <linearGradient
                       id="lineGradient1"
-                      gradientTransform="rotate(153.88)"
+                      gradientTransform="rotate(103.88)"
                     >
                       <stop offset="0%" stopColor="#C670E7" />
                       <stop offset="33.34%" stopColor="#62D89F" />
@@ -84,7 +84,15 @@ const Step1Section = () => {
                       fill="freeze"
                     />
                   </path>
-                  <circle cx="1" cy="1" r="5" fill="#D360FF" opacity="0" className="bg-gray-50">
+                  <circle
+                    class="circle-with-shadow"
+                    cx="1"
+                    cy="1"
+                    r="5"
+                    fill="#D360FF"
+                    opacity="0"
+                    className="bg-gray-50"
+                  >
                     <animate
                       attributeName="opacity"
                       from="0"

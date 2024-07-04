@@ -61,7 +61,7 @@ const Step2Section = () => {
                   <defs>
                     <linearGradient
                       id="lineGradient2"
-                      gradientTransform="rotate(153.88)"
+                      gradientTransform="rotate(103.88)"
                     >
                       <stop offset="0%" stopColor="#C670E7" />
                       <stop offset="33.34%" stopColor="#62D89F" />
@@ -85,7 +85,12 @@ const Step2Section = () => {
                       fill="freeze"
                     />
                   </path>
-                  <circle r="5" fill="#D360FF" opacity="0">
+                  <circle
+                    class="circle-with-shadow"
+                    r="5"
+                    fill="#D360FF"
+                    opacity="0"
+                  >
                     <animate
                       attributeName="opacity"
                       from="0"
@@ -117,8 +122,9 @@ const Step2Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-20 top-32 ${inViewState ? "animate-scale-up" : ""
-                  }`}
+                className={`absolute right-20 top-32 ${
+                  inViewState ? "animate-scale-up" : ""
+                }`}
               >
                 <Image
                   src="/images/hive-bg.png"
@@ -138,8 +144,9 @@ const Step2Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[300px] bottom-0 rounded shadow-sm   ${inViewState ? "gradient-border" : "gradient-border-thin"
-                  }`}
+                className={`absolute right-[300px] bottom-0 rounded shadow-sm   ${
+                  inViewState ? "gradient-border" : "gradient-border-thin"
+                }`}
               >
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
