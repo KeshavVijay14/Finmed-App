@@ -330,3 +330,34 @@ body {
   filter: blur(1px);
   box-shadow: 0 0 30px #00a8ff;
 }
+
+@layer utilities {
+  .gradient-border {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      153.07deg,
+      #c670e7 0%,
+      #62d89f 31.69%,
+      #00a8ff 71.42%,
+      #1c2d5c 100.59%
+    );
+  }
+  .gradient-border-thin {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      153.07deg,
+      #c670e7 0%,
+      #62d89f 31.69%,
+      #00a8ff 71.42%,
+      #1c2d5c 100.59%
+    );
+  }
+}

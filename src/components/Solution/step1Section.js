@@ -70,7 +70,7 @@ const Step1Section = () => {
                   </defs>
                   <path
                     id="path1"
-                    d="M2 2H25.9448C65 1 85.9448 22.1472 85.9448 47V158C85.9448 182.853 106.092 203 130.945 203H144"
+                    d="M2 4H15.9448C65 1 85.9448 22.1472 85.9448 47V158C85.9448 182.853 106.092 203 130.945 203H140"
                     stroke="url(#lineGradient1)"
                     strokeWidth="3"
                     fill="transparent"
@@ -84,7 +84,7 @@ const Step1Section = () => {
                       fill="freeze"
                     />
                   </path>
-                  <circle cx="2" cy="2" r="5" fill="#D360FF" opacity="0">
+                  <circle cx="1" cy="1" r="5" fill="#D360FF" opacity="0" className="bg-gray-50">
                     <animate
                       attributeName="opacity"
                       from="0"
@@ -105,13 +105,15 @@ const Step1Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-64 top-0 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step1.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-64 top-0 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step1.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
               <div
                 className={`absolute right-20 top-32 ${
@@ -125,49 +127,59 @@ const Step1Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-12 top-4 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step3.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-12 top-4 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step3.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[300px] bottom-0 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step5.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[300px] bottom-0 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step5.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[480px] bottom-16 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step2.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[480px] bottom-16 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step2.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-12 bottom-4 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step6.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-12 bottom-4 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step6.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
               <div
-                className={`absolute right-[544px] top-4 rounded shadow-sm p-3 ${
+                className={`absolute right-[544px] top-4 rounded shadow-sm  ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
-                <Image
-                  src="/images/step4.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step4.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
             </div>
           </div>

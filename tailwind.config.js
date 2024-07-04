@@ -99,28 +99,10 @@ module.exports = {
         inherit: "inherit",
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(180deg, rgba(28, 45, 92, 0), #081a49 29.5%, rgba(9, 26, 73, 0.99) 77%, rgba(28, 45, 92, 0))',
-      }
+        "custom-gradient":
+          "linear-gradient(180deg, rgba(28, 45, 92, 0), #081a49 29.5%, rgba(9, 26, 73, 0.99) 77%, rgba(28, 45, 92, 0))",
+      },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.gradient-border': {
-          border: '4px solid',
-          borderImageSource: 'linear-gradient(153.07deg, #c670e7 0%, #62d89f 31.69%, #00a8ff 71.42%, #1c2d5c 100.59%)',
-          borderImageSlice: '1',
-          borderRadius: '14px',
-          cursor: 'pointer',
-        },
-        '.gradient-border-thin': {
-          border: '0.5px solid',
-          borderImageSource: 'linear-gradient(153.07deg, #c670e7 0%, #62d89f 31.69%, #00a8ff 71.42%, #1c2d5c 100.59%)',
-          borderImageSlice: '1',
-          borderRadius: '14px',
-          cursor: 'pointer',
-        },
-      });
-    },
-  ],
+  plugins: [],
 };

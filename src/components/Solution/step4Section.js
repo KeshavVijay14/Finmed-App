@@ -42,9 +42,10 @@ const Step4Section = () => {
                 </div>
               </div>
               <div className="text-white font-roboto font-thin text-sm">
-                The Pulse of Finmed. Reading, analyzing, and transforming data into
-                actionable insights. It guides our decisions on client interactions,
-                claims processing, and company strategies with precision.
+                The Pulse of Finmed. Reading, analyzing, and transforming data
+                into actionable insights. It guides our decisions on client
+                interactions, claims processing, and company strategies with
+                precision.
               </div>
             </div>
 
@@ -70,7 +71,7 @@ const Step4Section = () => {
                   </defs>
                   <path
                     id="path4"
-                    d="M2 1.5L36.5 1.5L107 1.5V1.5C125.225 1.49999 140 16.2746 140 34.5L140 97.5"
+                    d="M2 5.5L36.5 5.5L107 6.5V6.5C125.225 5.49999 140 16.2746 140 34.5L140 97.5"
                     stroke="url(#lineGradient4)"
                     strokeWidth="3"
                     fill="transparent"
@@ -105,15 +106,21 @@ const Step4Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-48 top-12 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step4.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-48 top-12 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step4.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className={`absolute right-20 top-32 ${inViewState ? 'animate-scale-up' : ''}`}>
+              <div
+                className={`absolute right-20 top-32 ${
+                  inViewState ? "animate-scale-up" : ""
+                }`}
+              >
                 <Image
                   src="/images/pulse-bg.png"
                   alt="Icon 2"
@@ -121,45 +128,59 @@ const Step4Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-4 top-40 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step5.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-4 top-40 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step5.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[320px] bottom-16 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step2.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[320px] bottom-16 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step2.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[424px] bottom-32 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step1.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[424px] bottom-32 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step1.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-32 bottom-12 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step3.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-32 bottom-12 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step3.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className={`absolute right-[484px] top-0 rounded shadow-sm p-3 ${inViewState ? "gradient-border" : "gradient-border-thin"}`}>
-                <Image
-                  src="/images/step6.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div
+                className={`absolute right-[484px] top-0 rounded shadow-sm   ${
+                  inViewState ? "gradient-border" : "gradient-border-thin"
+                }`}
+              >
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step6.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
             </div>
           </div>

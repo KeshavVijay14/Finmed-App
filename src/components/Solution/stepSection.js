@@ -33,8 +33,8 @@ const StepSection = () => {
           ref={ref}
         >
           <div className="w-[80%] flex items-center h-[100vh]">
-            <div>
-              <h1 className="text-4xl font-semibold mb-4 text-[#62D89F] max-w-md font-roboto">
+            <div className="p-6 max-w-md ">
+              <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-md font-roboto">
                 A fully integrated suite of financial and healthcare solutions
               </h1>
               <p className="font-thin text-sm text-white max-w-md font-roboto">
@@ -50,10 +50,8 @@ const StepSection = () => {
                 <>
                   <svg
                     ref={circleRefs[0]}
-                    width="400"
-                    height="400"
-                    viewBox="0 0 400 400"
-                    className="absolute right-[-140px] top-6"
+                    viewBox="0 0 300 400"
+                    className="absolute  w-[300px]   right-[-42px] top-6"
                   >
                     <defs>
                       <linearGradient
@@ -68,7 +66,7 @@ const StepSection = () => {
                     </defs>
                     <path
                       id="stepPath-1"
-                      d="M2 2H40.9448C65.7976 2 85.9448 22.1472 85.9448 47V72C85.9448 96.8528 106.092 117 130.945 117H177"
+                      d="M2 5H40.9448C65.7976 5 85.9448 22.1472 85.9448 47V72C85.9448 96.8528 106.092 117 130.945 117H177"
                       stroke="url(#lineGradient1)"
                       strokeWidth="3"
                       fill="transparent"
@@ -104,10 +102,8 @@ const StepSection = () => {
                   </svg>
                   <svg
                     ref={circleRefs[1]}
-                    width="400"
-                    height="400"
-                    viewBox="0 0 400 400"
-                    className="absolute right-0 top-24"
+                    viewBox="0 0 200 300"
+                    className="absolute w-[200px]  right-48 top-24"
                   >
                     <defs>
                       <linearGradient
@@ -122,7 +118,7 @@ const StepSection = () => {
                     </defs>
                     <path
                       id="stepPath-2"
-                      d="M2 2H40.3536C65.2064 2 85.3536 22.1472 85.3536 47V158C85.3536 182.853 105.501 203 130.354 203H143"
+                      d="M2 5H40.3536C65.2064 5 85.3536 22.1472 85.3536 47V158C85.3536 182.853 105.501 203 130.354 203H143"
                       stroke="url(#lineGradient2)"
                       strokeWidth="3"
                       fill="transparent"
@@ -212,10 +208,8 @@ const StepSection = () => {
                   </svg>
                   <svg
                     ref={circleRefs[3]}
-                    width="400"
-                    height="400"
-                    viewBox="0 0 400 400"
-                    className="absolute right-[-170px] top-40"
+                    viewBox="0 0 300 300"
+                    className="absolute w-[300px] right-[-80px] top-40"
                   >
                     <defs>
                       <linearGradient
@@ -230,7 +224,7 @@ const StepSection = () => {
                     </defs>
                     <path
                       id="stepPath-4"
-                      d="M36 2H73.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 94.9988 229 70.5664 229H34C16.3269 229 2 214.673 2 197V168"
+                      d="M36 2H73.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 114.9988 229 95.5664 229H34C16.3269 229 6 224.673 4 187V168"
                       stroke="url(#lineGradient)"
                       strokeWidth="3"
                       fill="transparent"
@@ -266,53 +260,65 @@ const StepSection = () => {
                   </svg>
                 </>
               )}
-              <div className="absolute right-64 top-0 rounded shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step5.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-64 top-0 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step5.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-8 top-28 rounded shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step1.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-8 top-28 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step1.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[205px] bottom-28 rounded shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step4.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[205px] bottom-28 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step4.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[430px] bottom-40 rounded shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step3.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[430px] bottom-40 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step3.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-48 bottom-64 rounded shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step2.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[185px] bottom-64 rounded shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step2.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[400px] top-16 rounded-lg shadow-sm p-3 gradient-border">
-                <Image
-                  src="/images/step6.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[390px] top-16 rounded-lg shadow-sm   gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step6.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -51,10 +51,8 @@ const Step3Section = () => {
               {inViewState && (
                 <svg
                   ref={circleRef}
-                  width="400"
-                  height="400"
-                  viewBox="0 0 400 400"
-                  className="absolute right-[-280px] top-56"
+                  viewBox="0 0 100 200"
+                  className="absolute w-[100px] flex justify-center right-0 top-56"
                 >
                   <defs>
                     <linearGradient
@@ -69,7 +67,7 @@ const Step3Section = () => {
                   </defs>
                   <path
                     id="path3"
-                    d="M81.0001 166L80.9961 119.31L80.9961 47C80.9961 22.1472 60.8489 1.99999 35.9961 1.99999L2.00001 1.99999"
+                    d="M81.0001 166L80.9961 109.51L80.9961 47C80.9961 22.1472 60.8489 4.99999 15.9961 5.99999L5.00001 5.99999"
                     stroke="url(#lineGradient3)"
                     strokeWidth="3"
                     fill="transparent"
@@ -104,15 +102,21 @@ const Step3Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-64 top-8 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step6.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-64 top-8 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step6.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className={`absolute right-20 top-32 ${inViewState ? 'animate-scale-up' : ''}`}>
+              <div
+                className={`absolute right-24 top-32 ${
+                  inViewState ? "animate-scale-up" : ""
+                }`}
+              >
                 <Image
                   src="/images/v-score-bg.png"
                   alt="Icon 2"
@@ -120,49 +124,59 @@ const Step3Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-8 top-32 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step3.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-8 top-32 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step3.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[160px] bottom-8 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step2.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[160px] bottom-8 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step2.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[360px] bottom-12 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step4.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[360px] bottom-12 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step4.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
               <div
-                className={`absolute right-4 bottom-0 rounded shadow-sm p-3 ${
+                className={`absolute right-0 bottom-0 rounded shadow-sm  ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
-                <Image
-                  src="/images/step1.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step1.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
-              <div className="absolute right-[420px] top-16 rounded shadow-sm p-3 gradient-border-thin">
-                <Image
-                  src="/images/step5.svg"
-                  alt="Icon 2"
-                  width={20}
-                  height={20}
-                />
+              <div className="absolute right-[420px] top-16 rounded shadow-sm  gradient-border-thin">
+                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                  <Image
+                    src="/images/step5.svg"
+                    alt="Icon 2"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
             </div>
           </div>
