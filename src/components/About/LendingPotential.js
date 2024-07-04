@@ -29,7 +29,7 @@ const LendingPotential = () => {
                 Unlocking the full lending potential for the healthcare sector
               </h2>
               <div cla>
-                <p className="max-w-md text-sm font-thin leading-relaxed font-roboto text-start ml-36">
+                <p className="max-w-md text-sm font-thin leading-relaxed font-roboto text-center  ">
                   Our comprehensive suite of products makes for a big change at
                   the corner of finance and healthcare. Allowing both lenders
                   and healthcare providers to leverage all their assets.

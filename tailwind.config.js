@@ -88,6 +88,15 @@ module.exports = {
       borderRadius: {
         sm: "14px",
       },
+      borderRadius: {
+        'custom-top-left': '50% 100%',
+        'custom-bottom-left': '50% 100%',
+        'custom-top-right': '50%',
+        'custom-bottom-right': '0',
+      },
+      rotate: {
+        '45': '45deg',
+      },
       fontSize: {
         base: "16px",
         lgi: "19px",
@@ -101,6 +110,8 @@ module.exports = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(180deg, rgba(28, 45, 92, 0), #081a49 29.5%, rgba(9, 26, 73, 0.99) 77%, rgba(28, 45, 92, 0))",
+        "foundation-gradient":
+          "linear-gradient(-90.51deg, rgb(230, 146, 245), #c670e7);",
       },
     },
   },
