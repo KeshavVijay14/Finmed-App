@@ -65,9 +65,12 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="bg-gradient-to-b flex justify-center from-[#2B2465] via-[#081949] to-[#121D52] text-white py-16">
+    <div className="relative  flex justify-center bg-[#081949] text-white py-16">
+      <div className="dark-bg"></div>
       <div className="w-[80%]   text-center">
-        <h2 className="text-4xl font-bold mb-10 text-[#62D89F] font-trebuchet">The Team</h2>
+        <h2 className="text-4xl font-bold mb-10 text-[#62D89F] font-trebuchet">
+          The Team
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
             <TeamMember key={member.name} member={member} />

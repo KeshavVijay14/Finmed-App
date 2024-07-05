@@ -55,9 +55,10 @@ export default function Innovation() {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref }) => (
         <section
-          className="pt-48 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 px-8"
+          className="relative pt-48 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20"
           ref={ref}
         >
+          <div className="dark-bg"></div>
           <div className="container w-1/2 mx-auto text-center">
             <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
               Fueling Innovation by the Numbers

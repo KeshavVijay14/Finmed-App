@@ -1,7 +1,8 @@
 export default function InfoSection() {
   return (
-    <section className=" relative mt-100 bg-gradient-to-b  from-[#2B2465] via-[#081949] to-[#121D52] flex justify-center items-center py-16 px-8">
-      <div className="w-[60%] flex flex-col justify-center">
+    <section className=" relative mt-100 bg-[#081949] flex justify-center items-center py-16 px-8">
+      <div className="dark-bg"></div>
+      <div className="w-[60%] h-[500px]   flex flex-col justify-center">
         <div className="flex flex-col item-start">
           <div className="flex gap-4 items-end justify-start">
             <div className="gradient-border-purple"></div>

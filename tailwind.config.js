@@ -89,13 +89,13 @@ module.exports = {
         sm: "14px",
       },
       borderRadius: {
-        'custom-top-left': '50% 100%',
-        'custom-bottom-left': '50% 100%',
-        'custom-top-right': '50%',
-        'custom-bottom-right': '0',
+        "custom-top-left": "50% 100%",
+        "custom-bottom-left": "50% 100%",
+        "custom-top-right": "50%",
+        "custom-bottom-right": "0",
       },
       rotate: {
-        '45': '45deg',
+        45: "45deg",
       },
       fontSize: {
         base: "16px",
@@ -112,6 +112,8 @@ module.exports = {
           "linear-gradient(180deg, rgba(28, 45, 92, 0), #081a49 29.5%, rgba(9, 26, 73, 0.99) 77%, rgba(28, 45, 92, 0))",
         "foundation-gradient":
           "linear-gradient(-90.51deg, rgb(230, 146, 245), #c670e7);",
+        "dark-gradient":
+          "linear-gradient( 180deg, rgba(28, 45, 92, 0) 0%, #081949 29.5%, rgba(9, 26, 73, 0.986755) 77%, rgba(53, 56, 58, 0) 100% );",
       },
     },
   },

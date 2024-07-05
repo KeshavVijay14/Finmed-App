@@ -6,12 +6,13 @@ export default function WhyPartner() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <div className="bg-gradient-to-b flex justify-center from-[#2B2465] via-[#081949] to-[#121D52] text-white py-40 ref={ref}  ">
-          <div className="w-[80%] h-[100vh] flex flex-col justify-center items-center text-center">
+        <div className="relative   flex justify-center  bg-[#081949] text-white py-40 ref={ref}  ">
+          <div className="dark-bg"></div>
+          <div className="w-[80%]  h-[300px] flex flex-col justify-center items-center text-center">
             <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet text-center mb-12">
               Why partner with Finmed?
             </h2>
-            <div className="flex justify-end items-center py-10">
+            <div className="flex justify-end items-center py-10 z-10">
               <div className="flex">
                 <div className="flex">
                   <Image
@@ -35,7 +36,7 @@ export default function WhyPartner() {
                 </div>
               </div>
             </div>
-            <div className="flex    items-center mt-20 ">
+            <div className="flex    items-center z-10 ">
               <div className="flex ">
                 <div className="flex items-center ">
                   <ul className="text-white list-disc   flex flex-col items-center gap-10  marker:text-[#62D89F] ">

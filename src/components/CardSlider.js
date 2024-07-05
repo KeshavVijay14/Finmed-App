@@ -60,10 +60,11 @@ const CardSlider = () => {
     <InView triggerOnce threshold={1}>
       {({ ref }) => (
         <section
-          className="mt-100 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
+          className=" relative  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
           ref={ref}
         >
-          <div className="flex flex-col text-center w-[80%] justify-between">
+           <div className="dark-bg"></div>
+          <div className="flex flex-col mt-20 text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
               <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">
                 A fully integrated suite of financial and healthcare solutions

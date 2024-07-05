@@ -27,7 +27,7 @@ export default function PartnersSection() {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 px-8"
           ref={ref}
         >
-          <div className="container mx-auto flex flex-col items-center">
+          <div className="container mx-auto mb-20 flex flex-col items-center">
             <div
               className={`grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 ${
                 inView ? "animate-move-opacity" : ""
