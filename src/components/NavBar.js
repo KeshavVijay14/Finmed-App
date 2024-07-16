@@ -1,29 +1,22 @@
 // src/components/NavBar.js
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 export default function NavBar() {
   const pathName = usePathname();
-
   return (
     <nav className="flex justify-center items-center py-4  w-full overflow-x-auto  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white">
       <div className="w-[80%] flex justify-between">
         <div className="space-x-6 flex justify-center item-center">
-          <Image
-            src={"/images/logo.svg"}
-            alt="logo"
-            width={100}
-            height={100}
-            className="cursor-pointer"
-          />
-          <a
-            href="/home"
-            className={`${
-              pathName === "/home" && "gradient-underline"
-            } hover-gradient-underline   font-extralight text-[inherit]  customText px-2`}
-          >
-            Home
-          </a>
-
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo.svg"}
+              alt="logo"
+              width={100}
+              height={100}
+              className="cursor-pointer"
+            />
+          </Link>
           <a
             href="/solution"
             className={`${

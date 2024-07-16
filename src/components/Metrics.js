@@ -24,13 +24,13 @@ export default function MetricsSection() {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]  py-20 px-8"
           ref={ref}
         >
-          <div className="container md:w-1/2 mx-auto text-center">
+          <div className="container w-1/2 mx-auto text-center">
             <div>
               <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
-                Striving to become the cornerstone of healthcare financial
-                solutions
+                Striving To Become The Cornerstone Of Healthcare Financial
+                Solutions
               </h2>
-              <p className="text-white font-thin text-sm mb-24 font-roboto">
+              <p className="text-white font-thin text-sm mb-24  font-roboto">
                 Finmed makes alternative lending easy and attainable for the
                 healthcare industry. Our team is dedicated to making sure both
                 lenders and healthcare providers can connect both seamlessly and
@@ -47,6 +47,9 @@ export default function MetricsSection() {
                 />
               ))}
             </div>
+          </div>
+          <div className="py-32 px-8 flex justify-center w-full">
+            <div className="separator"></div>
           </div>
         </section>
       )}

@@ -63,11 +63,11 @@ const CardSlider = () => {
           className=" relative  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
           ref={ref}
         >
-           <div className="dark-bg"></div>
+          <div className="dark-bg"></div>
           <div className="flex flex-col mt-20 text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
               <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">
-                A fully integrated suite of financial and healthcare solutions
+                A Fully Integrated Suite Of Financial And Healthcare Solutions
               </h2>
               <p className="text-sm font-thin text-white mb-12 max-w-lg font-roboto">
                 Unlock the potential of healthcare financing with Finmed, where
@@ -104,21 +104,19 @@ const CardSlider = () => {
                 <div
                   className="slider-content flex transition-transform duration-300"
                   style={{
-                    transform: `translateX(-${currentIndex * 320}px)`,
-                    width: `${cards.length * 320}px`,
+                    transform: `translateX(-${currentIndex * "340"}px)`,
+                    width: `${cards.length * "340"}px`,
                   }}
                 >
                   {cards.map((card, index) => (
                     <div
                       key={index}
-                      className={`card h-56 w-80 rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
+                      className={`card h-56  rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
                     >
                       <div
                         className={`w-full absolute top-0 left-0 ${card.bgClass}`}
                         style={{
                           height: "10px",
-                          borderTopLeftRadius: "10px",
-                          borderTopRightRadius: "10px",
                         }}
                       ></div>
                       <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-6 pl-4">
