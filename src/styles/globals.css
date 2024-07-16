@@ -168,7 +168,6 @@ body {
   );
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .hover-scale {
@@ -416,6 +415,4 @@ body {
     rgba(9, 26, 73, 0.986755) 77%,
     rgba(53, 56, 58, 0) 100%
   );
-  
 }
- 

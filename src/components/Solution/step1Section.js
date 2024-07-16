@@ -29,19 +29,19 @@ const Step1Section = () => {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] justify-center flex"
         >
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-md ">
+            <div className="p-6 max-w-xl ">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step4.svg"
                   alt="Icon 2"
-                  width={16}
-                  height={16}
+                  width={32}
+                  height={32}
                 />
-                <div className="text-white text-2xl font-roboto font-semibold">
+                <div className="text-white text-4xl font-roboto font-semibold">
                   copay.com
                 </div>
               </div>
-              <div className="text-white font-thin text-sm font-roboto">
+              <div className="text-white font-thin text-lg font-roboto">
                 Introducing Copay.com, the ultimate one-stop lending platform
                 designed exclusively for healthcare providers in search of
                 financial solutions.
@@ -55,7 +55,7 @@ const Step1Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[145px] top-8"
+                  className="absolute right-[140px] top-8"
                 >
                   <defs>
                     <linearGradient
@@ -176,7 +176,7 @@ const Step1Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[544px] top-4 rounded shadow-sm  ${
+                className={`absolute right-[535px] top-4 rounded shadow-sm  ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >

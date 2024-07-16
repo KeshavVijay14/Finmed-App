@@ -29,19 +29,19 @@ const Step5Section = () => {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] justify-center flex"
         >
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-md ">
+            <div className="p-6 max-w-xl">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step3.svg"
                   alt="Icon 2"
-                  width={16}
-                  height={16}
+                  width={32}
+                  height={32}
                 />
-                <div className="text-white text-2xl font-roboto font-semibold">
+                <div className="text-white text-4xl font-roboto font-semibold">
                   8200
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-sm">
+              <div className="text-white font-roboto font-thin text-lg">
                 8200 is advanced monitoring and fraud detection system.
                 Utilizing cutting edge technology, we safeguard your
                 transactions in real-time, ensuring unparalleled security and
@@ -56,7 +56,7 @@ const Step5Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[-60px] top-72"
+                  className="absolute right-[-50px] top-72"
                 >
                   <defs>
                     <linearGradient
@@ -111,7 +111,7 @@ const Step5Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-80 top-16 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-96 top-0 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -133,7 +133,7 @@ const Step5Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-28 top-4 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-16 top-4 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
@@ -143,10 +143,10 @@ const Step5Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[100px] bottom-8 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[80px] bottom-0 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
-                    src="/images/step5.svg"
+                    src="/images/step2.svg"
                     alt="Icon 2"
                     width={20}
                     height={20}
@@ -167,7 +167,7 @@ const Step5Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-12 top-48 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-0 top-48 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
@@ -177,7 +177,7 @@ const Step5Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[440px] top-48 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[480px] top-48 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"

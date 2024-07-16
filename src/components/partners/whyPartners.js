@@ -6,13 +6,13 @@ export default function WhyPartner() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <div className="relative   flex justify-center  bg-[#081949] text-white py-40 ref={ref}  ">
+        <div className="relative mt-10   flex justify-center  bg-[#081949] text-white py-40 ref={ref}  ">
           <div className="dark-bg"></div>
-          <div className="w-[80%]  h-[300px] flex flex-col justify-center items-center text-center">
-            <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet text-center mb-12">
-              Why partner with Finmed?
+          <div className="w-[80%]  h-[800px] flex flex-col justify-center items-center text-center">
+            <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet text-center mb-12 z-10">
+              Why Partner With Finmed?
             </h2>
-            <div className="flex justify-end items-center py-10 z-10">
+            <div className="flex justify-end items-center py-24 z-10">
               <div className="flex">
                 <div className="flex">
                   <Image

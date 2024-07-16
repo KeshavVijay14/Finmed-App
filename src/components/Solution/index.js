@@ -14,7 +14,6 @@ const SolutionComp = () => {
   return (
     <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
       <HeroSection />
-      <Separator />
       <StepSection />
       <Step1Section />
       <Step2Section />
@@ -22,7 +21,6 @@ const SolutionComp = () => {
       <Step4Section />
       <Step5Section />
       <Step6Section />
-      <Separator />
     </div>
   );
 };

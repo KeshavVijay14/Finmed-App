@@ -5,7 +5,7 @@ const OurStory = () => {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div
-          className="pb-32 flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white px-4"
+          className="pb-48 flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white px-4"
           ref={ref}
         >
           <div
@@ -14,7 +14,7 @@ const OurStory = () => {
             }`}
           >
             <h2 className="text-4xl font-bold mb-4 text-[#62D89F] font-trebuchet">
-              Our story
+              Our Story
             </h2>
             <p className="max-w-2xl text-start  text-sm font-thin leading-relaxed font-roboto">
               Born from a simple theory in 2022, Finmed swiftly evolved into a

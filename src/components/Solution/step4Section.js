@@ -29,19 +29,19 @@ const Step4Section = () => {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] justify-center flex"
         >
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-md ">
+            <div className="p-6 max-w-xl">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step6.svg"
                   alt="Icon 2"
-                  width={16}
-                  height={16}
+                  width={32}
+                  height={32}
                 />
-                <div className="text-white text-2xl font-roboto font-semibold">
+                <div className="text-white text-4xl font-roboto font-semibold">
                   Pulse
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-sm">
+              <div className="text-white font-roboto font-thin text-lg">
                 The Pulse of Finmed. Reading, analyzing, and transforming data
                 into actionable insights. It guides our decisions on client
                 interactions, claims processing, and company strategies with
@@ -56,7 +56,7 @@ const Step4Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[85px] top-7"
+                  className="absolute right-[85px] top-8"
                 >
                   <defs>
                     <linearGradient
@@ -111,7 +111,7 @@ const Step4Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-48 top-12 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-40 top-2 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -133,7 +133,7 @@ const Step4Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-4 top-40 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[-40px] top-40 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -143,7 +143,7 @@ const Step4Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[320px] bottom-16 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[280px] bottom-[-40px] rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
@@ -153,7 +153,7 @@ const Step4Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[424px] bottom-32 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[460px] bottom-4 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
@@ -163,7 +163,7 @@ const Step4Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-32 bottom-12 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-32 bottom-2 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"

@@ -29,19 +29,19 @@ const Step3Section = () => {
           className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] justify-center flex"
         >
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-md ">
+            <div className="p-6 max-w-xl">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 2"
-                  width={16}
-                  height={16}
+                  width={32}
+                  height={32}
                 />
-                <div className="text-white text-2xl font-roboto font-semibold">
+                <div className="text-white text-4xl font-roboto font-semibold">
                   V Score
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-sm">
+              <div className="text-white font-roboto font-thin text-lg">
                 V Score utilizes a wide range of data points to score each
                 client, ensuring their compatibility within our lending network.
               </div>
@@ -107,7 +107,7 @@ const Step3Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-64 top-8 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-48 top-[-20px] rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
@@ -129,7 +129,7 @@ const Step3Section = () => {
                   height={160}
                 />
               </div>
-              <div className="absolute right-8 top-32 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[-40px] top-32 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"
@@ -139,7 +139,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[160px] bottom-8 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[160px] bottom-[-20px] rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
@@ -149,7 +149,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[360px] bottom-12 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[360px] bottom-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -173,7 +173,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] top-16 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[460px] top-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"

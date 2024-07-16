@@ -61,7 +61,7 @@ export default function Innovation() {
           <div className="dark-bg"></div>
           <div className="container w-1/2 mx-auto text-center">
             <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
-              Fueling Innovation by the Numbers
+              Fueling Innovation By The Numbers
             </h2>
 
             <div className="flex flex-row justify-center items-center space-y-0 md:space-x-24 py-16">

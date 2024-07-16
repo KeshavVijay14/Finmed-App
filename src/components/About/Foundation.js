@@ -27,7 +27,7 @@ export default function HoverEffectSections() {
           ref={ref}
         >
           <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet mb-12">
-            The foundation of Finmed
+            The Foundation Of Finmed
           </h2>
           <div className="relative flex flex-col justify-center items-center space-x-1 mb-40 mt-10">
             <div className="flex space-x-4">
@@ -160,6 +160,9 @@ export default function HoverEffectSections() {
                 )}
               </div>
             </div>
+          </div>
+          <div className="py-32 px-8 flex justify-center w-full">
+            <div className="separator"></div>
           </div>
         </div>
       )}
