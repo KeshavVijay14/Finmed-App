@@ -52,64 +52,67 @@ const Step2Section = () => {
             <div className="relative h-[440px] flex-grow">
               {inViewState && (
                 <svg
-                  ref={circleRef}
-                  width="400"
-                  height="400"
-                  viewBox="0 0 400 400"
-                  className="absolute right-[-100px] top-72"
+                ref={circleRef}
+                width="400"
+                height="400"
+                viewBox="0 0 400 400"
+                className="absolute right-[-100px] top-72"
+              >
+                <defs>
+                  <linearGradient
+                    id="lineGradient2"
+                    gradientTransform="rotate(103.88)"
+                  >
+                    <stop offset="0%" stopColor="#C670E7" />
+                    <stop offset="33.34%" stopColor="#62D89F" />
+                    <stop offset="75.15%" stopColor="#00A8FF" />
+                    <stop offset="105.85%" stopColor="#1C2D5C" />
+                  </linearGradient>
+                </defs>
+                <path
+                  id="path2"
+                  d="M97.5 2V36.5V107V107C97.5 125.225 82.7254 140 64.5 140H1.5"
+                  stroke="url(#lineGradient2)"
+                  strokeWidth="3"
+                  fill="transparent"
+                  strokeDasharray="0, 400"
                 >
-                  <defs>
-                    <linearGradient
-                      id="lineGradient2"
-                      gradientTransform="rotate(103.88)"
-                    >
-                      <stop offset="0%" stopColor="#C670E7" />
-                      <stop offset="33.34%" stopColor="#62D89F" />
-                      <stop offset="75.15%" stopColor="#00A8FF" />
-                      <stop offset="105.85%" stopColor="#1C2D5C" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    id="path2"
-                    d="M97.5 2V36.5V107V107C97.5 125.225 82.7254 140 64.5 140H1.5"
-                    stroke="url(#lineGradient2)"
-                    strokeWidth="3"
-                    fill="transparent"
-                    strokeDasharray="0, 400"
+                  <animate
+                    attributeName="stroke-dasharray"
+                    from="0, 400"
+                    to="400, 0"
+                    dur="2s"
+                    fill="freeze"
+                  />
+                </path>
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="5"
+                  fill="#D360FF"
+                  opacity="0"
+                  className="circle-with-shadow"
+                >
+                  <animate
+                    attributeName="opacity"
+                    from="0"
+                    to="1"
+                    begin="2s"
+                    dur="0.1s"
+                    fill="freeze"
+                  />
+                  <animateMotion
+                    repeatCount="indefinite"
+                    dur="5s"
+                    keyPoints="0;1"
+                    keyTimes="0;1"
+                    begin="2s"
                   >
-                    <animate
-                      attributeName="stroke-dasharray"
-                      from="0, 400"
-                      to="400, 0"
-                      dur="2s"
-                      fill="freeze"
-                    />
-                  </path>
-                  <circle
-                    class="circle-with-shadow"
-                    r="5"
-                    fill="#D360FF"
-                    opacity="0"
-                  >
-                    <animate
-                      attributeName="opacity"
-                      from="0"
-                      to="1"
-                      begin="2s"
-                      dur="0.1s"
-                      fill="freeze"
-                    />
-                    <animateMotion
-                      repeatCount="indefinite"
-                      dur="5s"
-                      keyPoints="0;1"
-                      keyTimes="0;1"
-                      begin="2s"
-                    >
-                      <mpath href="#path2" />
-                    </animateMotion>
-                  </circle>
-                </svg>
+                    <mpath href="#path2" />
+                  </animateMotion>
+                </circle>
+              </svg>
+              
               )}
               <div className="absolute right-48 top-[-36px] rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">

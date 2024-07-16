@@ -48,236 +48,248 @@ const StepSection = () => {
             <div className="relative h-[440px] w-[20px] flex-grow">
               {inViewState && (
                 <>
-                  <svg
-                    ref={circleRefs[0]}
-                    viewBox="0 0 300 400"
-                    className="absolute  w-[300px]   right-[-42px] top-6"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="lineGradient1"
-                        gradientTransform="rotate(103.88)"
-                      >
-                        <stop offset="0%" stopColor="#C670E7" />
-                        <stop offset="33.34%" stopColor="#62D89F" />
-                        <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      id="stepPath-1"
-                      d="M2 5H40.9448C65.7976 5 85.9448 22.1472 85.9448 47V72C85.9448 96.8528 106.092 117 130.945 117H177"
-                      stroke="url(#lineGradient1)"
-                      strokeWidth="3"
-                      fill="transparent"
-                      strokeDasharray="0, 400"
-                    >
-                      <animate
-                        attributeName="stroke-dasharray"
-                        from="0, 400"
-                        to="400, 0"
-                        dur="2s"
-                        fill="freeze"
-                      />
-                    </path>
-                    <circle
-                      class="circle-with-shadow"
-                      r="5"
-                      fill="#D360FF"
-                      opacity="0"
-                    >
-                      <animate
-                        attributeName="opacity"
-                        from="0"
-                        to="1"
-                        begin="2s"
-                        dur="0.1s"
-                        fill="freeze"
-                      />
-                      <animateMotion
-                        repeatCount="indefinite"
-                        dur="5s"
-                        keyPoints="0;1"
-                        keyTimes="0;1"
-                        begin="2s"
-                      >
-                        <mpath href="#stepPath-1" />
-                      </animateMotion>
-                    </circle>
-                  </svg>
-                  <svg
-                    ref={circleRefs[1]}
-                    viewBox="0 0 200 300"
-                    className="absolute w-[200px]  right-48 top-24"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="lineGradient2"
-                        gradientTransform="rotate(103.88)"
-                      >
-                        <stop offset="0%" stopColor="#C670E7" />
-                        <stop offset="33.34%" stopColor="#62D89F" />
-                        <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      id="stepPath-2"
-                      d="M2 5H40.3536C65.2064 5 85.3536 22.1472 85.3536 47V158C85.3536 182.853 105.501 203 130.354 203H143"
-                      stroke="url(#lineGradient2)"
-                      strokeWidth="3"
-                      fill="transparent"
-                      strokeDasharray="0, 400"
-                    >
-                      <animate
-                        attributeName="stroke-dasharray"
-                        from="0, 400"
-                        to="400, 0"
-                        dur="2s"
-                        fill="freeze"
-                      />
-                    </path>
-                    <circle
-                      class="circle-with-shadow"
-                      r="5"
-                      fill="#D360FF"
-                      opacity="0"
-                    >
-                      <animate
-                        attributeName="opacity"
-                        from="0"
-                        to="1"
-                        begin="2s"
-                        dur="0.1s"
-                        fill="freeze"
-                      />
-                      <animateMotion
-                        repeatCount="indefinite"
-                        dur="5s"
-                        keyPoints="0;1"
-                        keyTimes="0;1"
-                        begin="2s"
-                      >
-                        <mpath href="#stepPath-2" />
-                      </animateMotion>
-                    </circle>
-                  </svg>
-                  <svg
-                    ref={circleRefs[2]}
-                    width="400"
-                    height="400"
-                    viewBox="0 0 400 400"
-                    className="absolute right-8 top-40"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="lineGradient3"
-                        gradientTransform="rotate(103.88)"
-                      >
-                        <stop offset="0%" stopColor="#C670E7" />
-                        <stop offset="33.34%" stopColor="#62D89F" />
-                        <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      id="stepPath-3"
-                      d="M371.5 1.5V58V58C371.5 80.0914 353.591 98 331.5 98H1.5"
-                      stroke="url(#lineGradient3)"
-                      strokeWidth="3"
-                      fill="transparent"
-                      strokeDasharray="0, 400"
-                    >
-                      <animate
-                        attributeName="stroke-dasharray"
-                        from="0, 400"
-                        to="400, 0"
-                        dur="2s"
-                        fill="freeze"
-                      />
-                    </path>
-                    <circle
-                      class="circle-with-shadow"
-                      r="5"
-                      fill="#D360FF"
-                      opacity="0"
-                    >
-                      <animate
-                        attributeName="opacity"
-                        from="0"
-                        to="1"
-                        begin="2s"
-                        dur="0.1s"
-                        fill="freeze"
-                      />
-                      <animateMotion
-                        repeatCount="indefinite"
-                        dur="5s"
-                        keyPoints="0;1"
-                        keyTimes="0;1"
-                        begin="2s"
-                      >
-                        <mpath href="#stepPath-3" />
-                      </animateMotion>
-                    </circle>
-                  </svg>
-                  <svg
-                    ref={circleRefs[3]}
-                    viewBox="0 0 300 300"
-                    className="absolute w-[300px] right-[-80px] top-40"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="lineGradient"
-                        gradientTransform="rotate(103.88)"
-                      >
-                        <stop offset="1%" stopColor="#c670e7" />
-                        <stop offset="31.69%," stopColor="#62d89f" />
-                        <stop offset="71.42%" stopColor="#00a8ff" />
-                        <stop offset="100.59%" stopColor="#1c2d5c" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      id="stepPath-4"
-                      d="M36 2H73.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 114.9988 229 95.5664 229H34C16.3269 229 6 224.673 4 187V168"
-                      stroke="url(#lineGradient)"
-                      strokeWidth="3"
-                      fill="transparent"
-                      strokeDasharray="0, 400"
-                    >
-                      <animate
-                        attributeName="stroke-dasharray"
-                        from="0, 400"
-                        to="400, 0"
-                        dur="2s"
-                        fill="freeze"
-                      />
-                    </path>
-                    <circle
-                      class="circle-with-shadow"
-                      r="5"
-                      fill="#D360FF"
-                      opacity="0"
-                    >
-                      <animate
-                        attributeName="opacity"
-                        from="0"
-                        to="1"
-                        begin="2s"
-                        dur="0.1s"
-                        fill="freeze"
-                      />
-                      <animateMotion
-                        repeatCount="indefinite"
-                        dur="5s"
-                        keyPoints="0;1"
-                        keyTimes="0;1"
-                        begin="2s"
-                      >
-                        <mpath href="#stepPath-4" />
-                      </animateMotion>
-                    </circle>
-                  </svg>
+              <svg
+  ref={circleRefs[0]}
+  viewBox="0 0 300 400"
+  className="absolute  w-[300px] right-[-42px] top-6"
+>
+  <defs>
+    <linearGradient
+      id="lineGradient1"
+      gradientTransform="rotate(103.88)"
+    >
+      <stop offset="0%" stopColor="#C670E7" />
+      <stop offset="33.34%" stopColor="#62D89F" />
+      <stop offset="75.15%" stopColor="#00A8FF" />
+      <stop offset="105.85%" stopColor="#1C2D5C" />
+    </linearGradient>
+  </defs>
+  <path
+    id="stepPath-1"
+    d="M2 5H40.9448C65.7976 5 85.9448 22.1472 85.9448 47V72C85.9448 96.8528 106.092 117 130.945 117H177"
+    stroke="url(#lineGradient1)"
+    strokeWidth="3"
+    fill="transparent"
+    strokeDasharray="0, 400"
+  >
+    <animate
+      attributeName="stroke-dasharray"
+      from="0, 400"
+      to="400, 0"
+      dur="2s"
+      fill="freeze"
+    />
+  </path>
+  <circle
+    cx="1"
+    cy="1"
+    r="5"
+    fill="#D360FF"
+    opacity="0"
+    className="circle-with-shadow"
+  >
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      begin="2s"
+      dur="0.1s"
+      fill="freeze"
+    />
+    <animateMotion
+      repeatCount="indefinite"
+      dur="5s"
+      keyPoints="0;1"
+      keyTimes="0;1"
+      begin="2s"
+    >
+      <mpath href="#stepPath-1" />
+    </animateMotion>
+  </circle>
+</svg>
+
+<svg
+  ref={circleRefs[1]}
+  viewBox="0 0 200 300"
+  className="absolute w-[200px] right-48 top-24"
+>
+  <defs>
+    <linearGradient
+      id="lineGradient2"
+      gradientTransform="rotate(103.88)"
+    >
+      <stop offset="0%" stopColor="#C670E7" />
+      <stop offset="33.34%" stopColor="#62D89F" />
+      <stop offset="75.15%" stopColor="#00A8FF" />
+      <stop offset="105.85%" stopColor="#1C2D5C" />
+    </linearGradient>
+  </defs>
+  <path
+    id="stepPath-2"
+    d="M2 5H40.3536C65.2064 5 85.3536 22.1472 85.3536 47V158C85.3536 182.853 105.501 203 130.354 203H143"
+    stroke="url(#lineGradient2)"
+    strokeWidth="3"
+    fill="transparent"
+    strokeDasharray="0, 400"
+  >
+    <animate
+      attributeName="stroke-dasharray"
+      from="0, 400"
+      to="400, 0"
+      dur="2s"
+      fill="freeze"
+    />
+  </path>
+  <circle
+    cx="1"
+    cy="1"
+    r="5"
+    fill="#D360FF"
+    opacity="0"
+    className="circle-with-shadow"
+  >
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      begin="2s"
+      dur="0.1s"
+      fill="freeze"
+    />
+    <animateMotion
+      repeatCount="indefinite"
+      dur="5s"
+      keyPoints="0;1"
+      keyTimes="0;1"
+      begin="2s"
+    >
+      <mpath href="#stepPath-2" />
+    </animateMotion>
+  </circle>
+</svg>
+
+<svg
+  ref={circleRefs[2]}
+  width="400"
+  height="400"
+  viewBox="0 0 400 400"
+  className="absolute right-8 top-40"
+>
+  <defs>
+    <linearGradient
+      id="lineGradient3"
+      gradientTransform="rotate(103.88)"
+    >
+      <stop offset="0%" stopColor="#C670E7" />
+      <stop offset="33.34%" stopColor="#62D89F" />
+      <stop offset="75.15%" stopColor="#00A8FF" />
+      <stop offset="105.85%" stopColor="#1C2D5C" />
+    </linearGradient>
+  </defs>
+  <path
+    id="stepPath-3"
+    d="M371.5 1.5V58V58C371.5 80.0914 353.591 98 331.5 98H1.5"
+    stroke="url(#lineGradient3)"
+    strokeWidth="3"
+    fill="transparent"
+    strokeDasharray="0, 400"
+  >
+    <animate
+      attributeName="stroke-dasharray"
+      from="0, 400"
+      to="400, 0"
+      dur="2s"
+      fill="freeze"
+    />
+  </path>
+  <circle
+    cx="1"
+    cy="1"
+    r="5"
+    fill="#D360FF"
+    opacity="0"
+    className="circle-with-shadow"
+  >
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      begin="2s"
+      dur="0.1s"
+      fill="freeze"
+    />
+    <animateMotion
+      repeatCount="indefinite"
+      dur="5s"
+      keyPoints="0;1"
+      keyTimes="0;1"
+      begin="2s"
+    >
+      <mpath href="#stepPath-3" />
+    </animateMotion>
+  </circle>
+</svg>
+
+<svg
+  ref={circleRefs[3]}
+  viewBox="0 0 300 300"
+  className="absolute w-[300px] right-[-80px] top-40"
+>
+  <defs>
+    <linearGradient
+      id="lineGradient"
+      gradientTransform="rotate(103.88)"
+    >
+      <stop offset="1%" stopColor="#c670e7" />
+      <stop offset="31.69%" stopColor="#62d89f" />
+      <stop offset="71.42%" stopColor="#00a8ff" />
+      <stop offset="100.59%" stopColor="#1c2d5c" />
+    </linearGradient>
+  </defs>
+  <path
+    id="stepPath-4"
+    d="M36 2H73.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 114.9988 229 95.5664 229H34C16.3269 229 6 224.673 4 187V168"
+    stroke="url(#lineGradient)"
+    strokeWidth="3"
+    fill="transparent"
+    strokeDasharray="0, 400"
+  >
+    <animate
+      attributeName="stroke-dasharray"
+      from="0, 400"
+      to="400, 0"
+      dur="2s"
+      fill="freeze"
+    />
+  </path>
+  <circle
+    cx="1"
+    cy="1"
+    r="5"
+    fill="#D360FF"
+    opacity="0"
+    className="circle-with-shadow"
+  >
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      begin="2s"
+      dur="0.1s"
+      fill="freeze"
+    />
+    <animateMotion
+      repeatCount="indefinite"
+      dur="5s"
+      keyPoints="0;1"
+      keyTimes="0;1"
+      begin="2s"
+    >
+      <mpath href="#stepPath-4" />
+    </animateMotion>
+  </circle>
+</svg>
+
                 </>
               )}
               <div className="absolute right-64 top-0 rounded shadow-sm   gradient-border-thin">

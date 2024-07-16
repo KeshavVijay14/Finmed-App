@@ -85,13 +85,12 @@ const Step1Section = () => {
                     />
                   </path>
                   <circle
-                    class="circle-with-shadow"
                     cx="1"
                     cy="1"
                     r="5"
                     fill="#D360FF"
                     opacity="0"
-                    className="bg-gray-50"
+                    className="circle-with-shadow bg-gray-50"
                   >
                     <animate
                       attributeName="opacity"
