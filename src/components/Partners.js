@@ -46,19 +46,19 @@ export default function PartnersSection() {
               ))}
             </div>
             <div className="py-20 px-8 flex justify-center w-full">
-              <div className="separator  "></div>
+              <div className="separator"></div>
             </div>
             <div
-              className={`w-[60%] flex justify-between items-center ${
+              className={`w-full md:w-[60%] flex flex-wrap justify-between items-center ${
                 inView ? "animate-move-opacity" : ""
               }`}
             >
               {icons.map((icon, index) => (
                 <div
                   key={index}
-                  className="flex flex-col justify-between items-center"
+                  className="flex flex-col justify-center items-center text-center m-4"
                 >
-                  <div className=" ">
+                  <div>
                     <Image
                       src={icon.src}
                       alt={icon.alt}
@@ -67,8 +67,8 @@ export default function PartnersSection() {
                       className="mb-2"
                     />
                   </div>
-                  <div className={`${index % 2 !== 0 && "mt-3"}`}>
-                    <p className="text-white text-xl font-normal font-roboto">
+                  <div className={`${index % 2 !== 0 ? "mt-3" : ""}`}>
+                    <p className="text-white text-lg md:text-xl font-normal font-roboto">
                       {icon.label}
                     </p>
                   </div>
