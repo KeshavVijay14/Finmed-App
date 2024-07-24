@@ -6,7 +6,7 @@ const LendingPotential = () => {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
+        <div >
           <div
             className="flex justify-center  text-white py-16"
             ref={ref}

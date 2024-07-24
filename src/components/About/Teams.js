@@ -65,8 +65,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="relative  flex justify-center bg-[#081949] text-white py-16">
-      <div className="dark-bg"></div>
+    <div className="relative  flex justify-center  [background:linear-gradient(180deg,_rgba(28,_45,_92,_0),_#081a49_29.5%,_rgba(9,_26,_73,_0.99)_77%,_rgba(28,_45,_92,_0))]  text-white py-16">
       <div className="w-[80%]   text-center">
         <h2 className="text-4xl font-bold mb-10 mt-10 text-[#62D89F] font-trebuchet">
           The Team

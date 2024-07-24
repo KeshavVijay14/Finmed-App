@@ -1,7 +1,6 @@
 export default function InfoSection() {
   return (
-    <section className=" relative mt-100 bg-[#081949] flex justify-center items-center py-16 px-8">
-      <div className="dark-bg"></div>
+    <section className=" relative mt-100  [background:linear-gradient(180deg,_rgba(28,_45,_92,_0),_#081a49_29.5%,_rgba(9,_26,_73,_0.99)_77%,_rgba(28,_45,_92,_0))]  flex justify-center items-center py-16 px-8">
       <div className="w-[60%] h-[500px]   flex flex-col justify-center">
         <div className="flex flex-col item-start">
           <div className="flex gap-4 items-end justify-start">

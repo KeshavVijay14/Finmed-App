@@ -23,7 +23,7 @@ export default function HoverEffectSections() {
     >
       {({ inView, ref, entry }) => (
         <div
-          className="py-10 bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex flex-col justify-center items-center   "
+          className="py-10 flex flex-col justify-center items-center   "
           ref={ref}
         >
           <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet mb-12">

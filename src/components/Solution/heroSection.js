@@ -7,7 +7,7 @@ const HeroSection = () => {
       {({ inView, ref, entry }) => (
         <div>
           <div
-            className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center items-center"
+            className="  flex justify-center items-center"
             ref={ref}
           >
             <div
@@ -28,7 +28,7 @@ const HeroSection = () => {
                   and onboarding processes.
                 </p>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 py-8 md:py-16 gap-8 md:gap-20 max-w-xl mx-auto md:mx-0">
+              <div className="grid grid-cols-2 md:grid-cols-3  md:py-16 gap-8 md:gap-20 max-w-xl mx-auto md:mx-0 shade-bg">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 1"

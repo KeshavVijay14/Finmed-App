@@ -59,11 +59,7 @@ const CardSlider = () => {
   return (
     <InView triggerOnce threshold={1}>
       {({ ref }) => (
-        <section
-          className=" relative  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] py-20 flex justify-center"
-          ref={ref}
-        >
-          <div className="dark-bg"></div>
+        <section className=" relative   flex justify-center" ref={ref}>
           <div className="flex flex-col mt-20 text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
               <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">

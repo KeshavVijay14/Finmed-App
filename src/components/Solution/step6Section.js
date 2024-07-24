@@ -25,10 +25,7 @@ const Step6Section = () => {
     >
       {({ inView, ref, entry }) => (
         <div>
-          <div
-            ref={ref}
-            className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] justify-center flex"
-          >
+          <div ref={ref} className="  justify-center flex">
             <div className="flex gap-10 w-[80%] items-center h-[100vh]">
               <div className="p-6 max-w-xl">
                 <div className="flex justify-start items-center gap-3 mb-4">

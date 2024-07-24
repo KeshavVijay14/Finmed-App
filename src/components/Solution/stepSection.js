@@ -28,10 +28,7 @@ const StepSection = () => {
       onChange={(inView) => setInViewState(inView)}
     >
       {({ inView, ref, entry }) => (
-        <div
-          className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center items-center"
-          ref={ref}
-        >
+        <div className="  flex justify-center items-center" ref={ref}>
           <div className="w-[80%] flex items-center h-[100vh]">
             <div className="p-6 max-w-xl">
               <h1 className="text-4xl font-semibold mb-4 text-[#62D89F] max-w-xl font-roboto">

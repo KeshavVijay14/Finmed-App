@@ -6,10 +6,7 @@ export default function HeroSection() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <section
-          className={`bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] flex justify-center`}
-          ref={ref}
-        >
+        <section className={`  flex justify-center  `} ref={ref}>
           <div
             className={`container flex flex-col md:flex-row items-center justify-around gap-10 md:gap-20 xl:gap-0 h-auto md:h-[100vh] ${
               inView ? "animate-scale-opacity-z" : ""

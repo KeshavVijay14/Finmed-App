@@ -5,7 +5,7 @@ const OurStory = () => {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div
-          className="pb-48 flex flex-col justify-center items-center  bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A] text-white px-4"
+          className="pb-48 flex flex-col justify-center items-center   text-white px-4"
           ref={ref}
         >
           <div

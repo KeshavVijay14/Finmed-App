@@ -8,7 +8,7 @@ import Team from "../../components/About/Teams";
 import Foundation from "../../components/About/Foundation";
 export default function Home() {
   return (
-    <div className="bg-primary text-white  w-full overflow-x-auto ">
+    <div className="[background:linear-gradient(107.56deg,_#3c174b,_#3c174b_2%,_#492985_16%,_#251971_42.5%,_#2f257b_60.5%,_#00071c)] text-white  w-full overflow-x-auto ">
       <NavBar />
       <LendingPotential />
       <OurStory />

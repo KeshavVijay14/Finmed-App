@@ -5,12 +5,11 @@ export default function WhyPartnerDetailed() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
+        <div>
           <div
-            className="relative mt-10 pt-80 pb-8  flex justify-center     placeholder: text-white"
+            className="relative  pb-8  flex justify-center     placeholder: text-white"
             ref={ref}
           >
-            <div className="dark-bg"></div>
             <div
               className={`w-[80%] flex flex-col justify-center items-center py-10   ${
                 inView ? "animate-move-opacity" : ""

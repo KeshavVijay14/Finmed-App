@@ -10,7 +10,7 @@ import Step6Section from "./step6Section";
 
 const SolutionComp = () => {
   return (
-    <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
+    <div>
       <HeroSection />
       <StepSection />
       <Step1Section />

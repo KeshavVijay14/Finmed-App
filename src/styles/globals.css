@@ -410,10 +410,10 @@ body {
 
   background: linear-gradient(
     180deg,
-    rgba(28, 45, 92, 0) 0%,
-    #081949 29.5%,
-    rgba(9, 26, 73, 0.986755) 77%,
-    rgba(53, 56, 58, 0) 100%
+    #252567ac 29.5%,
+    rgba(9, 26, 73, 0.987) 77%,
+    rgba(69, 14, 186, 0.499) 0%,
+    rgba(25, 46, 60, 0) 100%
   );
 }
 
@@ -425,3 +425,12 @@ body {
     transform: rotate(20deg) scale(1);
   }
 }
+
+/* .shade-bg {
+  border-radius: 100%;
+  background: radial-gradient(
+    100% 50% at 50% 52.23%,
+    rgba(255, 255, 255, 0.168) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+} */

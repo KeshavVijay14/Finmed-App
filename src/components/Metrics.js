@@ -21,12 +21,12 @@ export default function MetricsSection() {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <section
-          className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]  py-20 px-8"
+          className="   py-20 px-8"
           ref={ref}
         >
-          <div className="container w-1/2 mx-auto text-center">
+          <div className="container lg:w-1/2 w-full mx-auto text-center">
             <div>
-              <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
+              <h2 className="text-3xl  font-bold text-[#62D89F] mb-4 font-trebuchet">
                 Striving To Become The Cornerstone Of Healthcare Financial
                 Solutions
               </h2>
