@@ -61,12 +61,16 @@ const Step4Section = () => {
                   <defs>
                     <linearGradient
                       id="lineGradient4"
-                      gradientTransform="rotate(103.88)"
+                      gradientUnits="userSpaceOnUse"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
                     >
                       <stop offset="0%" stopColor="#C670E7" />
                       <stop offset="33.34%" stopColor="#62D89F" />
                       <stop offset="75.15%" stopColor="#00A8FF" />
-                      <stop offset="105.85%" stopColor="#1C2D5C" />
+                      <stop offset="100%" stopColor="#1C2D5C" />
                     </linearGradient>
                   </defs>
                   <path
@@ -75,7 +79,7 @@ const Step4Section = () => {
                     stroke="url(#lineGradient4)"
                     strokeWidth="3"
                     fill="transparent"
-                    strokeDasharray="0, 400"
+                    strokeDasharray="400, 400"
                   >
                     <animate
                       attributeName="stroke-dasharray"
@@ -86,6 +90,8 @@ const Step4Section = () => {
                     />
                   </path>
                   <circle
+                    cx="0"
+                    cy="0"
                     r="5"
                     fill="#D360FF"
                     opacity="0"

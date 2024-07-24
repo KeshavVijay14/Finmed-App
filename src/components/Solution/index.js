@@ -7,8 +7,6 @@ import Step3Section from "./step3Section";
 import Step4Section from "./step4Section";
 import Step5Section from "./step5Section";
 import Step6Section from "./step6Section";
-import Separator from "../Separator";
-import Image from "next/image";
 
 const SolutionComp = () => {
   return (

@@ -63,21 +63,25 @@ const Step6Section = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient6"
-                        gradientTransform="rotate(103.88)"
+                        gradientUnits="userSpaceOnUse"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
                         <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
+                        <stop offset="100%" stopColor="#1C2D5C" />
                       </linearGradient>
                     </defs>
                     <path
                       id="path6"
-                      d="M6.99989 166L8.00389 139.51L8.00389 47C8.00389 22.1472 25.1511 10.99998 55.0039 6.99996L81 5.99994"
+                      d="M7 166L8 139.51L8 47C8 22.1472 25.1511 10.99998 55.0039 6.99996L81 5.99994"
                       stroke="url(#lineGradient6)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="400, 400"
                     >
                       <animate
                         attributeName="stroke-dasharray"
@@ -88,6 +92,8 @@ const Step6Section = () => {
                       />
                     </path>
                     <circle
+                      cx="0"
+                      cy="0"
                       r="5"
                       fill="#D360FF"
                       opacity="0"
@@ -192,7 +198,7 @@ const Step6Section = () => {
               </div>
             </div>
           </div>
-          <div className="py-32 px-8 flex justify-center w-full">
+          <div className="py-32 px-8 flex justify-center">
             <div className="separator"></div>
           </div>
         </div>

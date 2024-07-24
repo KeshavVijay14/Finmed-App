@@ -51,17 +51,21 @@ const StepSection = () => {
                   <svg
                     ref={circleRefs[0]}
                     viewBox="0 0 300 400"
-                    className="absolute  w-[300px] right-[-42px] top-6"
+                    className="absolute w-[300px] right-[-42px] top-6"
                   >
                     <defs>
                       <linearGradient
                         id="lineGradient1"
-                        gradientTransform="rotate(103.88)"
+                        gradientUnits="userSpaceOnUse"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
                         <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
+                        <stop offset="100%" stopColor="#1C2D5C" />
                       </linearGradient>
                     </defs>
                     <path
@@ -70,7 +74,7 @@ const StepSection = () => {
                       stroke="url(#lineGradient1)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="400, 400"
                     >
                       <animate
                         attributeName="stroke-dasharray"
@@ -81,8 +85,8 @@ const StepSection = () => {
                       />
                     </path>
                     <circle
-                      cx="1"
-                      cy="1"
+                      cx="0"
+                      cy="0"
                       r="5"
                       fill="#D360FF"
                       opacity="0"
@@ -116,12 +120,16 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient2"
-                        gradientTransform="rotate(103.88)"
+                        gradientUnits="userSpaceOnUse"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
                         <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
+                        <stop offset="100%" stopColor="#1C2D5C" />
                       </linearGradient>
                     </defs>
                     <path
@@ -130,7 +138,7 @@ const StepSection = () => {
                       stroke="url(#lineGradient2)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="400, 400"
                     >
                       <animate
                         attributeName="stroke-dasharray"
@@ -141,8 +149,8 @@ const StepSection = () => {
                       />
                     </path>
                     <circle
-                      cx="1"
-                      cy="1"
+                      cx="0"
+                      cy="0"
                       r="5"
                       fill="#D360FF"
                       opacity="0"
@@ -178,21 +186,25 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient3"
-                        gradientTransform="rotate(103.88)"
+                        gradientUnits="userSpaceOnUse"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
                       >
                         <stop offset="0%" stopColor="#C670E7" />
                         <stop offset="33.34%" stopColor="#62D89F" />
                         <stop offset="75.15%" stopColor="#00A8FF" />
-                        <stop offset="105.85%" stopColor="#1C2D5C" />
+                        <stop offset="100%" stopColor="#1C2D5C" />
                       </linearGradient>
                     </defs>
                     <path
                       id="stepPath-3"
-                      d="M371.5 1.5V58V58C371.5 80.0914 353.591 98 331.5 98H00.1"
+                      d="M371.5 1.5V58V58C371.5 80.0914 353.591 98 331.5 98H0.1"
                       stroke="url(#lineGradient3)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="600, 600"
                     >
                       <animate
                         attributeName="stroke-dasharray"
@@ -203,8 +215,8 @@ const StepSection = () => {
                       />
                     </path>
                     <circle
-                      cx="1"
-                      cy="1"
+                      cx="0"
+                      cy="0"
                       r="5"
                       fill="#D360FF"
                       opacity="0"
@@ -238,12 +250,16 @@ const StepSection = () => {
                     <defs>
                       <linearGradient
                         id="lineGradient"
-                        gradientTransform="rotate(103.88)"
+                        gradientUnits="userSpaceOnUse"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
                       >
                         <stop offset="1%" stopColor="#c670e7" />
                         <stop offset="31.69%" stopColor="#62d89f" />
                         <stop offset="71.42%" stopColor="#00a8ff" />
-                        <stop offset="100.59%" stopColor="#1c2d5c" />
+                        <stop offset="100%" stopColor="#1c2d5c" />
                       </linearGradient>
                     </defs>
                     <path
@@ -252,7 +268,7 @@ const StepSection = () => {
                       stroke="url(#lineGradient)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="600, 600"
                     >
                       <animate
                         attributeName="stroke-dasharray"
@@ -263,8 +279,8 @@ const StepSection = () => {
                       />
                     </path>
                     <circle
-                      cx="1"
-                      cy="1"
+                      cx="0"
+                      cy="0"
                       r="5"
                       fill="#D360FF"
                       opacity="0"

@@ -322,7 +322,7 @@ body {
     rgba(255, 255, 255, 0) 100.56%
   );
   border: 1px solid transparent;
-  border-collapse: collapse;
+
   border-image: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 100%,
