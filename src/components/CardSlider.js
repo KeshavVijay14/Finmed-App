@@ -46,20 +46,20 @@ const CardSlider = () => {
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cards.length - 1 : prevIndex - 1
+      prevIndex === 0 ? Math.max(cards.length - 3, 0) : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === cards.length - 1 ? 0 : prevIndex + 1
+      prevIndex >= cards.length - 3 ? 0 : prevIndex + 1
     );
   };
 
   return (
     <InView triggerOnce threshold={1}>
       {({ ref }) => (
-        <section className=" relative   flex justify-center" ref={ref}>
+        <section className="relative flex justify-center" ref={ref}>
           <div className="flex flex-col mt-20 text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
               <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">
@@ -73,7 +73,7 @@ const CardSlider = () => {
             </div>
             <div className="flex justify-end mb-6 gap-4">
               <div
-                onClick={handleNext}
+                onClick={handlePrev}
                 className="rounded-full p-2 px-3 bg-white cursor-pointer"
               >
                 <Image
@@ -84,7 +84,7 @@ const CardSlider = () => {
                 />
               </div>
               <div
-                onClick={handlePrev}
+                onClick={handleNext}
                 className="rounded-full p-2 px-3 bg-white cursor-pointer"
               >
                 <Image
@@ -96,21 +96,21 @@ const CardSlider = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="slider-container">
+              <div className="slider-container overflow-hidden">
                 <div
                   className="slider-content flex transition-transform duration-300"
                   style={{
-                    transform: `translateX(-${currentIndex * "340"}px)`,
-                    width: `${cards.length * "340"}px`,
+                    transform: `translateX(-${(currentIndex * 100) / 2}%)`,
+                    width: `${(cards.length * 100) / 2}vw`,
                   }}
                 >
                   {cards.map((card, index) => (
                     <div
                       key={index}
-                      className={`card h-56  rounded-lg shadow-lg text-left bg-white p-4 relative overflow-hidden`}
+                      className="card w-full md:w-[380px] h-56 rounded-lg shadow-lg text-left bg-white p-4 relative flex-shrink-0"
                     >
                       <div
-                        className={`w-full absolute top-0 left-0 ${card.bgClass}`}
+                        className={`w-full rounded-t-lg absolute top-0 left-0 ${card.bgClass}`}
                         style={{
                           height: "10px",
                         }}
