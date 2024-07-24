@@ -6,24 +6,27 @@ export default function PartnerForm() {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div className="bg-gradient-to-r from-[#401D60] via-[#271A73] to-[#1F1B5A]">
-          <div className="flex justify-center items-center h-screen" ref={ref}>
+          <div
+            className="flex justify-center items-center h-auto md:h-screen"
+            ref={ref}
+          >
             <div
-              className={`w-[80%] flex justify-around  items-center  ${
+              className={`w-full max-w-[80%] flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 ${
                 inView ? "animate-scale-opacity-z" : ""
               }`}
             >
-              <div className="w-[1/2]">
-                <h1 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
+              <div className="w-full md:w-1/2">
+                <h1 className="text-3xl font-bold text-[#62D89F] mb-4 font-trebuchet">
                   Become A Finmed Partner
                 </h1>
-                <p className="text-white mb-6 font-light text-base font-roboto">
+                <p className="text-white mb-6 pr-4 font-light text-base font-roboto">
                   Partner with us to grow your business and offer your clients
                   the financial solutions they are looking for.
                   <br />
                   Give your customers financial products you'll both love.
                 </p>
               </div>
-              <div className="w-[1/2] p-8 bg-opacity-10 bg-white border border-blue-300 rounded-xl shadow-lg">
+              <div className="w-full md:w-1/2 p-8 bg-opacity-10 bg-white border border-blue-300 rounded-xl shadow-lg">
                 <form className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <input
@@ -66,7 +69,7 @@ export default function PartnerForm() {
                   <div className="w-full flex justify-center">
                     <button
                       type="submit"
-                      className=" px-6 py-2 mt-4 font-semibold  rounded-md bg-opacity-20 bg-white text-white"
+                      className="px-6 py-2 mt-4 font-semibold rounded-md bg-opacity-20 bg-white text-white"
                     >
                       Send
                     </button>

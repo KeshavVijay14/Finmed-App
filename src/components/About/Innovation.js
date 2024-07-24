@@ -59,12 +59,12 @@ export default function Innovation() {
           ref={ref}
         >
           <div className="dark-bg"></div>
-          <div className="container w-1/2 mx-auto text-center">
+          <div className="container mx-auto text-center px-4 md:px-0">
             <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
               Fueling Innovation By The Numbers
             </h2>
 
-            <div className="flex flex-row justify-center items-center space-y-0 md:space-x-24 py-16">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 py-16">
               {metrics.map((metric, index) => (
                 <MetricItem
                   key={index}
@@ -77,7 +77,7 @@ export default function Innovation() {
           </div>
 
           <div
-            className={`w-1/2 mt-24 mx-auto flex flex-col items-center py-20 ${
+            className={`w-full md:w-1/2 mt-24 mx-auto flex flex-col items-center py-20 ${
               inView ? "animate-move-opacity" : ""
             }`}
           >
