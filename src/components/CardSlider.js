@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
 
 const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(4); // Default to 4 for larger screens
 
   const cards = [
     {
@@ -44,16 +45,29 @@ const CardSlider = () => {
     },
   ];
 
+  const maxIndex = cards.length - itemsToShow;
+
+  // Update items to show based on window width
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      const width = window.innerWidth;
+      setItemsToShow(width < 768 ? 3 : 4);
+    };
+
+    updateItemsToShow();
+    window.addEventListener("resize", updateItemsToShow);
+
+    return () => {
+      window.removeEventListener("resize", updateItemsToShow);
+    };
+  }, []);
+
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? Math.max(cards.length - 3, 0) : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex >= cards.length - 3 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex));
   };
 
   return (
@@ -72,9 +86,12 @@ const CardSlider = () => {
               </p>
             </div>
             <div className="flex justify-end mb-6 gap-4">
-              <div
+              <button
                 onClick={handlePrev}
-                className="rounded-full p-2 px-3 bg-white cursor-pointer"
+                disabled={currentIndex === 0}
+                className={`rounded-full p-2 px-3 bg-white cursor-pointer ${
+                  currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 <Image
                   src={"/images/arrowleft.svg"}
@@ -82,10 +99,15 @@ const CardSlider = () => {
                   width={10}
                   height={10}
                 />
-              </div>
-              <div
+              </button>
+              <button
                 onClick={handleNext}
-                className="rounded-full p-2 px-3 bg-white cursor-pointer"
+                disabled={currentIndex >= maxIndex}
+                className={`rounded-full p-2 px-3 bg-white cursor-pointer ${
+                  currentIndex >= maxIndex
+                    ? "opacity-50 cursor-not-allowed"
+                    : ""
+                }`}
               >
                 <Image
                   src={"/images/arrowRight.svg"}
@@ -93,21 +115,23 @@ const CardSlider = () => {
                   width={10}
                   height={10}
                 />
-              </div>
+              </button>
             </div>
             <div className="relative">
               <div className="slider-container overflow-hidden">
                 <div
                   className="slider-content flex transition-transform duration-300"
                   style={{
-                    transform: `translateX(-${(currentIndex * 100) / 2}%)`,
-                    width: `${(cards.length * 100) / 2}vw`,
+                    transform: `translateX(-${
+                      (currentIndex * 100) / itemsToShow
+                    }%)`,
+                    width: `${(cards.length * 100) / itemsToShow}vw`,
                   }}
                 >
                   {cards.map((card, index) => (
                     <div
                       key={index}
-                      className="card w-full md:w-[380px] h-56 rounded-lg shadow-lg text-left bg-white p-4 relative flex-shrink-0"
+                      className="card w-full md:w-[calc(80%/3)] lg:w-[calc(80%/4)] h-56 rounded-lg shadow-lg text-left bg-white p-4 relative flex-shrink-0"
                     >
                       <div
                         className={`w-full rounded-t-lg absolute top-0 left-0 ${card.bgClass}`}
