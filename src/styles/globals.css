@@ -240,6 +240,31 @@ body {
   color: #62d89f;
 }
 
+.icon-hover {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.icon-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  transition: left 0.4s ease-in-out;
+}
+
+.icon-hover:hover::before {
+  left: 100%;
+}
+
 .inView-animate::before {
   animation: shine 0.4s ease-in-out;
 }

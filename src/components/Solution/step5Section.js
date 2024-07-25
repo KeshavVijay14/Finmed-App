@@ -115,7 +115,7 @@ const Step5Section = () => {
                 </svg>
               )}
               <div className="absolute right-96 top-0 rounded shadow-sm   gradient-border-thin">
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
                     alt="Icon 2"
@@ -137,7 +137,7 @@ const Step5Section = () => {
                 />
               </div>
               <div className="absolute right-16 top-4 rounded shadow-sm   gradient-border-thin">
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
                     alt="Icon 2"
@@ -147,7 +147,7 @@ const Step5Section = () => {
                 </div>
               </div>
               <div className="absolute right-[80px] bottom-0 rounded shadow-sm   gradient-border-thin">
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
                     alt="Icon 2"
@@ -161,7 +161,7 @@ const Step5Section = () => {
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"
                     alt="Icon 2"
@@ -171,7 +171,7 @@ const Step5Section = () => {
                 </div>
               </div>
               <div className="absolute right-0 top-48 rounded shadow-sm   gradient-border-thin">
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
                     alt="Icon 2"
@@ -181,7 +181,7 @@ const Step5Section = () => {
                 </div>
               </div>
               <div className="absolute right-[480px] top-48 rounded shadow-sm   gradient-border-thin">
-                <div className="bg-[#1F1B5A]  w-[51px] h-[51px] flex justify-center items-center  rounded">
+                <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
                     alt="Icon 2"

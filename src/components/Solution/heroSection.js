@@ -6,10 +6,7 @@ const HeroSection = () => {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div>
-          <div
-            className="  flex justify-center items-center"
-            ref={ref}
-          >
+          <div className="  flex justify-center items-center" ref={ref}>
             <div
               className={`w-full max-w-[80%] flex flex-col md:flex-row justify-around items-center h-screen p-4 ${
                 inView ? "animate-scale-opacity-z" : ""
@@ -19,7 +16,7 @@ const HeroSection = () => {
                 <h1 className="text-2xl md:text-3xl font-bold mb-4 text-[#62D89F] font-trebuchet">
                   Creating Endless Lending Possibilities
                 </h1>
-                <p className="font-thin text-base md:text-md text-white max-w-lg mx-auto md:mx-0">
+                <p className="font-thin text-base md:text-md text-white max-w-lg mx-0">
                   Finmed is spearheading a revolution in both the financial and
                   healthcare industries. Our solutions empower financial
                   institutions and lenders with access to a secure platform.
