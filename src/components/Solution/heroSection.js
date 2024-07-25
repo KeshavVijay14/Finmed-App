@@ -75,7 +75,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="py-32 px-8 flex justify-center">
-            <div className="separator"></div>
+            <div className="separator2"></div>
           </div>
         </div>
       )}

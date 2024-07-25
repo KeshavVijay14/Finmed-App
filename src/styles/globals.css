@@ -334,6 +334,30 @@ body {
   box-shadow: 0 0 30px #00a8ff;
 }
 
+.separator2 {
+  height: 0.5px;
+  width: 50%;
+  margin: 20px 0;
+  padding: 0.8px;
+  border-radius: 0.125rem;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 49.78%,
+    rgba(255, 255, 255, 0) 100.56%
+  );
+
+  border-image: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 100%,
+    #ffffff 49.78%,
+    rgba(255, 255, 255, 0) 100.56%
+  );
+  border-image-slice: 1;
+  filter: blur(1px);
+  box-shadow: 0 0 30px #00a8ff;
+}
+
 @layer utilities {
   .gradient-border {
     width: 58px;

@@ -43,7 +43,7 @@ export default function PartnersSection() {
               ))}
             </div>
             <div className="py-32 px-8 flex justify-center w-full">
-              <div className="separator"></div>
+              <div className="separator2"></div>
             </div>
             <div
               className={`w-full md:w-[60%] flex flex-wrap justify-between items-center ${
