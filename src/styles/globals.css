@@ -474,11 +474,17 @@ body {
   }
 }
 
-/* .shade-bg {
-  border-radius: 100%;
+.shade-bg {
+  position: absolute;
+  width: 493px;
+  height: 493px;
+  left: calc(50% - 493px / 2 + 394.5px);
+  top: 246px;
+
   background: radial-gradient(
-    100% 50% at 50% 52.23%,
-    rgba(255, 255, 255, 0.168) 0%,
-    rgba(255, 255, 255, 0) 50%
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.168) 10%,
+    rgba(255, 255, 255, 0) 100%
   );
-} */
+  filter: blur(88.1px);
+}

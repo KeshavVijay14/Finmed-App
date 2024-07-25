@@ -25,7 +25,8 @@ const HeroSection = () => {
                   and onboarding processes.
                 </p>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3  md:py-16 gap-8 md:gap-20 max-w-xl mx-auto md:mx-0 shade-bg">
+              <div className="shade-bg"></div>
+              <div className="grid grid-cols-2 md:grid-cols-3  md:py-16 gap-8 md:gap-20 max-w-xl mx-auto md:mx-0">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 1"
