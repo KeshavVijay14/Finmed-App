@@ -20,10 +20,7 @@ export default function MetricsSection() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
-        <section
-          className="   py-20 px-8"
-          ref={ref}
-        >
+        <section className="   py-20 px-8" ref={ref}>
           <div className="container lg:w-1/2 w-full mx-auto text-center">
             <div>
               <h2 className="text-3xl  font-bold text-[#62D89F] mb-4 font-trebuchet">

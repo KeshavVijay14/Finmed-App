@@ -32,7 +32,7 @@ const StepSection = () => {
           <div className="w-[80%] flex items-center h-[100vh]">
             <div className="p-6 max-w-xl">
               <h1 className="text-4xl font-semibold mb-4 text-[#62D89F] max-w-xl font-roboto">
-                A Fully Integrated Suite Of Financial And Healthcare Solutions
+                A Fully Integrated Suite of Financial and Healthcare Solutions
               </h1>
               <p className="font-thin text-lg text-white max-w-xl font-roboto">
                 Mitigate risks, boost revenue, and lend to the healthcare

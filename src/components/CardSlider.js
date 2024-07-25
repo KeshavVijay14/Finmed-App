@@ -63,7 +63,7 @@ const CardSlider = () => {
           <div className="flex flex-col mt-20 text-center w-[80%] justify-between">
             <div className="flex flex-col items-start text-start">
               <h2 className="text-3xl font-bold text-[#62D89F] max-w-lg mb-2 font-trebuchet">
-                A Fully Integrated Suite Of Financial And Healthcare Solutions
+                A Fully Integrated Suite of Financial and Healthcare Solutions
               </h2>
               <p className="text-sm font-thin text-white mb-12 max-w-lg font-roboto">
                 Unlock the potential of healthcare financing with Finmed, where

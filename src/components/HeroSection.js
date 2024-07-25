@@ -14,7 +14,7 @@ export default function HeroSection() {
           >
             <div className="mb-10 max-w-lg px-4">
               <h1 className="text-2xl md:text-3xl font-bold mb-6 text-[#62D89F] font-trebuchet">
-                Innovative Financial Technology Revolutionizing he Healthcare
+                Innovative Financial Technology Revolutionizing The Healthcare
                 Sector
               </h1>
               <p className="mb-8 text-base font-light text-white sm:max-w-sm md:max-w-md font-roboto">
