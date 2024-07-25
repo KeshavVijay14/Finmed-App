@@ -313,7 +313,7 @@ body {
   height: 0.5px;
   width: 50%;
   margin: 20px 0;
-  padding: 0.1px;
+  padding: 0.8px;
   border-radius: 0.125rem;
   background: linear-gradient(
     270deg,
@@ -321,7 +321,6 @@ body {
     #ffffff 49.78%,
     rgba(255, 255, 255, 0) 100.56%
   );
-  border: 1px solid transparent;
 
   border-image: linear-gradient(
     270deg,
