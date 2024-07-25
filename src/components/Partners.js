@@ -42,7 +42,7 @@ export default function PartnersSection() {
                 </div>
               ))}
             </div>
-            <div className="py-20 px-8 flex justify-center w-full">
+            <div className="py-32 px-8 flex justify-center w-full">
               <div className="separator"></div>
             </div>
             <div
