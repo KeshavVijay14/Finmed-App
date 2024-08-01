@@ -4,7 +4,7 @@ import { InView } from "react-intersection-observer";
 
 const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsToShow, setItemsToShow] = useState(4); // Default to 4 for larger screens
+  const [itemsToShow, setItemsToShow] = useState(4);
 
   const cards = [
     {
@@ -47,29 +47,14 @@ const CardSlider = () => {
 
   const maxIndex = cards.length - itemsToShow;
 
-  // Update items to show based on window width
-  useEffect(() => {
-    const updateItemsToShow = () => {
-      const width = window.innerWidth;
-      setItemsToShow(width < 768 ? 3 : 4);
-    };
-
-    updateItemsToShow();
-    window.addEventListener("resize", updateItemsToShow);
-
-    return () => {
-      window.removeEventListener("resize", updateItemsToShow);
-    };
-  }, []);
-
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex));
+    setCurrentIndex((prevIndex) => prevIndex + 1);
   };
-
+  console.log("<><>", currentIndex);
   return (
     <InView triggerOnce threshold={1}>
       {({ ref }) => (
@@ -103,7 +88,7 @@ const CardSlider = () => {
               <button
                 onClick={handleNext}
                 disabled={currentIndex >= maxIndex}
-                className={`rounded-full p-2 px-3 bg-white cursor-pointer ${
+                className={`rounded-full p-2 px-3 bg-white cursor-pointer  ${
                   currentIndex >= maxIndex
                     ? "opacity-50 cursor-not-allowed"
                     : ""
@@ -123,9 +108,9 @@ const CardSlider = () => {
                   className="slider-content flex transition-transform duration-300"
                   style={{
                     transform: `translateX(-${
-                      (currentIndex * 100) / itemsToShow
+                      (currentIndex * 170) / itemsToShow
                     }%)`,
-                    width: `${(cards.length * 100) / itemsToShow}vw`,
+                    width: `${(cards.length * 80) / itemsToShow}vw`,
                   }}
                 >
                   {cards.map((card, index) => (
