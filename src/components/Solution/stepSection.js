@@ -263,8 +263,8 @@ const StepSection = () => {
                       >
                         <animate
                           attributeName="stroke-dasharray"
-                          from="0, 400"
-                          to="400, 0"
+                          from="0, 600"
+                          to="600, 0"
                           dur="2s"
                           fill="freeze"
                           id="lineAnimationStepPath4"
