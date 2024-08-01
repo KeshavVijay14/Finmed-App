@@ -57,16 +57,12 @@ const StepSection = () => {
                       <defs>
                         <linearGradient
                           id="lineGradient1"
-                          gradientUnits="userSpaceOnUse"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="100%"
+                          gradientTransform="rotate(103.88)"
                         >
                           <stop offset="0%" stopColor="#C670E7" />
                           <stop offset="33.34%" stopColor="#62D89F" />
                           <stop offset="75.15%" stopColor="#00A8FF" />
-                          <stop offset="100%" stopColor="#1C2D5C" />
+                          <stop offset="105.85%" stopColor="#1C2D5C" />
                         </linearGradient>
                       </defs>
                       <path
@@ -75,7 +71,7 @@ const StepSection = () => {
                         stroke="url(#lineGradient1)"
                         strokeWidth="3"
                         fill="transparent"
-                        strokeDasharray="400, 400"
+                        strokeDasharray="0, 400"
                       >
                         <animate
                           attributeName="stroke-dasharray"
@@ -83,30 +79,32 @@ const StepSection = () => {
                           to="400, 0"
                           dur="2s"
                           fill="freeze"
+                          id="lineAnimationStepPath1"
                         />
                       </path>
                       <circle
-                        cx="0"
-                        cy="0"
+                        cx="1"
+                        cy="1"
                         r="5"
                         fill="#D360FF"
                         opacity="0"
-                        className="circle-with-shadow"
+                        className="circle-with-shadow bg-gray-50"
                       >
                         <animate
                           attributeName="opacity"
                           from="0"
                           to="1"
-                          begin="2s"
                           dur="0.1s"
                           fill="freeze"
+                          begin="lineAnimationStepPath1.end"
                         />
                         <animateMotion
                           repeatCount="indefinite"
-                          dur="5s"
+                          dur="4s"
                           keyPoints="0;1"
                           keyTimes="0;1"
-                          begin="2s"
+                          calcMode="linear"
+                          begin="lineAnimationStepPath1.end"
                         >
                           <mpath href="#stepPath-1" />
                         </animateMotion>
@@ -117,21 +115,16 @@ const StepSection = () => {
                       ref={circleRefs[1]}
                       viewBox="0 0 200 300"
                       className="absolute w-[200px] right-48 top-24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <defs>
                         <linearGradient
                           id="lineGradient2"
-                          gradientUnits="userSpaceOnUse"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="100%"
+                          gradientTransform="rotate(103.88)"
                         >
                           <stop offset="0%" stopColor="#C670E7" />
                           <stop offset="33.34%" stopColor="#62D89F" />
                           <stop offset="75.15%" stopColor="#00A8FF" />
-                          <stop offset="100%" stopColor="#1C2D5C" />
+                          <stop offset="105.85%" stopColor="#1C2D5C" />
                         </linearGradient>
                       </defs>
                       <path
@@ -140,7 +133,7 @@ const StepSection = () => {
                         stroke="url(#lineGradient2)"
                         strokeWidth="3"
                         fill="transparent"
-                        strokeDasharray="400, 400"
+                        strokeDasharray="0, 400"
                       >
                         <animate
                           attributeName="stroke-dasharray"
@@ -148,30 +141,32 @@ const StepSection = () => {
                           to="400, 0"
                           dur="2s"
                           fill="freeze"
+                          id="lineAnimationStepPath2"
                         />
                       </path>
                       <circle
-                        cx="0"
-                        cy="0"
+                        cx="1"
+                        cy="1"
                         r="5"
                         fill="#D360FF"
                         opacity="0"
-                        className="circle-with-shadow"
+                        className="circle-with-shadow bg-gray-50"
                       >
                         <animate
                           attributeName="opacity"
                           from="0"
                           to="1"
-                          begin="2s"
                           dur="0.1s"
                           fill="freeze"
+                          begin="lineAnimationStepPath2.end"
                         />
                         <animateMotion
                           repeatCount="indefinite"
-                          dur="5s"
+                          dur="4s"
                           keyPoints="0;1"
                           keyTimes="0;1"
-                          begin="2s"
+                          calcMode="linear"
+                          begin="lineAnimationStepPath2.end"
                         >
                           <mpath href="#stepPath-2" />
                         </animateMotion>
@@ -188,16 +183,12 @@ const StepSection = () => {
                       <defs>
                         <linearGradient
                           id="lineGradient3"
-                          gradientUnits="userSpaceOnUse"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="100%"
+                          gradientTransform="rotate(103.88)"
                         >
                           <stop offset="0%" stopColor="#C670E7" />
                           <stop offset="33.34%" stopColor="#62D89F" />
                           <stop offset="75.15%" stopColor="#00A8FF" />
-                          <stop offset="100%" stopColor="#1C2D5C" />
+                          <stop offset="105.85%" stopColor="#1C2D5C" />
                         </linearGradient>
                       </defs>
                       <path
@@ -206,38 +197,40 @@ const StepSection = () => {
                         stroke="url(#lineGradient3)"
                         strokeWidth="3"
                         fill="transparent"
-                        strokeDasharray="600, 600"
+                        strokeDasharray="0, 400"
                       >
                         <animate
                           attributeName="stroke-dasharray"
                           from="0, 600"
                           to="600, 0"
-                          dur="1s"
+                          dur="2s"
                           fill="freeze"
+                          id="lineAnimationStepPath3"
                         />
                       </path>
                       <circle
-                        cx="0"
-                        cy="0"
+                        cx="1"
+                        cy="1"
                         r="5"
                         fill="#D360FF"
                         opacity="0"
-                        className="circle-with-shadow"
+                        className="circle-with-shadow bg-gray-50"
                       >
                         <animate
                           attributeName="opacity"
                           from="0"
                           to="1"
-                          begin="2s"
                           dur="0.1s"
                           fill="freeze"
+                          begin="lineAnimationStepPath3.end"
                         />
                         <animateMotion
                           repeatCount="indefinite"
-                          dur="5s"
+                          dur="4s"
                           keyPoints="0;1"
                           keyTimes="0;1"
-                          begin="2s"
+                          calcMode="linear"
+                          begin="lineAnimationStepPath3.end"
                         >
                           <mpath href="#stepPath-3" />
                         </animateMotion>
@@ -252,56 +245,54 @@ const StepSection = () => {
                       <defs>
                         <linearGradient
                           id="lineGradient"
-                          gradientUnits="userSpaceOnUse"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="100%"
+                          gradientTransform="rotate(103.88)"
                         >
-                          <stop offset="1%" stopColor="#c670e7" />
-                          <stop offset="31.69%" stopColor="#62d89f" />
-                          <stop offset="71.42%" stopColor="#00a8ff" />
-                          <stop offset="100%" stopColor="#1c2d5c" />
+                          <stop offset="0%" stopColor="#C670E7" />
+                          <stop offset="33.34%" stopColor="#62D89F" />
+                          <stop offset="75.15%" stopColor="#00A8FF" />
+                          <stop offset="105.85%" stopColor="#1C2D5C" />
                         </linearGradient>
                       </defs>
                       <path
                         id="stepPath-4"
-                        d="M36 2H73.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 114.9988 229 95.5664 229H34C16.3269 229 6 224.673 4 187V168"
+                        d="M36 2H24.8525C99.1278 2 119.446 22.811 118.84 48.079L115.553 185.079C114.968 209.504 114.9988 229 95.5664 229H34C16.3269 229 6 224.673 4 187V168"
                         stroke="url(#lineGradient)"
                         strokeWidth="3"
                         fill="transparent"
-                        strokeDasharray="600, 600"
+                        strokeDasharray="0, 400"
                       >
                         <animate
                           attributeName="stroke-dasharray"
-                          from="0, 600"
-                          to="600, 0"
+                          from="0, 400"
+                          to="400, 0"
                           dur="2s"
                           fill="freeze"
+                          id="lineAnimationStepPath4"
                         />
                       </path>
                       <circle
-                        cx="0"
-                        cy="0"
+                        cx="1"
+                        cy="1"
                         r="5"
                         fill="#D360FF"
                         opacity="0"
-                        className="circle-with-shadow"
+                        className="circle-with-shadow bg-gray-50"
                       >
                         <animate
                           attributeName="opacity"
                           from="0"
                           to="1"
-                          begin="2s"
                           dur="0.1s"
                           fill="freeze"
+                          begin="lineAnimationStepPath4.end"
                         />
                         <animateMotion
                           repeatCount="indefinite"
-                          dur="5s"
+                          dur="4s"
                           keyPoints="0;1"
                           keyTimes="0;1"
-                          begin="2s"
+                          calcMode="linear"
+                          begin="lineAnimationStepPath4.end"
                         >
                           <mpath href="#stepPath-4" />
                         </animateMotion>
