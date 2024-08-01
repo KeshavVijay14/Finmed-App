@@ -26,19 +26,19 @@ const Step4Section = () => {
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-xl">
+            <div className="p-6 max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step6.svg"
                   alt="Icon 2"
-                  width={32}
-                  height={32}
+                  width={28}
+                  height={28}
                 />
-                <div className="text-white text-4xl font-roboto font-semibold">
+                <div className="text-white text-3xl font-roboto font-semibold">
                   Pulse
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-lg">
+              <div className="text-white font-roboto font-thin text-md">
                 The Pulse of Finmed. Reading, analyzing, and transforming data
                 into actionable insights. It guides our decisions on client
                 interactions, claims processing, and company strategies with
@@ -53,7 +53,7 @@ const Step4Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[85px] top-8"
+                  className="absolute right-[28px] top-8"
                 >
                   <defs>
                     <linearGradient
@@ -125,15 +125,15 @@ const Step4Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-20 top-32 ${
+                className={`absolute right-28 top-32 ${
                   inViewState ? "animate-scale-up" : ""
                 }`}
               >
                 <Image
                   src="/images/pulse-bg.png"
                   alt="Icon 2"
-                  width={320}
-                  height={160}
+                  width={260}
+                  height={130}
                 />
               </div>
               <div className="absolute right-[-40px] top-40 rounded shadow-sm   gradient-border-thin">
@@ -156,7 +156,7 @@ const Step4Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[460px] bottom-4 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[420px] bottom-4 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
@@ -177,7 +177,7 @@ const Step4Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[484px] top-0 rounded shadow-sm   ${
+                className={`absolute right-[420px] top-0 rounded shadow-sm   ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >

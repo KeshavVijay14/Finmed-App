@@ -26,19 +26,19 @@ const Step2Section = () => {
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-xl">
+            <div className="p-6 max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step5.svg"
                   alt="Icon 2"
-                  width={32}
-                  height={32}
+                  width={28}
+                  height={28}
                 />
-                <div className="text-white text-4xl font-roboto font-semibold">
+                <div className="text-white text-3xl font-roboto font-semibold">
                   Hive
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-lg">
+              <div className="text-white font-roboto font-thin text-md">
                 Designed with security, efficiency, and compliance in mind. Hive
                 ensures the smooth and reliable exchange of healthcare claim
                 data between medical billing companies and our financial
@@ -53,7 +53,7 @@ const Step2Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[-100px] top-72"
+                  className="absolute right-[-100px] top-64"
                 >
                   <defs>
                     <linearGradient
@@ -132,8 +132,8 @@ const Step2Section = () => {
                 <Image
                   src="/images/hive-bg.png"
                   alt="Icon 2"
-                  width={320}
-                  height={160}
+                  width={260}
+                  height={130}
                 />
               </div>
               <div className="absolute right-[-40px] top-32 rounded shadow-sm   gradient-border-thin">
@@ -147,7 +147,7 @@ const Step2Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[290px] bottom-[-20px] rounded shadow-sm   ${
+                className={`absolute right-[290px] bottom-[10px] rounded shadow-sm   ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
@@ -160,7 +160,7 @@ const Step2Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[480px] bottom-8 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[420px] bottom-16 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -180,7 +180,7 @@ const Step2Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[460px] top-8 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[420px] top-8 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"

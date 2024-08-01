@@ -26,19 +26,19 @@ const Step3Section = () => {
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-xl">
+            <div className="p-6 max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step1.svg"
                   alt="Icon 2"
-                  width={32}
-                  height={32}
+                  width={28}
+                  height={28}
                 />
-                <div className="text-white text-4xl font-roboto font-semibold">
+                <div className="text-white text-3xl font-roboto font-semibold">
                   V Score
                 </div>
               </div>
-              <div className="text-white font-roboto font-thin text-lg">
+              <div className="text-white font-roboto font-thin text-md">
                 V Score utilizes a wide range of data points to score each
                 client, ensuring their compatibility within our lending network.
               </div>
@@ -128,8 +128,8 @@ const Step3Section = () => {
                 <Image
                   src="/images/v-score-bg.png"
                   alt="Icon 2"
-                  width={320}
-                  height={160}
+                  width={260}
+                  height={130}
                 />
               </div>
               <div className="absolute right-[-40px] top-32 rounded shadow-sm  gradient-border-thin">
@@ -176,7 +176,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[460px] top-4 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[420px] top-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"

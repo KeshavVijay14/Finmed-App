@@ -27,19 +27,19 @@ const Step6Section = () => {
         <div>
           <div ref={ref} className="  justify-center flex">
             <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-              <div className="p-6 max-w-xl">
+              <div className="p-6 max-w-md">
                 <div className="flex justify-start items-center gap-3 mb-4">
                   <Image
                     src="/images/step2.svg"
                     alt="Icon 2"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                   />
-                  <div className="text-white text-4xl font-roboto font-semibold">
+                  <div className="text-white text-3xl font-roboto font-semibold">
                     Lender Network
                   </div>
                 </div>
-                <div className="text-white font-roboto font-thin text-lg">
+                <div className="text-white font-roboto font-thin text-md">
                   Discover our expansive network of banks and lenders, all eager
                   to participate in the healthcare lending market. Each member
                   can select their unique criteria for desired credit profiles.
@@ -55,7 +55,7 @@ const Step6Section = () => {
                     width="400"
                     height="400"
                     viewBox="0 0 400 400"
-                    className="absolute right-[80px] top-36"
+                    className="absolute right-[50px] top-36"
                   >
                     <defs>
                       <linearGradient
@@ -127,15 +127,15 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`absolute right-20 top-32 ${
+                  className={`absolute right-28 top-32 ${
                     inViewState ? "animate-scale-up" : ""
                   }`}
                 >
                   <Image
                     src="/images/lender-network-bg.png"
                     alt="Icon 2"
-                    width={320}
-                    height={160}
+                    width={260}
+                    height={130}
                   />
                 </div>
                 <div className="absolute right-[-20px] top-48 rounded shadow-sm   gradient-border-thin">
@@ -148,7 +148,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-[300px] bottom-[-20px] rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-[280px] bottom-[-20px] rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step5.svg"
@@ -159,7 +159,7 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`absolute right-[450px] bottom-20 rounded shadow-sm   ${
+                  className={`absolute right-[420px] bottom-20 rounded shadow-sm   ${
                     inViewState ? "gradient-border" : "gradient-border-thin"
                   }`}
                 >
@@ -172,7 +172,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-32 bottom-4 rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-28 bottom-4 rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step6.svg"
@@ -182,7 +182,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-[360px] top-4 rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-[360px] top-0 rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step4.svg"

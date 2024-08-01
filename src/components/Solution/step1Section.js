@@ -26,19 +26,19 @@ const Step1Section = () => {
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
           <div className="flex gap-10 w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-xl ">
+            <div className="p-6 max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step4.svg"
                   alt="Icon 2"
-                  width={32}
-                  height={32}
+                  width={28}
+                  height={28}
                 />
-                <div className="text-white text-4xl font-roboto font-semibold">
+                <div className="text-white text-3xl font-roboto font-semibold">
                   copay.com
                 </div>
               </div>
-              <div className="text-white font-thin text-lg font-roboto">
+              <div className="text-white font-thin text-md font-roboto">
                 Introducing Copay.com, the ultimate one-stop lending platform
                 designed exclusively for healthcare providers in search of
                 financial solutions.
@@ -52,7 +52,7 @@ const Step1Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[140px] top-8"
+                  className="absolute right-[80px] top-5"
                 >
                   <defs>
                     <linearGradient
@@ -129,8 +129,8 @@ const Step1Section = () => {
                 <Image
                   src="/images/co-pay-bg.png"
                   alt="Icon 2"
-                  width={320}
-                  height={160}
+                  width={260}
+                  height={130}
                 />
               </div>
               <div className="absolute right-12 top-4 rounded shadow-sm  gradient-border-thin">
@@ -143,7 +143,7 @@ const Step1Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[300px] bottom-0 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[240px] bottom-0 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -153,7 +153,7 @@ const Step1Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[480px] bottom-16 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[420px] bottom-16 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
@@ -174,7 +174,7 @@ const Step1Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[535px] top-4 rounded shadow-sm  ${
+                className={`absolute right-[460px] top-0 rounded shadow-sm  ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
