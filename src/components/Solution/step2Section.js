@@ -58,16 +58,12 @@ const Step2Section = () => {
                   <defs>
                     <linearGradient
                       id="lineGradient2"
-                      gradientUnits="userSpaceOnUse"
-                      x1="0%"
-                      y1="0%"
-                      x2="100%"
-                      y2="100%"
+                      gradientTransform="rotate(103.88)"
                     >
                       <stop offset="0%" stopColor="#C670E7" />
                       <stop offset="33.34%" stopColor="#62D89F" />
                       <stop offset="75.15%" stopColor="#00A8FF" />
-                      <stop offset="100%" stopColor="#1C2D5C" />
+                      <stop offset="105.85%" stopColor="#1C2D5C" />
                     </linearGradient>
                   </defs>
                   <path
@@ -76,7 +72,7 @@ const Step2Section = () => {
                     stroke="url(#lineGradient2)"
                     strokeWidth="3"
                     fill="transparent"
-                    strokeDasharray="400, 400"
+                    strokeDasharray="0, 400"
                   >
                     <animate
                       attributeName="stroke-dasharray"
@@ -84,30 +80,32 @@ const Step2Section = () => {
                       to="400, 0"
                       dur="2s"
                       fill="freeze"
+                      id="lineAnimation2"
                     />
                   </path>
                   <circle
-                    cx="0"
-                    cy="0"
+                    cx="1"
+                    cy="1"
                     r="5"
                     fill="#D360FF"
                     opacity="0"
-                    className="circle-with-shadow"
+                    className="circle-with-shadow bg-gray-50"
                   >
                     <animate
                       attributeName="opacity"
                       from="0"
                       to="1"
-                      begin="2s"
                       dur="0.1s"
                       fill="freeze"
+                      begin="lineAnimation2.end"
                     />
                     <animateMotion
                       repeatCount="indefinite"
-                      dur="5s"
+                      dur="4s"
                       keyPoints="0;1"
                       keyTimes="0;1"
-                      begin="2s"
+                      calcMode="linear"
+                      begin="lineAnimation2.end"
                     >
                       <mpath href="#path2" />
                     </animateMotion>
