@@ -25,7 +25,7 @@ const Step3Section = () => {
     >
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
-          <div className="flex gap-10 w-[80%] items-center h-[100vh]">
+          <div className="flex gap-10 w-[90%] xl:w-[80%] items-center h-[100vh]">
             <div className="p-6 max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
@@ -130,7 +130,7 @@ const Step3Section = () => {
                   height={130}
                 />
               </div>
-              <div className="absolute right-[-40px] top-32 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[-20px] top-32 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"

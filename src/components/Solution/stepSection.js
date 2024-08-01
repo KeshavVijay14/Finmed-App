@@ -28,9 +28,9 @@ const StepSection = () => {
       onChange={(inView) => setInViewState(inView)}
     >
       {({ inView, ref, entry }) => (
-        <div className="flex flex-wrap justify-around">
+        <div className="flex  justify-evenly">
           <div
-            className="w-[80%] flex items-center justify-between  h-[100vh]"
+            className="w-[90%] xl:w-[80%] flex items-center justify-between  h-[100vh]"
             ref={ref}
           >
             <div className="p-6 max-w-md xl:max-w-xl">
