@@ -8,7 +8,7 @@ export default function HeroSection() {
       {({ inView, ref, entry }) => (
         <section className={`  flex justify-center  `} ref={ref}>
           <div
-            className={`container flex flex-col md:flex-row items-center justify-around gap-10 md:gap-20 xl:gap-0 h-auto md:h-[100vh] ${
+            className={`container flex flex-col md:flex-row px-4 md:px-0 items-center justify-around gap-0 md:gap-20 xl:gap-0 h-auto md:h-[100vh] ${
               inView ? "animate-scale-opacity-z" : ""
             }`}
           >
@@ -31,13 +31,16 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <div className={`relative h-full flex items-center hover-scale`}>
-              <div className="absolute left-[-80px] transform translate-y-16">
+            <div
+              className={`relative ml-12  md:ml-0 h-full flex items-center hover-scale px-8 md:px-0`}
+            >
+              <div className="absolute left-[-20px] md:left-[-80px] transform translate-y-16">
                 <Image
                   src="/images/mobile-screen-view.svg"
                   alt="Mobile Dashboard"
                   width={180}
                   height={360}
+                  className="w-full max-w-[200px] md:max-w-[450px] h-[200px] md:h-[350px]"
                 />
               </div>
               <div>

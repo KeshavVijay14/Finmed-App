@@ -31,7 +31,7 @@ export default function PartnersSection() {
               }`}
             >
               {partners.map((partner, index) => (
-                <div key={index} className="px-16 flex">
+                <div key={index} className="px-8 flex">
                   <Image
                     src={partner.src}
                     alt={partner.alt}
@@ -46,7 +46,7 @@ export default function PartnersSection() {
               <div className="separator"></div>
             </div>
             <div
-              className={`w-full md:w-[60%] flex flex-wrap justify-between items-center ${
+              className={`w-full md:w-[60%] px-12 flex flex-wrap justify-between items-center ${
                 inView ? "animate-move-opacity" : ""
               }`}
             >
