@@ -25,8 +25,8 @@ const Step1Section = () => {
     >
       {({ inView, ref, entry }) => (
         <div ref={ref} className="w-full justify-center flex">
-          <div className="flex gap-10 w-[80%] xl:w-[80%]   items-center h-[100vh]">
-            <div className="p-6 max-w-md">
+          <div className="flex w-[80%] items-center h-[100vh]">
+            <div className="max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step4.svg"
@@ -45,14 +45,14 @@ const Step1Section = () => {
               </div>
             </div>
 
-            <div className="relative h-[440px]  flex-grow">
+            <div className="relative h-[440px] flex-grow">
               {inViewState && (
                 <svg
                   ref={circleRef}
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[80px] top-5"
+                  className="absolute right-0 top-4"
                 >
                   <defs>
                     <linearGradient
@@ -111,7 +111,7 @@ const Step1Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-64 top-0 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-40 top-0 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
@@ -133,7 +133,7 @@ const Step1Section = () => {
                   height={130}
                 />
               </div>
-              <div className="absolute right-12 top-4 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-0 top-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"
@@ -143,7 +143,7 @@ const Step1Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[240px] bottom-0 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[120px] bottom-0 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -153,7 +153,7 @@ const Step1Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] bottom-16 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-[320px] bottom-16 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
@@ -163,7 +163,7 @@ const Step1Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-12 bottom-4 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute right-0 bottom-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
@@ -174,7 +174,7 @@ const Step1Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[460px] top-0 rounded shadow-sm  ${
+                className={`absolute right-[390px] top-0 rounded shadow-sm  ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >

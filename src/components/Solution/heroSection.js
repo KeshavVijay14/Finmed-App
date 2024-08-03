@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div>
           <div className="flex justify-center items-center" ref={ref}>
             <div
-              className={`w-full max-w-[90%] md:max-w-[80%] flex flex-col md:flex-row justify-around items-center h-auto md:h-screen p-4 md:p-0 ${
+              className={`w-full max-w-[90%] md:max-w-[80%] flex flex-col md:flex-row justify-between items-center h-auto md:h-screen p-4 md:p-0 ${
                 inView ? "animate-scale-opacity-z" : ""
               }`}
             >

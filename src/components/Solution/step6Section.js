@@ -26,8 +26,8 @@ const Step6Section = () => {
       {({ inView, ref, entry }) => (
         <div>
           <div ref={ref} className="  justify-center flex">
-            <div className="flex  w-[90%] xl:w-[80%] items-center h-[100vh]">
-              <div className="p-6 max-w-md">
+            <div className="flex w-[80%] items-center h-[100vh]">
+              <div className=" selection: max-w-md">
                 <div className="flex justify-start items-center gap-3 mb-4">
                   <Image
                     src="/images/step2.svg"
@@ -55,7 +55,7 @@ const Step6Section = () => {
                     width="400"
                     height="400"
                     viewBox="0 0 400 400"
-                    className="absolute right-[50px] top-36"
+                    className="absolute right-0 top-36"
                   >
                     <defs>
                       <linearGradient
@@ -125,7 +125,7 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`absolute right-28 top-32 ${
+                  className={`absolute right-20 top-32 ${
                     inViewState ? "animate-scale-up" : ""
                   }`}
                 >
@@ -136,7 +136,7 @@ const Step6Section = () => {
                     height={130}
                   />
                 </div>
-                <div className="absolute right-[-20px] top-48 rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-0 top-48 rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step3.svg"
@@ -146,7 +146,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-[280px] bottom-[-20px] rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-[280px] bottom-0 rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step5.svg"
@@ -157,7 +157,7 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`absolute right-[420px] bottom-20 rounded shadow-sm   ${
+                  className={`absolute right-[360px] bottom-20 rounded shadow-sm   ${
                     inViewState ? "gradient-border" : "gradient-border-thin"
                   }`}
                 >

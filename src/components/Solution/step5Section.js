@@ -25,8 +25,8 @@ const Step5Section = () => {
     >
       {({ inView, ref, entry }) => (
         <div ref={ref} className="  justify-center flex">
-          <div className="flex  w-[90%] xl:w-[80%] items-center h-[100vh]">
-            <div className="p-6 max-w-md">
+          <div className="flex  w-[80%] items-center h-[100vh]">
+            <div className="  max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
                   src="/images/step3.svg"
