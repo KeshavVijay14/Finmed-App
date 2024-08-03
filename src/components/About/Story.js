@@ -5,7 +5,7 @@ const OurStory = () => {
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref, entry }) => (
         <div
-          className="pb-48 flex flex-col justify-center items-center   text-white px-4"
+          className="pb-48 flex flex-col justify-center items-center text-white px-4"
           ref={ref}
         >
           <div
@@ -13,10 +13,10 @@ const OurStory = () => {
               inView ? "animate-move-opacity" : ""
             }`}
           >
-            <h2 className="text-4xl font-bold mb-4 text-[#62D89F] font-trebuchet">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#62D89F] font-trebuchet">
               Our Story
             </h2>
-            <p className="max-w-2xl text-start  text-sm font-thin leading-relaxed font-roboto">
+            <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl text-start text-xs md:text-sm font-thin leading-relaxed font-roboto">
               Born from a simple theory in 2022, Finmed swiftly evolved into a
               vital solution. Recognizing the challenges healthcare providers
               and lenders face due to the complex A/R. We embarked on a journey

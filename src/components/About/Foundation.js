@@ -26,7 +26,7 @@ export default function HoverEffectSections() {
           className="py-10 flex flex-col justify-center items-center   "
           ref={ref}
         >
-          <h2 className="text-4xl font-bold text-[#62D89F]  font-trebuchet mb-12">
+          <h2 className="text-4xl font-bold text-[#62D89F] font-trebuchet mb-20 px-8 sm:px-6 md:px-8 lg:px-10 xl:px-12 sm:mb-16 md:mb-12 lg:mb-10 xl:mb-8">
             The Foundation Of Finmed
           </h2>
           <div className="relative flex flex-col justify-center items-center space-x-1 mb-40 mt-10">
@@ -59,11 +59,11 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-1"></div>
                 )}
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="absolute top-[-30px] left-[-350px] mr-20 mb-8 h-10">
-                    <h3 className="text-3xl font-bold text-[#C670E7]  font-trebuchet">
+                  <div className="absolute top-[-120px] right-[-350px] mr-20 mb-8 h-10 md:top-[-30px] md:left-[-350px]">
+                    <h3 className="text-xl md:text-3xl font-bold text-[#C670E7]  font-trebuchet">
                       Compliance
                     </h3>
-                    <p className="text-white max-w-xs text-sm font-thin font-roboto">
+                    <p className="text-white max-w-xs text-xs md:text-sm font-thin font-roboto">
                       Finmed employs compliance to ensure lenders standards are
                       met. We meticulously implement compliance protocols to
                       guarantee this alignment fostering trust and security
@@ -100,11 +100,11 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-2"></div>
                 )}
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="absolute top-[-30px] right-[-400px] ml-32 mb-8">
-                    <h3 className="text-3xl font-bold text-[#62D89F]  font-trebuchet">
+                  <div className="absolute top-[-120px] left-[-320px] md:top-[-30px] md:right-[-400px] md:left-0 ml-32 mb-8">
+                    <h3 className="text-xl md:text-3xl font-bold text-[#62D89F]  font-trebuchet">
                       Security
                     </h3>
-                    <p className="text-white max-w-sm text-sm font-thin font-roboto">
+                    <p className="text-white max-w-sm text-xs md:text-sm font-thin font-roboto">
                       Finmed prioritizes security for all data, adhering to
                       HIPAA guidelines, safeguarding sensitive information. We
                       ensure lenders data and processes remain confidential and
@@ -145,11 +145,11 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-3"></div>
                 )}
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="absolute top-[100px] left-[-80px] w-[600px]">
-                    <h3 className="text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
+                  <div className="absolute top-[100px] left-[-120px] sm:left-[-100px] md:left-[-80px] lg:left-[-60px] xl:left-[-40px] w-[600px]">
+                    <h3 className="text-xl md:text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
                       Data Analytics
                     </h3>
-                    <p className="text-white  max-w-sm text-sm font-thin font-roboto  ">
+                    <p className="text-white  max-w-sm text-xs md:text-sm font-thin font-roboto  ">
                       Finmed harnesses thousands of data points to accurately
                       predict the value of each claim. We employ data analytics
                       to continuously enhance our understanding of healthcare

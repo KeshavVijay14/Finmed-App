@@ -54,13 +54,13 @@ export default function Innovation() {
   return (
     <InView triggerOnce threshold={0.5}>
       {({ inView, ref }) => (
-        <section className="relative pt-48   py-20" ref={ref}>
+        <section className="relative pt-48 py-20" ref={ref}>
           <div className="container mx-auto text-center px-4 md:px-0">
-            <h2 className="text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#62D89F] mb-4 font-trebuchet">
               Fueling Innovation By The Numbers
             </h2>
 
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-24 py-16">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-24 py-8 md:py-16">
               {metrics.map((metric, index) => (
                 <MetricItem
                   key={index}
@@ -73,14 +73,14 @@ export default function Innovation() {
           </div>
 
           <div
-            className={`w-full md:w-1/2 mt-24 mx-auto flex flex-col items-center py-20 ${
+            className={`w-full md:w-3/4 lg:w-1/2 mt-12 md:mt-24 mx-auto flex flex-col items-center py-10 md:py-20 ${
               inView ? "animate-move-opacity" : ""
             }`}
           >
-            <h2 className="text-4xl font-bold text-[#62D89F] font-trebuchet mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#62D89F] font-trebuchet mb-4">
               We Firmly Believe
             </h2>
-            <p className="max-w-md text-start text-white font-thin text-sm mb-12 font-roboto">
+            <p className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center md:text-start text-white font-thin text-xs sm:text-sm mb-6 md:mb-12 font-roboto">
               Technology holds the key to revolutionizing the financial market
               for healthcare. Our mission is to develop cutting-edge technology
               that seamlessly connects healthcare providers and lenders,
