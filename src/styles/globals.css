@@ -155,11 +155,6 @@ body {
   transition: transform 0.5s ease;
 }
 
-.card {
-  min-width: 300px;
-  margin: 0 10px;
-}
-
 .custom-img-bg {
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -487,4 +482,8 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
   filter: blur(88.1px);
+}
+
+.slick-slide > div {
+  margin: 0 10px;
 }

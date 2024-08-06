@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const CardSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsToShow, setItemsToShow] = useState(4);
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const cards = [
     {
@@ -45,16 +48,55 @@ const CardSlider = () => {
     },
   ];
 
-  const maxIndex = cards.length - itemsToShow;
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    arrows: false,
+    beforeChange: (current, next) => setCurrentSlide(next),
+  };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
+    sliderRef.current.slickPrev();
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
+    sliderRef.current.slickNext();
   };
-  console.log("<><>", currentIndex);
+
+  const isNextDisabled = () => {
+    return currentSlide === cards.length - settings.slidesToShow;
+  };
+
+  const isPrevDisabled = () => {
+    return currentSlide === 0;
+  };
+
   return (
     <InView triggerOnce threshold={1}>
       {({ ref }) => (
@@ -73,9 +115,9 @@ const CardSlider = () => {
             <div className="flex justify-end mb-6 gap-4">
               <button
                 onClick={handlePrev}
-                disabled={currentIndex === 0}
+                disabled={isPrevDisabled()}
                 className={`rounded-full p-2 px-3 bg-white cursor-pointer ${
-                  currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+                  isPrevDisabled() ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
                 <Image
@@ -87,11 +129,9 @@ const CardSlider = () => {
               </button>
               <button
                 onClick={handleNext}
-                disabled={currentIndex >= maxIndex}
-                className={`rounded-full p-2 px-3 bg-white cursor-pointer  ${
-                  currentIndex >= maxIndex
-                    ? "opacity-50 cursor-not-allowed"
-                    : ""
+                disabled={isNextDisabled()}
+                className={`rounded-full p-2 px-3 bg-white cursor-pointer ${
+                  isNextDisabled() ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
                 <Image
@@ -103,37 +143,24 @@ const CardSlider = () => {
               </button>
             </div>
             <div className="relative">
-              <div className="slider-container overflow-hidden">
-                <div
-                  className="slider-content flex transition-transform duration-300"
-                  style={{
-                    transform: `translateX(-${
-                      (currentIndex * 170) / itemsToShow
-                    }%)`,
-                    width: `${(cards.length * 80) / itemsToShow}vw`,
-                  }}
-                >
-                  {cards.map((card, index) => (
+              <Slider ref={sliderRef} {...settings}>
+                {cards.map((card, index) => (
+                  <div
+                    key={index}
+                    className="card w-full h-56 mx-2 rounded-lg shadow-lg text-left bg-white"
+                  >
                     <div
-                      key={index}
-                      className="card w-full md:w-[calc(80%/3)] lg:w-[calc(80%/4)] h-56 rounded-lg shadow-lg text-left bg-white p-4 relative flex-shrink-0"
-                    >
-                      <div
-                        className={`w-full rounded-t-lg absolute top-0 left-0 ${card.bgClass}`}
-                        style={{
-                          height: "10px",
-                        }}
-                      ></div>
-                      <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-6 pl-4">
-                        {card.title}
-                      </h3>
-                      <p className="text-black font-thin text-sm font-roboto pl-4">
-                        {card.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+                      className={`h-3 w-full rounded-t-lg ${card.bgClass}`}
+                    ></div>
+                    <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2 pl-4">
+                      {card.title}
+                    </h3>
+                    <p className="text-black font-thin text-sm font-roboto pl-4">
+                      {card.description}
+                    </p>
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </section>
