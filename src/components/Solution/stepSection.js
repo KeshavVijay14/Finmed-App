@@ -35,7 +35,7 @@ const StepSection = () => {
                 <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-md xl:max-w-lg 2xl:max-w-xl  font-roboto">
                   A Fully Integrated Suite of Financial and Healthcare Solutions
                 </h1>
-                <p className="font-thin text-md text-white max-w-md xl:max-w-xl font-roboto">
+                <p className="font-thin text-md text-white max-w-md xl:max-w-lg 2xl:max-w-xl font-roboto">
                   Mitigate risks, boost revenue, and lend to the healthcare
                   industry more efficiently with our fully integrated platform.
                   Use Finmed to handle all of your lending related needs,
