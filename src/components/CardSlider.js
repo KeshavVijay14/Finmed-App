@@ -147,17 +147,19 @@ const CardSlider = () => {
                 {cards.map((card, index) => (
                   <div
                     key={index}
-                    className="card w-full h-56 mx-2 rounded-lg shadow-lg text-left bg-white"
+                    className="w-full h-56 mx-2 rounded-lg shadow-lg text-left bg-white"
                   >
                     <div
                       className={`h-3 w-full rounded-t-lg ${card.bgClass}`}
                     ></div>
-                    <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2 pl-4">
-                      {card.title}
-                    </h3>
-                    <p className="text-black font-thin text-sm font-roboto pl-4">
-                      {card.description}
-                    </p>
+                    <div className="p-2">
+                      <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2 pl-4">
+                        {card.title}
+                      </h3>
+                      <p className="text-black font-thin text-xs  xl:text-sm font-roboto pl-4">
+                        {card.description}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </Slider>
