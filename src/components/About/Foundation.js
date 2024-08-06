@@ -29,7 +29,7 @@ export default function HoverEffectSections() {
           <h2 className="text-4xl font-bold text-[#62D89F] font-trebuchet mb-20 px-8 sm:px-6 md:px-8 lg:px-10 xl:px-12 sm:mb-16 md:mb-12 lg:mb-10 xl:mb-8">
             The Foundation Of Finmed
           </h2>
-          <div className="relative flex flex-col justify-center items-center space-x-1 mb-40 mt-10">
+          <div className="relative flex flex-col justify-center items-center space-x-1 p-28">
             <div className="flex space-x-4">
               <div
                 className="relative"
@@ -145,7 +145,7 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-3"></div>
                 )}
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="absolute top-[100px] left-[-120px] sm:left-[-100px] md:left-[-80px] lg:left-[-60px] xl:left-[-40px] w-[600px]">
+                  <div className="absolute top-[100px] left-[-120px] sm:left-[-100px] w-[600px]">
                     <h3 className="text-xl md:text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
                       Data Analytics
                     </h3>

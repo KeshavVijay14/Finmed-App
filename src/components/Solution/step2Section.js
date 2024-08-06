@@ -72,12 +72,13 @@ const Step2Section = () => {
                     stroke="url(#lineGradient2)"
                     strokeWidth="3"
                     fill="transparent"
-                    strokeDasharray="0, 400"
+                    strokeDasharray="400"
+                    strokeDashoffset="400"
                   >
                     <animate
-                      attributeName="stroke-dasharray"
-                      from="0, 400"
-                      to="400, 0"
+                      attributeName="stroke-dashoffset"
+                      from="400"
+                      to="800"
                       dur="2s"
                       fill="freeze"
                       id="lineAnimation2"
@@ -102,7 +103,7 @@ const Step2Section = () => {
                     <animateMotion
                       repeatCount="indefinite"
                       dur="4s"
-                      keyPoints="0;1"
+                      keyPoints="1;0"
                       keyTimes="0;1"
                       calcMode="linear"
                       begin="lineAnimation2.end"

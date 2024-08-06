@@ -31,8 +31,8 @@ const StepSection = () => {
         <div className="flex  justify-center">
           <div className="w-[80%] h-[100vh]" ref={ref}>
             <div className=" relative flex items-center  h-[440px]">
-              <div className="max-w-md xl:max-w-xl">
-                <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-lg xl:max-w-xl  font-roboto">
+              <div className="max-w-md xl:max-w-lg 2xl:max-w-xl">
+                <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-md xl:max-w-lg 2xl:max-w-xl  font-roboto">
                   A Fully Integrated Suite of Financial and Healthcare Solutions
                 </h1>
                 <p className="font-thin text-md text-white max-w-md xl:max-w-xl font-roboto">
