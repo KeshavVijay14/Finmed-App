@@ -29,7 +29,7 @@ export default function HoverEffectSections() {
           <h2 className="text-4xl font-bold text-[#62D89F] font-trebuchet mb-20 px-8 sm:px-6 md:px-8 lg:px-10 xl:px-12 sm:mb-16 md:mb-12 lg:mb-10 xl:mb-8">
             The Foundation Of Finmed
           </h2>
-          <div className="relative flex flex-col justify-center items-center space-x-1 p-28">
+          <div className=" flex flex-col justify-center items-center space-x-1 p-28">
             <div className="flex space-x-4">
               <div
                 className="relative"
