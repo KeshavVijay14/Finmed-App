@@ -76,7 +76,7 @@ export default function HoverEffectSections() {
                   alt="Security"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer z-50 ${
+                  className={`transition-transform duration-300 cursor-pointer z-100  first-letter:${
                     hoveredSection === "security" || inViewState
                       ? "transform translate-x-4 -translate-y-4 scale-200"
                       : ""
@@ -114,9 +114,9 @@ export default function HoverEffectSections() {
                 alt="Data Analytics"
                 width={115}
                 height={115}
-                className={`transition-transform duration-300 cursor-pointer  z-200${
+                className={`transition-transform duration-300 cursor-pointer z-100 first-letter:${
                   hoveredSection === "dataAnalytics" || inViewState
-                    ? "transform   translate-y-4 scale-200"
+                    ? "transform translate-y-4 scale-200"
                     : ""
                 }`}
               />
