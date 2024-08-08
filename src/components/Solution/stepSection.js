@@ -174,7 +174,7 @@ const StepSection = () => {
                     width="400"
                     height="400"
                     viewBox="0 0 400 400"
-                    className="absolute right-0 top-40"
+                    className="absolute right-0 top-36"
                   >
                     <defs>
                       <linearGradient
@@ -193,12 +193,13 @@ const StepSection = () => {
                       stroke="url(#lineGradient3)"
                       strokeWidth="3"
                       fill="transparent"
-                      strokeDasharray="0, 400"
+                      strokeDasharray="400"
+                      strokeDashoffset="400"
                     >
                       <animate
-                        attributeName="stroke-dasharray"
-                        from="0, 600"
-                        to="600, 0"
+                        attributeName="stroke-dashoffset"
+                        from="400"
+                        to="780"
                         dur="2s"
                         fill="freeze"
                         id="lineAnimationStepPath3"
@@ -223,7 +224,7 @@ const StepSection = () => {
                       <animateMotion
                         repeatCount="indefinite"
                         dur="4s"
-                        keyPoints="0;1"
+                        keyPoints="1;0"
                         keyTimes="0;1"
                         calcMode="linear"
                         begin="lineAnimationStepPath3.end"
@@ -326,7 +327,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[380px] bottom-40 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[370px] bottom-44 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"

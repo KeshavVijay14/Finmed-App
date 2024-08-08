@@ -14,37 +14,37 @@ const CardSlider = () => {
       title: "copay.com",
       description:
         "Introducing Copay com, the ultimate one-stop lending platform designed exclusively for healthcare providers in search of financial solutions.",
-      bgClass: "bg-purple-500",
+      bgClass: "#C670E7",
     },
     {
       title: "Hive",
       description:
         "Designed with security, efficiency, and compliance in mind. Hive ensures the smooth and reliable exchange of healthcare claim data between medical billing companies and our financial technology.",
-      bgClass: "bg-green-500",
+      bgClass: "#62D89F",
     },
     {
       title: "V Score",
       description:
         "V Score utilizes a wide range of data points to score each client, ensuring their compatibility within our lending network.",
-      bgClass: "bg-blue-500",
+      bgClass: "#00A8FF",
     },
     {
       title: "Pulse",
       description:
         "Pulse serves as the pulse of Finmed, recording and transforming data into actionable business intelligence to inform our decisions on client interactions, claim processing, and company strategies with precision.",
-      bgClass: "bg-purple-300",
+      bgClass: "#C670E7",
     },
     {
       title: "8200",
       description:
         "8200 is advanced monitoring and fraud detection system. Utilizing cutting edge technology, we safeguard your transactions in real-time, ensuring unparalleled security and peace of mind for all of our clients.",
-      bgClass: "bg-purple-500",
+      bgClass: "#62D89F",
     },
     {
       title: "Lender Network",
       description:
         "Discover our expansive network of banks and lenders, all eager to participate in the healthcare lending market. Each member can select their unique criteria for desired credit profiles. Clients meeting these criteria are seamlessly connected, streamlining the lending process.",
-      bgClass: "bg-green-500",
+      bgClass: "#00A8FF",
     },
   ];
 
@@ -150,7 +150,7 @@ const CardSlider = () => {
                     className="w-full h-56 mx-2 rounded-lg shadow-lg text-left bg-white"
                   >
                     <div
-                      className={`h-3 w-full rounded-t-lg ${card.bgClass}`}
+                      className={`h-3 w-full rounded-t-lg bg-[${card?.bgClass}]`}
                     ></div>
                     <div className="p-2">
                       <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2 pl-4">

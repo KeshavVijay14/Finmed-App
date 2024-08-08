@@ -7,7 +7,7 @@ export default function WhyPartnerDetailed() {
       {({ inView, ref, entry }) => (
         <div>
           <div
-            className="relative  pb-8  flex justify-center     placeholder: text-white"
+            className="relative mt-20 md:mt-0  pb-8  flex justify-center     placeholder: text-white"
             ref={ref}
           >
             <div
