@@ -150,7 +150,11 @@ const CardSlider = () => {
                     className="w-full h-56 mx-2 rounded-lg shadow-lg text-left bg-white"
                   >
                     <div
-                      className={`h-3 w-full rounded-t-lg bg-[${card?.bgClass}]`}
+                      className={`h-3 w-full rounded-t-lg ${
+                        ((index === 0 || index === 3) && "bg-[#C670E7]") ||
+                        ((index === 1 || index === 4) && "bg-[#62D89F]") ||
+                        ((index === 2 || index === 5) && "bg-[#00A8FF]")
+                      }`}
                     ></div>
                     <div className="p-2">
                       <h3 className="text-xl font-bold text-black mb-2 font-roboto mt-2 pl-4">
