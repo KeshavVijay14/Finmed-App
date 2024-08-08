@@ -76,7 +76,7 @@ export default function HoverEffectSections() {
                   alt="Security"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer ${
+                  className={`transition-transform duration-300 cursor-pointer z-50 ${
                     hoveredSection === "security" || inViewState
                       ? "transform translate-x-4 -translate-y-4 scale-200"
                       : ""
@@ -104,42 +104,40 @@ export default function HoverEffectSections() {
               </div>
             </div>
 
-            <div>
-              <div
-                className="relative"
-                onMouseEnter={() => setHoveredSection("dataAnalytics")}
-                onMouseLeave={() => setHoveredSection(null)}
-              >
-                <Image
-                  src="/images/Vector 3.svg"
-                  alt="Data Analytics"
-                  width={115}
-                  height={115}
-                  className={`transition-transform duration-300 cursor-pointer ${
-                    hoveredSection === "dataAnalytics" || inViewState
-                      ? "transform   translate-y-4 scale-200"
-                      : ""
-                  }`}
-                />
+            <div
+              className="relative"
+              onMouseEnter={() => setHoveredSection("dataAnalytics")}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <Image
+                src="/images/Vector 3.svg"
+                alt="Data Analytics"
+                width={115}
+                height={115}
+                className={`transition-transform duration-300 cursor-pointer  z-200${
+                  hoveredSection === "dataAnalytics" || inViewState
+                    ? "transform   translate-y-4 scale-200"
+                    : ""
+                }`}
+              />
 
-                {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="foundation-bg-3"></div>
-                )}
-                {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="absolute top-[100px] left-[-80px] sm:left-[-100px] w-[320px]">
-                    <h3 className="text-xl md:text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
-                      Data Analytics
-                    </h3>
-                    <p className="text-white  max-w-sm text-xs md:text-sm font-thin font-roboto  ">
-                      Finmed harnesses thousands of data points to accurately
-                      predict the value of each claim. We employ data analytics
-                      to continuously enhance our understanding of healthcare
-                      claim payment processes, enabling us to adapt and optimize
-                      strategies for greater efficiency.
-                    </p>
-                  </div>
-                )}
-              </div>
+              {(hoveredSection === "dataAnalytics" || inViewState) && (
+                <div className="foundation-bg-3"></div>
+              )}
+              {(hoveredSection === "dataAnalytics" || inViewState) && (
+                <div className="absolute top-[100px] left-[-80px] sm:left-[-100px] w-[320px]">
+                  <h3 className="text-xl md:text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
+                    Data Analytics
+                  </h3>
+                  <p className="text-white  max-w-sm text-xs md:text-sm font-thin font-roboto  ">
+                    Finmed harnesses thousands of data points to accurately
+                    predict the value of each claim. We employ data analytics to
+                    continuously enhance our understanding of healthcare claim
+                    payment processes, enabling us to adapt and optimize
+                    strategies for greater efficiency.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
           <div className="py-32 px-8 flex justify-center w-full">
