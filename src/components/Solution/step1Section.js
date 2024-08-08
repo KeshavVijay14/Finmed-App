@@ -12,7 +12,7 @@ const Step1Section = () => {
       if (animateCircle) {
         setTimeout(() => {
           animateCircle.beginElement();
-        }, 2000); // Start circle animation after 2 seconds
+        }, 2000);
       }
     }
   }, [inViewState]);
@@ -25,7 +25,7 @@ const Step1Section = () => {
     >
       {({ inView, ref, entry }) => (
         <div ref={ref} className="w-full justify-center flex">
-          <div className="flex w-[80%] items-center h-[100vh]">
+          <div className="w-[80%] h-[100vh] md:flex md:justify-between items-center">
             <div className="max-w-md">
               <div className="flex justify-start items-center gap-3 mb-4">
                 <Image
@@ -45,7 +45,7 @@ const Step1Section = () => {
               </div>
             </div>
 
-            <div className="relative h-[440px] flex-grow">
+            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
               {inViewState && (
                 <svg
                   ref={circleRef}
@@ -122,7 +122,7 @@ const Step1Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-16 top-40 ${
+                className={`md:relative absolute right-16 top-40 ${
                   inViewState ? "animate-scale-up" : ""
                 }`}
               >

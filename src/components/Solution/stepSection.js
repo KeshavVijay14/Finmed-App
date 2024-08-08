@@ -29,20 +29,23 @@ const StepSection = () => {
     >
       {({ inView, ref, entry }) => (
         <div className="flex  justify-center">
-          <div className="w-[80%] h-[100vh]" ref={ref}>
-            <div className=" relative flex items-center  h-[440px]">
-              <div className="max-w-md xl:max-w-lg 2xl:max-w-xl">
-                <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-md xl:max-w-lg 2xl:max-w-xl  font-roboto">
-                  A Fully Integrated Suite of Financial and Healthcare Solutions
-                </h1>
-                <p className="font-thin text-md text-white max-w-md xl:max-w-lg 2xl:max-w-xl font-roboto">
-                  Mitigate risks, boost revenue, and lend to the healthcare
-                  industry more efficiently with our fully integrated platform.
-                  Use Finmed to handle all of your lending related needs,
-                  effectively manage risks, and expand your presence in the
-                  healthcare lending sector.
-                </p>
-              </div>
+          <div
+            className="w-[80%] h-[100vh] md:flex md:justify-between items-center"
+            ref={ref}
+          >
+            <div className="max-w-md xl:max-w-lg 2xl:max-w-xl">
+              <h1 className="text-3xl font-semibold mb-4 text-[#62D89F] max-w-md xl:max-w-lg 2xl:max-w-xl  font-roboto">
+                A Fully Integrated Suite of Financial and Healthcare Solutions
+              </h1>
+              <p className="font-thin text-md text-white max-w-md xl:max-w-lg 2xl:max-w-xl font-roboto">
+                Mitigate risks, boost revenue, and lend to the healthcare
+                industry more efficiently with our fully integrated platform.
+                Use Finmed to handle all of your lending related needs,
+                effectively manage risks, and expand your presence in the
+                healthcare lending sector.
+              </p>
+            </div>
+            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
               {inViewState && (
                 <>
                   <svg
@@ -317,7 +320,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[160px] bottom-28 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[160px] top-72 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -327,7 +330,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[370px] bottom-44 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[370px] top-56 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"
@@ -337,7 +340,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[150px] bottom-64 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[150px] top-36 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step2.svg"
