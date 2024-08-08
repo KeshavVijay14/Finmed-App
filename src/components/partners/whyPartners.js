@@ -24,11 +24,11 @@ export default function WhyPartner() {
                   height={300}
                   className="rounded-lg hover-scale mb-28 mx-8"
                 />
-                <ul className="text-white list-disc list-inside flex flex-col items-center gap-12 marker:text-[#62D89F] md:ml-0 ml-3">
+                <ul className="text-white list-disc list-inside flex flex-col items-center gap-12 marker:text-[#62D89F]">
                   <li className="w-full max-w-[300px] mt-4 font-trebuchet text-xl font-normal">
                     Lending and underwriting solutions your clients will love.
                   </li>
-                  <li className="w-full max-w-[320px] mt-4 font-trebuchet text-xl font-normal ml-4">
+                  <li className="w-full   max-w-[320px] mt-4 font-trebuchet text-xl font-normal md:ml-12 ml-14">
                     Elevate your clients' experiences with top-line financial
                     products.
                   </li>
@@ -36,7 +36,7 @@ export default function WhyPartner() {
               </div>
 
               <div className="flex flex-col items-center">
-                <ul className="text-white list-disc list-inside flex flex-col items-center gap-8 marker:text-[#62D89F]">
+                <ul className="text-white list-disc list-inside flex flex-col items-center gap-8 marker:text-[#62D89F] md:ml-0 ml-6">
                   <li className="w-full max-w-[300px] mt-4 font-trebuchet text-xl font-normal">
                     Creative strategies to ensure your clients secure the
                     financing they are looking for.
