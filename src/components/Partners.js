@@ -24,14 +24,14 @@ export default function PartnersSection() {
     <InView triggerOnce threshold={1}>
       {({ inView, ref, entry }) => (
         <section className="py-20 px-8" ref={ref}>
-          <div className="container mx-auto mb-20 flex flex-col items-center">
+          <div className="container mx-auto  flex flex-col items-center justify-center">
             <div
-              className={`grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 ${
+              className={`grid grid-cols-2 md:grid-cols-4 ${
                 inView ? "animate-move-opacity" : ""
               }`}
             >
               {partners.map((partner, index) => (
-                <div key={index} className="px-8 flex">
+                <div key={index} className="p-8 flex">
                   <Image
                     src={partner.src}
                     alt={partner.alt}

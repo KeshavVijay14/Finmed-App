@@ -59,7 +59,7 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-1"></div>
                 )}
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="absolute top-[-120px] right-[-350px] mr-20 mb-8 h-10 md:top-[-30px] md:left-[-350px]">
+                  <div className="absolute top-[-150px] left-[-100px] mr-20 mb-8 md:h-10 md:top-[-30px]  h-40 w-40 md:w-auto  md:left-[-350px]">
                     <h3 className="text-xl md:text-3xl font-bold text-[#C670E7]  font-trebuchet">
                       Compliance
                     </h3>
@@ -100,7 +100,7 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-2"></div>
                 )}
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="absolute top-[-120px] left-[-320px] md:top-[-30px] md:right-[-400px] md:left-0 ml-32 mb-8">
+                  <div className="absolute top-[-180px] left-[-10px]   md:top-[-30px] md:right-[-400px] md:left-0  h-40 w-48 md:w-auto md:ml-32 mb-8">
                     <h3 className="text-xl md:text-3xl font-bold text-[#62D89F]  font-trebuchet">
                       Security
                     </h3>
@@ -145,7 +145,7 @@ export default function HoverEffectSections() {
                   <div className="foundation-bg-3"></div>
                 )}
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="absolute top-[100px] left-[-120px] sm:left-[-100px] w-[600px]">
+                  <div className="absolute top-[100px] left-[-80px] sm:left-[-100px] w-[320px]">
                     <h3 className="text-xl md:text-3xl ml-16  font-bold text-[#00A8FF]  font-trebuchet">
                       Data Analytics
                     </h3>
