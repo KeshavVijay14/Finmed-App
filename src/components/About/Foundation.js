@@ -48,13 +48,6 @@ export default function HoverEffectSections() {
                   }`}
                 />
 
-                <Image
-                  src="/images/foundation1.svg"
-                  alt="Hover Compliance"
-                  layout="fill"
-                  objectFit="cover"
-                  className={`absolute inset-96 opacity-0   transition-opacity duration-300 cursor-pointer ${"opacity-80"}`}
-                />
                 {(hoveredSection === "compliance" || inViewState) && (
                   <div className="foundation-bg-1"></div>
                 )}
@@ -89,13 +82,7 @@ export default function HoverEffectSections() {
                       : ""
                   }`}
                 />
-                <Image
-                  src="/images/foundation2.svg"
-                  alt="Hover Security"
-                  layout="fill"
-                  objectFit="cover"
-                  className={`absolute inset-96 opacity-0 transition-opacity duration-300 cursor-pointer ${"opacity-80"}`}
-                />
+
                 {(hoveredSection === "security" || inViewState) && (
                   <div className="foundation-bg-2"></div>
                 )}
@@ -134,13 +121,7 @@ export default function HoverEffectSections() {
                       : ""
                   }`}
                 />
-                <Image
-                  src="/images/foundation3.svg"
-                  alt="Hover DataAnalytics"
-                  layout="fill"
-                  objectFit="cover"
-                  className={`absolute inset-96 opacity-0  transition-opacity duration-300 cursor-pointer ${"opacity-80"}`}
-                />
+
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
                   <div className="foundation-bg-3"></div>
                 )}
