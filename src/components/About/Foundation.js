@@ -115,13 +115,13 @@ export default function HoverEffectSections() {
                 width={115}
                 height={115}
                 className={`transition-transform duration-300 cursor-pointer z-100 first-letter:${
-                  hoveredSection === "dataAnalytics" || inViewState
+                  'dataAnalytics' === "dataAnalytics" || inViewState
                     ? "transform translate-y-4 scale-200"
                     : ""
                 }`}
               />
 
-              {(hoveredSection === "dataAnalytics" || inViewState) && (
+              {('dataAnalytics' === "dataAnalytics" || inViewState) && (
                 <div className="foundation-bg-3"></div>
               )}
               {(hoveredSection === "dataAnalytics" || inViewState) && (
