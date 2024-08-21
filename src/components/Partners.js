@@ -14,10 +14,10 @@ export default function PartnersSection() {
   ];
 
   const icons = [
-    { src: "/images/connect.svg", alt: "Connect", label: "Connect" },
-    { src: "/images/collect.svg", alt: "Collect", label: "Collect" },
-    { src: "/images/analyze.svg", alt: "Analyze", label: "Analyze" },
-    { src: "/images/deliver.svg", alt: "Deliver", label: "Deliver" },
+    { src: "/images/connect-1.svg", alt: "Connect", label: "Connect" },
+    { src: "/images/collect-2.svg", alt: "Collect", label: "Collect" },
+    { src: "/images/analyze-2.svg", alt: "Analyze", label: "Analyze" },
+    { src: "/images/deliver-1.svg", alt: "Deliver", label: "Deliver" },
   ];
 
   return (
@@ -53,7 +53,7 @@ export default function PartnersSection() {
               {icons.map((icon, index) => (
                 <div
                   key={index}
-                  className="flex flex-col justify-center items-center text-center m-4"
+                  className="flex flex-col justify-center items-center text-center m-4 h-20 w-20"
                 >
                   <div>
                     <Image
@@ -64,7 +64,11 @@ export default function PartnersSection() {
                       className="mb-2"
                     />
                   </div>
-                  <div className={`${index % 2 !== 0 ? "mt-3" : ""}`}>
+                  <div
+                    className={`${
+                      index === 1 || index === 3 ? "mt-4" : "mt-0"
+                    }`}
+                  >
                     <p className="text-white text-lg md:text-xl font-normal font-roboto">
                       {icon.label}
                     </p>
