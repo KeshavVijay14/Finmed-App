@@ -45,7 +45,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <Image
-                  src="/images/desktop-screen-view.svg"
+                  src="/images/web-view.svg"
                   alt="Desktop Dashboard"
                   width={500}
                   height={300}

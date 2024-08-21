@@ -3,14 +3,14 @@ import { InView } from "react-intersection-observer";
 
 export default function PartnersSection() {
   const partners = [
-    { src: "/images/logo1.svg", alt: "Partner 1" },
-    { src: "/images/logo2.svg", alt: "Partner 2" },
-    { src: "/images/logo3.svg", alt: "Partner 3" },
-    { src: "/images/logo4.svg", alt: "Partner 4" },
-    { src: "/images/logo5.svg", alt: "Partner 5" },
-    { src: "/images/logo6.svg", alt: "Partner 6" },
-    { src: "/images/logo7.svg", alt: "Partner 7" },
-    { src: "/images/logo8.svg", alt: "Partner 8" },
+    { src: "/images/logo-1.svg", alt: "Partner 1" },
+    { src: "/images/logo-2.svg", alt: "Partner 2" },
+    { src: "/images/logo-3.svg", alt: "Partner 3" },
+    { src: "/images/logo-4.svg", alt: "Partner 4" },
+    { src: "/images/logo-5.svg", alt: "Partner 5" },
+    { src: "/images/logo-6.svg", alt: "Partner 6" },
+    { src: "/images/logo-7.svg", alt: "Partner 7" },
+    { src: "/images/logo-8.svg", alt: "Partner 8" },
   ];
 
   const icons = [
