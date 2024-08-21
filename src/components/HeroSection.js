@@ -32,15 +32,15 @@ export default function HeroSection() {
             </div>
 
             <div
-              className={`relative ml-12  md:ml-0 h-full flex items-center hover-scale px-8 md:px-0`}
+              className={`relative  h-full flex items-center hover-scale px-0`}
             >
-              <div className="absolute left-[-20px] md:left-[-80px] transform translate-y-16">
+              <div className="absolute left-[-50px]  md:bottom-50  transform translate-y-16">
                 <Image
                   src="/images/mobile-screen-view.svg"
                   alt="Mobile Dashboard"
                   width={180}
                   height={360}
-                  className="w-full max-w-[200px] md:max-w-[450px] h-[200px] md:h-[350px]"
+                  className="w-full max-w-[100px] md:max-w-[450px] h-[200px] md:h-[350px]"
                 />
               </div>
               <div>
