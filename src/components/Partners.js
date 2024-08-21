@@ -66,7 +66,11 @@ export default function PartnersSection() {
                   </div>
                   <div
                     className={`${
-                      index === 1 || index === 3 ? "mt-4" : "mt-0"
+                      index === 1 || index === 3
+                        ? "mt-4"
+                        : index === 0
+                        ? "mt-1"
+                        : "mt-0"
                     }`}
                   >
                     <p className="text-white text-lg md:text-xl font-normal font-roboto">
