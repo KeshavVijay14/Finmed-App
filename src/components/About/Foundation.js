@@ -127,7 +127,7 @@ export default function HoverEffectSections() {
               </div>
 
               {(hoveredSection === "dataAnalytics" || inViewState) && (
-                <div className="absolute top-[100px] left-[-80px] sm:left-[-100px] w-[320px]">
+                <div className="absolute top-[120px] left-[-80px] sm:left-[-100px] w-[320px]">
                   <h3 className="text-xl md:text-3xl ml-16 font-bold text-[#00A8FF] font-trebuchet">
                     Data Analytics
                   </h3>
