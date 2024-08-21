@@ -430,7 +430,7 @@ body {
   cursor: pointer;
 }
 
-/* .foundation-bg-3 {
+.foundation-bg-3 {
   position: absolute !important;
   width: 80px;
   height: 80px;
@@ -439,23 +439,6 @@ body {
   background: #00a8ff;
   filter: blur(30px);
   cursor: pointer;
-} */
-.foundation-bg-3 {
-  position: absolute;
-  width: calc(
-    100% + 20px
-  ); /* Expand the size beyond the image to create a glow effect */
-  height: calc(
-    100% + 20px
-  ); /* Expand the size beyond the image to create a glow effect */
-  top: -20px; /* Center the expanded background */
-  left: -20px; /* Center the expanded background */
-  background: #00a8ff;
-  filter: blur(30px);
-  opacity: 0.7; /* Adjust the opacity for a softer glow */
-  pointer-events: none; /* Ensure the glow doesn't interfere with hover events */
-  transition: opacity 0.3s ease;
-  z-index: 0; /* Ensure the glow is behind the image */
 }
 
 .circle-with-shadow {
