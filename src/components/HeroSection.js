@@ -34,7 +34,7 @@ export default function HeroSection() {
             <div
               className={`relative  h-full flex items-center hover-scale px-0`}
             >
-              <div className="absolute left-[-50px]  md:bottom-50  transform translate-y-16">
+              <div className="absolute md:left-[-100px]  left-[-50px]  md:bottom-50  transform translate-y-16">
                 <Image
                   src="/images/mobile-screen-view.svg"
                   alt="Mobile Dashboard"
