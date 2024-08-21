@@ -26,12 +26,15 @@ export default function PartnersSection() {
         <section className="py-20 px-8" ref={ref}>
           <div className="container mx-auto  flex flex-col items-center justify-center">
             <div
-              className={`grid grid-cols-2 md:grid-cols-4 ${
+              className={`flex flex-wrap ${
                 inView ? "animate-move-opacity" : ""
               }`}
             >
               {partners.map((partner, index) => (
-                <div key={index} className="p-8 flex">
+                <div
+                  key={index}
+                  className="w-1/2 md:w-1/4 p-8 flex items-center justify-center h-32"
+                >
                   <Image
                     src={partner.src}
                     alt={partner.alt}
