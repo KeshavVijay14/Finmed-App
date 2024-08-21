@@ -46,14 +46,14 @@ const Step5Section = () => {
               </div>
             </div>
 
-            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
+            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 sm:mr-[-40px]">
               {inViewState && (
                 <svg
                   ref={circleRef}
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[-80px] top-64"
+                  className="absolute sm:right-[-80px] right-[-100px] sm:top-64 top-56"
                 >
                   <defs>
                     <linearGradient
@@ -112,7 +112,7 @@ const Step5Section = () => {
                   </circle>
                 </svg>
               )}
-              <div className="absolute right-80 top-0 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-80 top-0 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -123,7 +123,7 @@ const Step5Section = () => {
                 </div>
               </div>
               <div
-                className={`md:relative absolute right-20 top-32 ${
+                className={`md:relative absolute right-20 sm:top-32 top-28 ${
                   inViewState ? "animate-scale-up" : ""
                 }`}
               >
@@ -155,7 +155,7 @@ const Step5Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[300px] bottom-16 rounded shadow-sm   ${
+                className={`absolute sm:right-[300px] right-[240px] sm:bottom-16 bottom-24 rounded shadow-sm   ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
@@ -178,7 +178,7 @@ const Step5Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] top-48 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[420px] right-[280px] sm:top-48 top-[380px] rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"

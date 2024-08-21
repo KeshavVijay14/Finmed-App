@@ -46,14 +46,14 @@ const Step2Section = () => {
               </div>
             </div>
 
-            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
+            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 sm:mr-[-40px]">
               {inViewState && (
                 <svg
                   ref={circleRef}
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute right-[-100px] top-64"
+                  className="absolute sm:right-[-100px] right-[-150px] top-64"
                 >
                   <defs>
                     <linearGradient
@@ -146,7 +146,7 @@ const Step2Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute right-[290px] bottom-[10px] rounded shadow-sm   ${
+                className={`absolute sm:right-[290px] right-[190px] bottom-[10px] rounded shadow-sm   ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >
@@ -159,7 +159,7 @@ const Step2Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] bottom-16 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[420px] bottom-16 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -179,7 +179,7 @@ const Step2Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] top-8 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[420px] top-8 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"

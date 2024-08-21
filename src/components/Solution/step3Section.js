@@ -44,7 +44,7 @@ const Step3Section = () => {
               </div>
             </div>
 
-            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
+            <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 sm:mr-[-40px]">
               {inViewState && (
                 <svg
                   ref={circleRef}
@@ -150,7 +150,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[360px] bottom-4 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute sm:right-[360px]  bottom-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -174,7 +174,7 @@ const Step3Section = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[420px] top-4 rounded shadow-sm  gradient-border-thin">
+              <div className="absolute sm:right-[420px] top-4 rounded shadow-sm  gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"

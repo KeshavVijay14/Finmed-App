@@ -48,14 +48,14 @@ const Step6Section = () => {
                 </div>
               </div>
 
-              <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 mr-[-40px]">
+              <div className="relative h-[440px] md:mt-0 md:mr-0 mt-20 sm:mr-[-40px]">
                 {inViewState && (
                   <svg
                     ref={circleRef}
                     width="400"
                     height="400"
                     viewBox="0 0 400 400"
-                    className="absolute right-0 top-36"
+                    className="absolute sm:right-0  top-36"
                   >
                     <defs>
                       <linearGradient
@@ -125,7 +125,7 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`md:relative absolute right-20 top-32 ${
+                  className={`md:relative absolute sm:right-20 right-12 sm:top-32 top-20 ${
                     inViewState ? "animate-scale-up" : ""
                   }`}
                 >
@@ -146,7 +146,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-[280px] bottom-0 rounded shadow-sm   gradient-border-thin">
+                <div className="absolute right-[280px] sm:bottom-0 bottom-[-20px] rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step5.svg"
@@ -157,7 +157,7 @@ const Step6Section = () => {
                   </div>
                 </div>
                 <div
-                  className={`absolute right-[360px] bottom-20 rounded shadow-sm   ${
+                  className={`absolute sm:right-[360px] bottom-20 rounded shadow-sm   ${
                     inViewState ? "gradient-border" : "gradient-border-thin"
                   }`}
                 >
@@ -180,7 +180,7 @@ const Step6Section = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute right-[360px] top-0 rounded shadow-sm   gradient-border-thin">
+                <div className="absolute sm:right-[360px] top-0 rounded shadow-sm   gradient-border-thin">
                   <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                     <Image
                       src="/images/step4.svg"
