@@ -443,10 +443,10 @@ body {
 .foundation-bg-3 {
   position: absolute;
   width: calc(
-    100% + 40px
+    100% + 20px
   ); /* Expand the size beyond the image to create a glow effect */
   height: calc(
-    100% + 40px
+    100% + 20px
   ); /* Expand the size beyond the image to create a glow effect */
   top: -20px; /* Center the expanded background */
   left: -20px; /* Center the expanded background */
