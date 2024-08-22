@@ -18,7 +18,7 @@ export default function WhyPartnerDetailed() {
               <h2 className="text-4xl font-bold text-[#62D89F]   font-trebuchet text-center mb-12">
                 Why Partner With Finmed?
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 px-20 text-white">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 px-2 md:px-20 text-white">
                 <div>
                   <h3 className="text-xl font-bold text-[#62D89F] mb-4 font-trebuchet">
                     Broker & Accountant partners
