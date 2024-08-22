@@ -17,7 +17,7 @@ export default function NavBar() {
         <div className="flex items-center space-x-6">
           <Link href={"/"}>
             <Image
-              src={"/images/primary-logo.ai"}
+              src={"/images/primary-logo.png"}
               alt="logo"
               width={100}
               height={100}
@@ -116,7 +116,7 @@ export default function NavBar() {
 
           <Link href={"/"}>
             <Image
-              src={"/images/logo.svg"}
+              src={"/images/primary-logo.png"}
               alt="logo"
               width={100}
               height={100}

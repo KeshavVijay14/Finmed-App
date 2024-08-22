@@ -56,26 +56,21 @@ export default function PartnersSection() {
               {icons.map((icon, index) => (
                 <div
                   key={index}
-                  className="flex flex-col justify-center items-center text-center m-4 h-20 w-20"
+                  className="flex flex-col justify-center items-center text-center m-4 h-30 w-20"
                 >
                   <div>
                     <Image
                       src={icon.src}
                       alt={icon.alt}
-                      width={30}
-                      height={30}
-                      className="mb-2"
+                      width={
+                        index === 1 || index === 3 ? 50 : index === 0 ? 40 : 30
+                      }
+                      height={
+                        index === 1 || index === 3 ? 50 : index === 0 ? 40 : 30
+                      }
                     />
                   </div>
-                  <div
-                    className={`${
-                      index === 1 || index === 3
-                        ? "mt-4"
-                        : index === 0
-                        ? "mt-1"
-                        : "mt-0"
-                    }`}
-                  >
+                  <div className={"mt-4"}>
                     <p className="text-white text-lg md:text-xl font-normal font-roboto">
                       {icon.label}
                     </p>
