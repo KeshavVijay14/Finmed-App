@@ -52,7 +52,7 @@ const Step1Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute sm:right-12 right-[-50px] top-4"
+                  className="absolute sm:right-12 sm:w-[400px] w-[320px] right-0 sm:top-4"
                 >
                   <defs>
                     <linearGradient

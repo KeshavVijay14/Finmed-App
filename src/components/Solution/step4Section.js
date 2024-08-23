@@ -53,7 +53,7 @@ const Step4Section = () => {
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
-                  className="absolute sm:right-[28px] top-8"
+                  className="absolute sm:right-[28px] sm:w-[400px] w-[320px] top-8"
                 >
                   <defs>
                     <linearGradient
@@ -175,7 +175,7 @@ const Step4Section = () => {
                 </div>
               </div>
               <div
-                className={`absolute sm:right-[420px] top-0 rounded shadow-sm   ${
+                className={`absolute sm:right-[420px] sm:top-0 top-10 rounded shadow-sm   ${
                   inViewState ? "gradient-border" : "gradient-border-thin"
                 }`}
               >

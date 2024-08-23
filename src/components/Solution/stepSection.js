@@ -51,7 +51,7 @@ const StepSection = () => {
                   <svg
                     ref={circleRefs[0]}
                     viewBox="0 0 300 400"
-                    className="absolute w-[300px] right-[-100px] top-6"
+                    className="absolute sm:w-[300px] w-[180px] sm:right-[-100px] right-0 sm:top-4 top-16"
                   >
                     <defs>
                       <linearGradient
@@ -113,7 +113,7 @@ const StepSection = () => {
                   <svg
                     ref={circleRefs[1]}
                     viewBox="0 0 200 300"
-                    className="absolute w-[200px] right-40 top-24"
+                    className="absolute sm:w-[200px] w-[140px] sm:right-40 right-[170px] sm:top-24 top-32"
                   >
                     <defs>
                       <linearGradient
@@ -177,7 +177,7 @@ const StepSection = () => {
                     width="400"
                     height="400"
                     viewBox="0 0 400 400"
-                    className="absolute right-0 top-36"
+                    className="absolute sm:right-0 sm:top-36 top-24 sm:w-[400px] w-[320px] right-10"
                   >
                     <defs>
                       <linearGradient
@@ -240,7 +240,7 @@ const StepSection = () => {
                   <svg
                     ref={circleRefs[3]}
                     viewBox="0 0 300 300"
-                    className="absolute w-[300px] right-[-120px] top-40"
+                    className="absolute sm:w-[300px] w-[180px] sm:right-[-120px] right-0 sm:top-40 top-[180px]"
                   >
                     <defs>
                       <linearGradient
@@ -300,7 +300,7 @@ const StepSection = () => {
                   </svg>
                 </>
               )}
-              <div className="absolute right-44 top-0 rounded shadow-sm    gradient-border-thin">
+              <div className="absolute right-44 sm:top-0 top-8 rounded shadow-sm    gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover    w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step5.svg"
@@ -310,7 +310,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-0 top-28 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-0 right-8 top-28 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step1.svg"
@@ -320,7 +320,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[160px] top-72 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute right-[160px] sm:top-72 top-60 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step4.svg"
@@ -330,7 +330,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[370px] top-56 rounded shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[370px] sm:top-56 top-48 rounded shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step3.svg"
@@ -350,7 +350,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute right-[350px] top-20 rounded-lg shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[350px] sm:top-20 top-24 rounded-lg shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
