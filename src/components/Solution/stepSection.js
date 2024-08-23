@@ -350,7 +350,7 @@ const StepSection = () => {
                   />
                 </div>
               </div>
-              <div className="absolute sm:right-[350px] sm:top-20 top-24 rounded-lg shadow-sm   gradient-border-thin">
+              <div className="absolute sm:right-[350px] right-[280px] sm:top-20 top-24 rounded-lg shadow-sm   gradient-border-thin">
                 <div className="bg-[#1F1B5A] icon-hover  w-[51px] h-[51px] flex justify-center items-center  rounded">
                   <Image
                     src="/images/step6.svg"
