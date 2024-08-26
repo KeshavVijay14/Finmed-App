@@ -15,6 +15,7 @@ export default function HoverEffectSections() {
     }
     return () => clearTimeout(timer);
   }, [inViewState]);
+
   return (
     <InView
       triggerOnce
@@ -23,13 +24,13 @@ export default function HoverEffectSections() {
     >
       {({ inView, ref, entry }) => (
         <div
-          className="py-10 flex flex-col justify-center items-center   "
+          className="py-10 flex flex-col justify-center items-center"
           ref={ref}
         >
           <h2 className="text-4xl font-bold text-[#62D89F] font-trebuchet mb-20 px-8 sm:px-6 md:px-8 lg:px-10 xl:px-12 sm:mb-16 md:mb-12 lg:mb-10 xl:mb-8">
             The Foundation Of Finmed
           </h2>
-          <div className=" flex flex-col justify-center items-center p-28">
+          <div className="flex flex-col justify-center items-center p-28">
             <div className="flex space-x-4">
               <div
                 className="relative"
@@ -41,19 +42,18 @@ export default function HoverEffectSections() {
                   alt="Compliance"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer z-100  first-letter:   ${
+                  className={`transition-transform duration-300 cursor-pointer z-10 ${
                     hoveredSection === "compliance" || inViewState
-                      ? "transform -translate-x-4 -translate-y-4 scale-200 "
+                      ? "transform -translate-x-2 -translate-y-2 scale-110"
                       : ""
                   }`}
                 />
-
                 {(hoveredSection === "compliance" || inViewState) && (
                   <div className="foundation-bg-1"></div>
                 )}
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="absolute top-[-150px] left-[-100px] mr-20 mb-8 md:h-10 md:top-[-30px]  h-40 w-40 md:w-auto  md:left-[-350px]">
-                    <h3 className="text-xl md:text-3xl font-bold text-[#C670E7]  font-trebuchet">
+                  <div className="absolute top-[-150px] left-[-100px] md:h-10 md:top-[-30px] h-40 w-40 md:w-auto md:left-[-350px]">
+                    <h3 className="text-xl md:text-3xl font-bold text-[#C670E7] font-trebuchet">
                       Compliance
                     </h3>
                     <p className="text-white max-w-xs text-xs md:text-sm font-thin font-roboto">
@@ -76,19 +76,18 @@ export default function HoverEffectSections() {
                   alt="Security"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer z-100  first-letter:${
+                  className={`transition-transform duration-300 cursor-pointer z-10 ${
                     hoveredSection === "security" || inViewState
-                      ? "transform translate-x-4 -translate-y-4 scale-200"
+                      ? "transform translate-x-2 -translate-y-2 scale-110"
                       : ""
                   }`}
                 />
-
                 {(hoveredSection === "security" || inViewState) && (
                   <div className="foundation-bg-2"></div>
                 )}
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="absolute top-[-180px] left-[-10px]   md:top-[-30px] md:right-[-400px] md:left-0  h-40 w-48 md:w-auto md:ml-32 mb-8">
-                    <h3 className="text-xl md:text-3xl font-bold text-[#62D89F]  font-trebuchet">
+                  <div className="absolute top-[-180px] left-[-10px] md:top-[-30px] md:right-[-400px] md:left-0 h-40 w-48 md:w-auto md:ml-32 mb-8">
+                    <h3 className="text-xl md:text-3xl font-bold text-[#62D89F] font-trebuchet">
                       Security
                     </h3>
                     <p className="text-white max-w-sm text-xs md:text-sm font-thin font-roboto">
@@ -120,7 +119,7 @@ export default function HoverEffectSections() {
                   height={115}
                   className={`transition-transform duration-300 cursor-pointer z-10 ${
                     hoveredSection === "dataAnalytics" || inViewState
-                      ? "transform translate-y-4 scale-200"
+                      ? "transform translate-y-2 scale-110"
                       : ""
                   }`}
                 />
