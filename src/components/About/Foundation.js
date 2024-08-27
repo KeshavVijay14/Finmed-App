@@ -39,7 +39,7 @@ export default function HoverEffectSections() {
             The Foundation Of Finmed
           </h2>
           <div className="flex flex-col justify-center items-center p-28">
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 ">
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("compliance")}
@@ -50,7 +50,7 @@ export default function HoverEffectSections() {
                   alt="Compliance"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 ease-in-out cursor-pointer z-10 ${
+                  className={`transition-transform duration-300 ease-in-out cursor-pointer ${
                     hoveredSection === "compliance" || inViewState
                       ? "transform -translate-x-2 -translate-y-2 scale-110"
                       : ""
@@ -84,7 +84,7 @@ export default function HoverEffectSections() {
                   alt="Security"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 ease-in-out cursor-pointer z-10 ${
+                  className={`transition-transform duration-300 ease-in-out cursor-pointer  ${
                     hoveredSection === "security" || inViewState
                       ? "transform translate-x-2 -translate-y-2 scale-110"
                       : ""
@@ -125,7 +125,7 @@ export default function HoverEffectSections() {
                   alt="Data Analytics"
                   width={115}
                   height={115}
-                  className={`transition-transform duration-300 ease-in-out cursor-pointer z-10 ${
+                  className={`transition-transform duration-300 ease-in-out cursor-pointer  ${
                     hoveredSection === "dataAnalytics" || inViewState
                       ? "transform translate-y-2 scale-110"
                       : ""
