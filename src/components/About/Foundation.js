@@ -41,7 +41,7 @@ export default function HoverEffectSections() {
           <div className="flex flex-col justify-center items-center p-28">
             <div className="flex space-x-4 ">
               <div
-                className="relative"
+                className="relative z-10"
                 onMouseEnter={() => handleMouseEnter("compliance")}
                 onMouseLeave={handleMouseLeave}
               >
@@ -75,7 +75,7 @@ export default function HoverEffectSections() {
               </div>
 
               <div
-                className="relative"
+                className="relative z-10"
                 onMouseEnter={() => handleMouseEnter("security")}
                 onMouseLeave={handleMouseLeave}
               >
@@ -112,7 +112,7 @@ export default function HoverEffectSections() {
             </div>
 
             <div
-              className="relative"
+              className="relative z-10"
               onMouseEnter={() => handleMouseEnter("dataAnalytics")}
               onMouseLeave={handleMouseLeave}
             >
