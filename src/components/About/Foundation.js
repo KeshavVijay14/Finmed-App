@@ -42,17 +42,17 @@ export default function HoverEffectSections() {
                   alt="Compliance"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer z-10 ${
+                  className={`transition-transform duration-500 ease-in-out cursor-pointer z-10 ${
                     hoveredSection === "compliance" || inViewState
                       ? "transform -translate-x-2 -translate-y-2 scale-110"
                       : ""
                   }`}
                 />
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="foundation-bg-1"></div>
+                  <div className="foundation-bg-1 transition-transform duration-500 ease-in-out"></div>
                 )}
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="absolute top-[-150px] left-[-100px] md:h-10 md:top-[-30px] h-40 w-40 md:w-auto md:left-[-350px]">
+                  <div className="absolute top-[-150px] left-[-100px] md:h-10 md:top-[-30px] h-40 w-40 md:w-auto md:left-[-350px] transition-opacity duration-500 ease-in-out">
                     <h3 className="text-xl md:text-3xl font-bold text-[#C670E7] font-trebuchet">
                       Compliance
                     </h3>
@@ -76,17 +76,17 @@ export default function HoverEffectSections() {
                   alt="Security"
                   width={80}
                   height={80}
-                  className={`transition-transform duration-300 cursor-pointer z-10 ${
+                  className={`transition-transform duration-500 ease-in-out cursor-pointer z-10 ${
                     hoveredSection === "security" || inViewState
                       ? "transform translate-x-2 -translate-y-2 scale-110"
                       : ""
                   }`}
                 />
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="foundation-bg-2"></div>
+                  <div className="foundation-bg-2 transition-transform duration-500 ease-in-out"></div>
                 )}
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="absolute top-[-180px] left-[-10px] md:top-[-30px] md:right-[-400px] md:left-0 h-40 w-48 md:w-auto md:ml-32 mb-8">
+                  <div className="absolute top-[-180px] left-[-10px] md:top-[-30px] md:right-[-400px] md:left-0 h-40 w-48 md:w-auto md:ml-32 mb-8 transition-opacity duration-500 ease-in-out">
                     <h3 className="text-xl md:text-3xl font-bold text-[#62D89F] font-trebuchet">
                       Security
                     </h3>
@@ -110,14 +110,14 @@ export default function HoverEffectSections() {
             >
               <div className="relative inline-block">
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="foundation-bg-3 absolute inset-0"></div>
+                  <div className="foundation-bg-3 absolute inset-0 transition-transform duration-500 ease-in-out"></div>
                 )}
                 <Image
                   src="/images/Vector 3.svg"
                   alt="Data Analytics"
                   width={115}
                   height={115}
-                  className={`transition-transform duration-300 cursor-pointer z-10 ${
+                  className={`transition-transform duration-500 ease-in-out cursor-pointer z-10 ${
                     hoveredSection === "dataAnalytics" || inViewState
                       ? "transform translate-y-2 scale-110"
                       : ""
@@ -126,7 +126,7 @@ export default function HoverEffectSections() {
               </div>
 
               {(hoveredSection === "dataAnalytics" || inViewState) && (
-                <div className="absolute top-[120px] left-[-80px] sm:left-[-100px] w-[320px]">
+                <div className="absolute top-[120px] left-[-80px] sm:left-[-100px] w-[320px] transition-opacity duration-500 ease-in-out">
                   <h3 className="text-xl md:text-3xl ml-16 font-bold text-[#00A8FF] font-trebuchet">
                     Data Analytics
                   </h3>

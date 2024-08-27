@@ -409,36 +409,45 @@ body {
 }
 
 .foundation-bg-1 {
-  position: absolute !important;
+  position: absolute;
   width: 80px;
   height: 95px;
   right: 16px;
   bottom: 16px;
   background: #c670e7;
   filter: blur(30px);
+  -webkit-filter: blur(30px); /* Safari-specific */
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari-specific */
 }
 
 .foundation-bg-2 {
-  position: absolute !important;
+  position: absolute;
   width: 80px;
   height: 95px;
   left: 16px;
   bottom: 16px;
   background: #62d89f;
   filter: blur(30px);
+  -webkit-filter: blur(30px); /* Safari-specific */
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari-specific */
 }
 
 .foundation-bg-3 {
-  position: absolute !important;
+  position: absolute;
   width: 60px;
   height: 60px;
   left: 16px;
   top: 16px;
   background: #00a8ff;
   filter: blur(30px);
+  -webkit-filter: blur(30px); /* Safari-specific */
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari-specific */
 }
 
 .circle-with-shadow {
