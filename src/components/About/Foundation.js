@@ -5,6 +5,7 @@ import { InView } from "react-intersection-observer";
 export default function HoverEffectSections() {
   const [hoveredSection, setHoveredSection] = useState(null);
   const [inViewState, setInViewState] = useState(false);
+  const [hoverTimeout, setHoverTimeout] = useState(null);
 
   useEffect(() => {
     let timer;
@@ -16,13 +17,23 @@ export default function HoverEffectSections() {
     return () => clearTimeout(timer);
   }, [inViewState]);
 
+  const handleMouseEnter = (section) => {
+    clearTimeout(hoverTimeout);
+    setHoveredSection(section);
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimeout);
+    setHoveredSection(null);
+  };
+
   return (
     <InView
       triggerOnce
       threshold={0.5}
       onChange={(inView) => setInViewState(inView)}
     >
-      {({ inView, ref, entry }) => (
+      {({ inView, ref }) => (
         <div
           className="py-10 flex flex-col justify-center items-center"
           ref={ref}
@@ -34,8 +45,8 @@ export default function HoverEffectSections() {
             <div className="flex space-x-4">
               <div
                 className="relative"
-                onMouseEnter={() => setHoveredSection("compliance")}
-                onMouseLeave={() => setHoveredSection(null)}
+                onMouseEnter={() => handleMouseEnter("compliance")}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
                   src="/images/Vector 1.svg"
@@ -49,7 +60,7 @@ export default function HoverEffectSections() {
                   }`}
                 />
                 {(hoveredSection === "compliance" || inViewState) && (
-                  <div className="foundation-bg-1 transition-transform duration-500 ease-in-out"></div>
+                  <div className="foundation-bg-1 show"></div>
                 )}
                 {(hoveredSection === "compliance" || inViewState) && (
                   <div className="absolute top-[-150px] left-[-100px] md:h-10 md:top-[-30px] h-40 w-40 md:w-auto md:left-[-350px] transition-opacity duration-500 ease-in-out">
@@ -68,8 +79,8 @@ export default function HoverEffectSections() {
 
               <div
                 className="relative"
-                onMouseEnter={() => setHoveredSection("security")}
-                onMouseLeave={() => setHoveredSection(null)}
+                onMouseEnter={() => handleMouseEnter("security")}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
                   src="/images/Vector 2.svg"
@@ -83,7 +94,7 @@ export default function HoverEffectSections() {
                   }`}
                 />
                 {(hoveredSection === "security" || inViewState) && (
-                  <div className="foundation-bg-2 transition-transform duration-500 ease-in-out"></div>
+                  <div className="foundation-bg-2 show"></div>
                 )}
                 {(hoveredSection === "security" || inViewState) && (
                   <div className="absolute top-[-180px] left-[-10px] md:top-[-30px] md:right-[-400px] md:left-0 h-40 w-48 md:w-auto md:ml-32 mb-8 transition-opacity duration-500 ease-in-out">
@@ -105,12 +116,12 @@ export default function HoverEffectSections() {
 
             <div
               className="relative"
-              onMouseEnter={() => setHoveredSection("dataAnalytics")}
-              onMouseLeave={() => setHoveredSection(null)}
+              onMouseEnter={() => handleMouseEnter("dataAnalytics")}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="relative inline-block">
                 {(hoveredSection === "dataAnalytics" || inViewState) && (
-                  <div className="foundation-bg-3 absolute inset-0 transition-transform duration-500 ease-in-out"></div>
+                  <div className="foundation-bg-3 show"></div>
                 )}
                 <Image
                   src="/images/Vector 3.svg"
